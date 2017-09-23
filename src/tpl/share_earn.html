@@ -1,0 +1,147 @@
+
+<div class="container-fluid w-xxl w-auto-xs" ng-controller="Uaccess" ng-init="app.settings.container = false;"> 
+ <div id="inner">
+  <div class="container inner" style="min-height: 500px;">  
+    <div class="row">  
+         
+    <div class="text-center" ng-include="'src/tpl/blocks/usersidebar.html'">
+        {% include 'src/blocks/usersidebar.html' %}
+    </div>  
+<div class="col-md-10">
+<div id="awning">
+<div class="page-header">  
+<div class="clearfix">
+<h1 class="pull-left">
+Share &amp; Earn
+</h1>
+    
+    
+<div class="pull-right">
+<a class="btn btn-primary" href="javascript:void(0)" data-toggle="modal" data-target="#promo-code-modal">Promo Code</a>        
+      
+</div>
+</div>
+</div>
+</div>
+<div class="alert alert-info">
+<b>Earn a $10 credit after each friend's first purchase!</b>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-heading">
+<b>Invite via Email</b>
+</div>
+<div class="panel-body">
+    <form class="invite-email" ng-submit="invitebyemail()"> 
+          <div role="alert" ng-show="msg" class="alert  alert-dismissible alertIn alertOut ng-animate alert-success" style="">
+             <span dynamic="flash.text"> 
+                 <span class="ng-scope">
+                   {{msg}}
+                 </span>
+                         
+             </span>
+           
+         </div>
+
+<div class="form-group">
+    <input name="email_1" ng-model="invite.email_1" id="email_1" class="form-control" placeholder="Email Address 1" type="text">
+</div>
+<div class="form-group">
+<input name="email_2" ng-model="invite.email_2" id="email_2" class="form-control" placeholder="Email Address 2" type="text">
+</div>
+<div class="form-group">
+<input name="email_3" ng-model="invite.email_3" id="email_3" class="form-control" placeholder="Email Address 3" type="text">
+</div>
+<div class="form-group">
+<input name="email_4" ng-model="invite.email_4" id="email_4" class="form-control" placeholder="Email Address 4" type="text">
+</div>
+<div class="form-group"> 
+<input name="email_5" ng-model="invite.email_5" id="email_5" class="form-control" placeholder="Email Address 5" type="text"> 
+<input ng-model="invite.refer_link" class="form-control" type="hidden" >               
+</div>
+<input name="commit" value="Send Invites" data-disable-with="Sending..." class="btn btn-primary btn-block" type="submit">
+</form> 
+
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-heading">
+<b>Invite via Facebook</b>
+</div>
+<div class="panel-body">
+<p>Easily send to one or multiple friends. On average, most people invite 3 or more friends.</p>
+
+<span class="size" id="share_button"><img src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/facebook.png" border="0" alt="Facebook"/></span>
+<div class="fb-share-button" data-href="{{userrefercodeurl}} " data-layout="button_count"></div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<b>Share a Link</b>
+</div>
+<div class="panel-body">
+<p><input name="invite_url" id="invite_url" value="{{userrefercodeurl}} " onclick="$(this).select();" class="form-control" type="text"></p>
+Copy &amp; paste your invite link for friends to click.
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+ 
+   </div>  
+      </div>  
+     </div> 
+    
+    
+   
+        <div  class="modal fade in" id="promo-code-modal" role="dialog" style="display: none;">      
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                <div class="modal-header">
+                <button class="close" data-dismiss="modal" type="button">
+                <span aria-hidden="aria-hidden">×</span>
+                <span class="sr-only">Close</span>
+                </button>
+
+                <h3>Promo Code</h3>
+                </div>
+                <div class="modal-body">
+                 <form ng-submit="addpromo()">  
+                     <div style="color:red;" ng-if="promsg">{{promsg}}</div>              
+                <div class="form-group">  
+                    <input type="text" name="promo_code" ng-model="user.promo_code" id="promo_code" class="form-control" placeholder="Promo Code" required/>
+                </div>
+                <input type="submit" name="commit" value="Save" class="btn btn-primary btn-block" id="new-promo-code">
+                 </form>
+                </div>
+                </div>
+            </div>
+       </div>    
+    
+    
+    
+    
+    
+ </div>    
+ <script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery('#share_button').click(function(e){
+e.preventDefault();
+FB.ui(
+{
+method: 'feed',
+name: 'The Button App Referral Code: rupNDQ',
+link: 'https://rupak.crystalbiltech.com/thebutton/?user_invitecode=rupNDQ',
+picture: 'https://cache.addthiscdn.com/icons/v3/thumbs/32x32/facebook.png',
+caption: 'Thoag',
+description: 'Please use this referral code for thoag account registration and get benefits.',
+message: ''
+}); 
+});
+});
+</script>          

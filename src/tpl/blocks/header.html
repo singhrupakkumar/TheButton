@@ -1,0 +1,86 @@
+<!DOCTYPE html>      
+<html lang="en" data-ng-app="app">
+    <head>
+        <meta charset="utf-8" />
+        <title>The Button App</title>
+        <meta name="description" content="Angularjs, Html5, Music, Landing, 4 in 1 ui kits package" />
+        <meta name="keywords" content="AngularJS, angular, bootstrap, admin, dashboard, panel, app, charts, components,flat, responsive, layout, kit, ui, route, web, app, widgets" />
+        <meta name="keywords" content="ng-map,AngularJS,center">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="google-signin-client_id" content="10376399595-3dmhi6f2g9ib2u19co5eotooitka6hje.apps.googleusercontent.com">
+        <link rel="stylesheet" href="libs/assets/animate.css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="libs/assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="libs/assets/simple-line-icons/css/simple-line-icons.css" type="text/css" /> 
+        <link rel="stylesheet" href="libs/jquery/bootstrap/dist/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="src/css/bootstrap-datetimepicker.css" type="text/css" />
+
+        <!-- build:css css/app.min.css -->
+        <link rel="stylesheet" href="src/css/font.css" type="text/css" />
+        <link rel="stylesheet" href="src/css/app.css" type="text/css" />
+        <script src="https://apis.google.com/js/platform.js" async defer></script>   
+        
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css" />
+    <link rel="javascript" type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" />
+
+        <!-- endbuild -->
+    </head>
+    <body ng-controller="AppCtrl">
+       
+
+<div class="loader"></div>    
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1735134643181693',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();   
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <div ng-controller="Uaccess">
+    <div class="container"> 
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button"> <span class="sr-only">Menu</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" ui-sref="home"><!-- <img alt="Logo" src="#" height="34">--> LOGO</a> </div>
+         
+        <div class="navbar-left visible-lg" id="navbar-search">   
+            <form  ng-submit="searchcat()">  
+             <div class="input-group">  
+            <input autocomplete="off" class="form-control" ng-model="data.search" placeholder="Search..." type="text" required>
+           
+            <span class="input-group-btn">
+            <button class="btn btn-primary btn-lg"> <span class="fa fa-search"></span> </button> 
+            </span> </div>
+            </form>
+        </div>
+            
+      <ul class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li> <a ui-sref="home"> <i class="fa fa-gift"></i> Sell </a> </li>
+          <li> <a ui-sref="home" ng-class="{ active: isActive('#/')}"><i class="fa fa-home"></i> Home </a></li>
+          <li ng-show="loggedin==1" id="acc"> <a ui-sref="user.profile"><i class="fa fa-user"></i> Account </a></li>
+          <li ng-show="loggedin==0" id="sign" class="dropdown"> <a class="dropdown-toggle sign-up" href="#mylogin" data-toggle="modal" data-target="#mylogin">Sign Up Now - It's Free!</a> </li>
+          <!--li> <a ui-sref="home"> <i class="fa fa-question-circle"></i> Tutorial </a> </li-->
+   
+
+        </ul>
+      </ul>
+    </div>
+   </div>    
+  </nav>
+</header>

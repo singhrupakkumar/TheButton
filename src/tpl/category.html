@@ -1,0 +1,132 @@
+<div ng-controller="homeController">
+<div id="main"> 
+             
+       <div class="container-fluid" style="padding-top: 15px;   padding-bottom: 15px;"> 
+             <div class="container"> 
+              <div class="catalog-navigation hidden-xs" style="padding: 1.2% 0;"> 
+              <span ng-repeat="(index,cat) in catlist">  
+                     <a ng-click="searchbyidbylink(cat.Category.id)" ng-class="(cat.Category.id== currentcat ? 'active' : '')">{{cat.Category.name}}</a> 
+                    <span ng-show="index == 0" class="text-muted">|</span>
+              </span>
+              </div>
+             </div>
+        </div>  
+    
+ <style>
+ .ftr_pagination .pagination > li.current {
+    /* border: 1px solid #dadada; */
+    padding: 8px 14px;
+	    line-height: 20px !important;
+    background-color: #000;
+    color: #fff;
+    float: left;
+}
+ </style>
+<div class="container">
+
+
+
+
+<div class="row">
+      <div class="col-md-9">
+        <div data-columns="3" id="grid">
+            
+            <div class="column size-1of3" ng-repeat="product in productlistbycatlink"> 
+             <div class="panel panel-default panel-catalog">
+              <div class="panel-heading" ng-click="productdetail(product.Product.id)">  
+           
+                 <img ng-src="{{product.Product.image}}" alt="{{product.Product.name}}" class="img-responsive lot-show"> 
+               
+	      </div>
+                
+              <div class="panel-body">       
+                  <p title="{{product.Product.name}}">{{product.Product.name | limitTo:60}}</p>  
+                <div class="row">
+               
+                  <div class="col-xs-6">
+                    <div class="pricing"> <span class="price">${{product.Product.price}}</span> <span class="msrp">${{product.Product.price}}</span> </div>
+                  </div>
+                  <div class="col-xs-6">
+             
+                  </div> 
+                </div>
+                  
+              </div>
+              <div class="panel-footer"> 
+                <div class="row">
+                  <div class="col-xs-6 panel-separator"> <i ng-class="(product.Product.reminder==1 ? 'fa fa-heart' : 'fa fa-heart-o')" class="remind-me" id="{{product.Product.id}}" ng-click="reminderadd(product.Product.id,$event)" ></i> <span class="reminder-count">{{product.Product.reminder_count}}</span> </div>
+                  <div class="col-xs-6"> 
+                    <div class="buy-it-now" ng-click="addtocart(product.Product.id,product.Product.category_id,$event)" id="{{product.Product.id}}"> <i class="fa fa-shopping-cart"></i> <span>Buy</span><div id="price_{{product.Product.id}}" price="{{product.Product.price}}"> </div></div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+           </div>  
+
+                <!---------product_item--------------->
+
+</div>
+ </div>
+    
+    <div class="col-md-3" ng-if="productlistbycatlink[0].Category.id !=2">
+        <hr class="visible-xs">
+        <h3>{{ productlistbycatlink[0].Category.name }} Catalogs:</h3> 
+        <div class="panel panel-default panel-selected" ng-repeat="child in productlistbycatlink[0].Category.ChildCategory">
+          <div class="panel-body"> 
+               
+            <p><a href="javascript:void(0)">{{child.name}}</a></p>              
+            <div class="row">
+                <div class="col-xs-4" ng-repeat="pimg in child.Product">   
+                   
+                    <a href="javascript:void(0)"> <img class="img-responsive" ng-src="{{pimg.Product.image}}"> </a>
+                  
+                </div>  
+            </div>
+          </div> 
+        </div>    
+       
+      </div>
+       <div class="col-md-3" ng-if="productlistbycatlink[0].Category.id ==2">  
+        <hr class="visible-xs">
+        <span ng-repeat="(index,cat) in catlist" ng-if="cat.Category.id !=1 && cat.Category.id !=currentcat">
+        <h3>{{ cat.Category.name }} Catalogs:</h3>   
+        <div class="panel panel-default panel-selected">
+          <div class="panel-body">
+            <p><a href="#">{{cat.Category.name}}</a></p>           
+            <div class="row">
+               
+              <div class="col-xs-4" ng-repeat="catproduct in cat.Product | limitTo:3"> <a href="javascript:void(0)"> <img class="img-responsive" ng-src="{{catproduct.image}}"> </a> </div>
+            </div>
+          </div> 
+        </div>        
+       </span>
+      </div>
+
+ </div>
+
+
+             
+</div>
+
+
+
+     
+     </div> 
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+
+  </div> 
+
+   
+ 

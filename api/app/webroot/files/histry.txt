@@ -1,0 +1,8468 @@
+===================================================2017-04-26 12:29:06 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh
+            [password] => ashutosh!1#
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 11:25:10 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => orders
+    [action] => admin_dlstas
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 404-5-4
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/orders/dlstas
+============================================================Over=================================================================
+===================================================2017-04-26 11:20:59 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh
+            [password] => ashutosh!1#
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 11:03:25 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getsubcat
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [id] => 6
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getsubcat
+============================================================Over=================================================================
+===================================================2017-04-26 11:03:25 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getsubcat
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 6
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getsubcat
+============================================================Over=================================================================
+===================================================2017-04-26 11:03:25 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getproduct
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 21
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getproduct
+============================================================Over=================================================================
+===================================================2017-04-26 10:58:11 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getsubcat
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [id] => 6
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getsubcat
+============================================================Over=================================================================
+===================================================2017-04-26 10:58:11 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getsubcat
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 6
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getsubcat
+============================================================Over=================================================================
+===================================================2017-04-26 10:58:11 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getproduct
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 21
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getproduct
+============================================================Over=================================================================
+===================================================2017-04-26 10:33:59 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh
+            [password] => ashutosh!1#
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 10:33:46 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 10:23:57 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantslist
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [{data:{Restaurant:{latitude:33_3443,longitude:37_54545}}}] => 
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantslist
+============================================================Over=================================================================
+===================================================2017-04-26 10:23:38 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantslist
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [{data:{Restaurant:{latitude:33_3443,longitude:37_54545}}] => 
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantslist
+============================================================Over=================================================================
+===================================================2017-04-26 10:23:22 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh
+            [password] => ashutosh!1#
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 10:21:14 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantslist
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [------WebKitFormBoundaryJdcHdKoKSOrIPJRc
+Content-Disposition:_form-data;_name] => "data"
+
+{
+------WebKitFormBoundaryJdcHdKoKSOrIPJRc
+Content-Disposition: form-data; name="Restaurant"
+
+
+------WebKitFormBoundaryJdcHdKoKSOrIPJRc
+Content-Disposition: form-data; name="{"
+
+
+------WebKitFormBoundaryJdcHdKoKSOrIPJRc
+Content-Disposition: form-data; name="latitude"
+
+30.6942091,
+------WebKitFormBoundaryJdcHdKoKSOrIPJRc
+Content-Disposition: form-data; name="longitude"
+
+76.860565}
+------WebKitFormBoundaryJdcHdKoKSOrIPJRc
+Content-Disposition: form-data; name="}"
+
+
+------WebKitFormBoundaryJdcHdKoKSOrIPJRc
+Content-Disposition: form-data; name="}"
+
+
+------WebKitFormBoundaryJdcHdKoKSOrIPJRc--
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantslist
+============================================================Over=================================================================
+===================================================2017-04-26 10:14:29 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_twitterlogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [screen_name] => simerjit_fwrk
+    [twitter_id] => 808313075862413312
+    [session_id] => 1493188263237
+    [device_uuid] => BF5127D7-8A0E-48A0-A4EF-39DAF84D7D5F
+    [User] => Array
+        (
+            [username] => simerjit_fwrk
+            [twitter_id] => 808313075862413312
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/twitterlogin
+============================================================Over=================================================================
+===================================================2017-04-26 09:26:14 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh
+            [password] => ashutosh!1#
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 09:24:43 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantsliste
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [data] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [latitude] => 30.7237825
+                    [longitude] => 76.846555
+                )
+
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantsliste
+============================================================Over=================================================================
+===================================================2017-04-26 09:23:27 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantslist
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [------WebKitFormBoundary5gWmCQ4Th2xv28xS
+Content-Disposition:_form-data;_name] => "data"
+
+{
+------WebKitFormBoundary5gWmCQ4Th2xv28xS
+Content-Disposition: form-data; name="Restaurant"
+
+
+------WebKitFormBoundary5gWmCQ4Th2xv28xS
+Content-Disposition: form-data; name="{"
+
+
+------WebKitFormBoundary5gWmCQ4Th2xv28xS
+Content-Disposition: form-data; name="latitude"
+
+30.7237825,
+------WebKitFormBoundary5gWmCQ4Th2xv28xS
+Content-Disposition: form-data; name="longitude"
+
+76.846555}
+------WebKitFormBoundary5gWmCQ4Th2xv28xS
+Content-Disposition: form-data; name="}"
+
+
+------WebKitFormBoundary5gWmCQ4Th2xv28xS
+Content-Disposition: form-data; name="}"
+
+
+------WebKitFormBoundary5gWmCQ4Th2xv28xS--
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantslist
+============================================================Over=================================================================
+===================================================2017-04-26 09:23:06 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantslist
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [------WebKitFormBoundaryOFz9X4q0o9J7hmbn
+Content-Disposition:_form-data;_name] => "data"
+
+{Restaurant:{latitude:30.7237825,longitude:76.846555}}}
+------WebKitFormBoundaryOFz9X4q0o9J7hmbn--
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantslist
+============================================================Over=================================================================
+===================================================2017-04-26 09:22:43 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantslist
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [------WebKitFormBoundaryBnBHw72wj3zoV0IA
+Content-Disposition:_form-data;_name] => "{"data""
+
+{"Restaurant":{"latitude":30.7237825,"longitude":76.846555}}}
+------WebKitFormBoundaryBnBHw72wj3zoV0IA--
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantslist
+============================================================Over=================================================================
+===================================================2017-04-26 09:18:57 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantsliste
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [data] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [latitude] => 30.7237825
+                    [longitude] => 76.846555
+                )
+
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantsliste
+============================================================Over=================================================================
+===================================================2017-04-26 09:18:20 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh
+            [password] => ashutosh!1#
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 09:17:49 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh@avainfotech.com
+            [password] => ashutosh!1#
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 09:17:27 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [role] => admin
+            [name] => Ashutosh Kumar
+            [username] => ashutosh
+            [password] => ashutosh!1#
+            [active] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/add
+============================================================Over=================================================================
+===================================================2017-04-26 09:15:08 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantsliste
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [data] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [latitude] => 30.7237825
+                    [longitude] => 76.846555
+                )
+
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantsliste
+============================================================Over=================================================================
+===================================================2017-04-26 09:15:07 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_restaurantsliste
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [data] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [latitude] => 30.7237825
+                    [longitude] => 76.846555
+                )
+
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/restaurantsliste
+============================================================Over=================================================================
+===================================================2017-04-26 09:14:56 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh@avainfotech.com
+            [password] => 123456
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 09:14:39 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => ashutosh@avainfotech.com
+            [password] => 123456
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 09:12:44 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 09:12:36 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 08:30:40 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-26 08:26:19 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => orders
+    [action] => admin_dlstas
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 399-5-436
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/orders/dlstas
+============================================================Over=================================================================
+===================================================2017-04-26 08:26:18 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => orders
+    [action] => admin_dlstas
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 399-4-435
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/orders/dlstas
+============================================================Over=================================================================
+===================================================2017-04-26 07:57:54 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => payfortRoute
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [paymentMethod] => cc_merchantpage
+)
+
+<-----Query------>
+Array
+(
+    [r] => getPaymentPage
+)
+
+<-----Location------>
+/thoag/shop/payfortRoute
+============================================================Over=================================================================
+===================================================2017-04-26 07:49:07 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => orders
+    [action] => admin_dlstas
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 399-3-434
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/orders/dlstas
+============================================================Over=================================================================
+===================================================2017-04-26 07:19:37 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => diksha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-26 07:19:05 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => anurag
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-26 07:18:49 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => simerjit
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-26 07:18:33 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 05:30:04 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => anurag
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 05:29:43 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => diksha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 05:29:27 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 04:17:13 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => orders
+    [action] => admin_dlstas
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 398-5-426
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/orders/dlstas
+============================================================Over=================================================================
+===================================================2017-04-25 04:12:33 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 04:11:25 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => orders
+    [action] => admin_dlstas
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 398-3-426
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/orders/dlstas
+============================================================Over=================================================================
+===================================================2017-04-25 03:53:52 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => promocodes
+    [action] => api_promocode
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [ext] => json
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [res_id] => 21
+    [order_amount] => 1500.00
+    [promocode] => FLAT10
+    [user_id] => 398
+    [session_id] => 1493122737688
+    [UserPromocode] => Array
+        (
+            [user_id] => 398
+            [res_id] => 21
+            [session_id] => 1493122737688
+            [promocode_id] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/promocodes/promocode.json
+============================================================Over=================================================================
+===================================================2017-04-25 03:52:47 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => promocodes
+    [action] => api_promocode
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [ext] => json
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [res_id] => 21
+    [order_amount] => 1400.00
+    [promocode] => FLAT10
+    [user_id] => 398
+    [session_id] => 1493122737688
+    [UserPromocode] => Array
+        (
+            [user_id] => 398
+            [res_id] => 21
+            [session_id] => 1493122737688
+            [promocode_id] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/promocodes/promocode.json
+============================================================Over=================================================================
+===================================================2017-04-25 03:52:34 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => promocodes
+    [action] => api_promocode
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [ext] => json
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [res_id] => 21
+    [order_amount] => 1400.00
+    [promocode] => FLAT10
+    [user_id] => 398
+    [session_id] => 1493122737688
+    [UserPromocode] => Array
+        (
+            [user_id] => 398
+            [res_id] => 21
+            [session_id] => 1493122737688
+            [promocode_id] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/promocodes/promocode.json
+============================================================Over=================================================================
+===================================================2017-04-25 03:52:30 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => promocodes
+    [action] => api_promocode
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [ext] => json
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [res_id] => 21
+    [order_amount] => 1400.00
+    [promocode] => FLAT10
+    [user_id] => 398
+    [session_id] => 1493122737688
+    [UserPromocode] => Array
+        (
+            [user_id] => 398
+            [res_id] => 21
+            [session_id] => 1493122737688
+            [promocode_id] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/promocodes/promocode.json
+============================================================Over=================================================================
+===================================================2017-04-25 03:50:04 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 30
+            [phone] => +9660+96609876541230
+            [name] => simerjit
+            [address] => Future works
+            [city] => 
+            [state] => 
+            [country] => 
+            [zip] => 
+            [dob] => 1993-09-30T18:30:00.000Z
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:49:36 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 30
+            [phone] => +9660+96609876541230
+            [name] => simerjit
+            [address] => Future works
+            [city] => 
+            [state] => 
+            [country] => 
+            [zip] => 
+            [dob] => 1993-09-30T18:30:00.000Z
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:42:25 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 30
+            [phone] => +966009876541230
+            [name] => simerjit
+            [address] => Future works
+            [city] => 
+            [state] => 
+            [country] => 
+            [zip] => 
+            [dob] => 1993-09-30T18:30:00.000Z
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:41:57 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 30
+            [phone] => +966009876541230
+            [name] => simerjit
+            [address] => Future works
+            [city] => 
+            [state] => 
+            [country] => 
+            [zip] => 
+            [dob] => 1993-09-30T18:30:00.000Z
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:41:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 30
+            [phone] => +966009876541230
+            [name] => simerjit
+            [address] => Future works
+            [city] => 
+            [state] => 
+            [country] => 
+            [zip] => 
+            [dob] => 1993-09-30T18:30:00.000Z
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:40:48 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 30
+            [phone] => +966009876541230
+            [name] => simerjit
+            [address] => Future works
+            [city] => 
+            [state] => 
+            [country] => 
+            [zip] => 
+            [dob] => 1993-09-30T18:30:00.000Z
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:39:48 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 30
+            [phone] => +966009876541230
+            [name] => simerjit
+            [address] => Future works
+            [city] => 
+            [state] => 
+            [country] => 
+            [zip] => 
+            [dob] => 1993-09-30T18:30:00.000Z
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:39:38 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 30
+            [phone] => +966009876541230
+            [name] => simerjit
+            [address] => Future works
+            [city] => 
+            [state] => 
+            [country] => 
+            [zip] => 
+            [dob] => 1993-09-30T18:30:00.000Z
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:38:15 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 30
+            [phone] => +966009876541230
+            [name] => simerjit
+            [address] => Future works
+            [city] => 
+            [state] => 
+            [country] => 
+            [zip] => 
+            [dob] => 1993-09-30T18:30:00.000Z
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:37:01 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 398
+            [phone] => +96601234567695553
+            [name] => Diksha Khajuria
+            [address] => Sector 20a house number 117
+            [city] => Chandigarh
+            [state] => Punjab
+            [country] => India
+            [zip] => Fjnnj
+            [dob] => 2017-02-07T00:00:00.000Z
+            [gender] => female
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:35:48 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_editprofile
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [user] => Array
+        (
+            [id] => 398
+            [phone] => +96601234567695553
+            [name] => Diksha Khajuria
+            [address] => Sector 20a house number 117
+            [city] => Chandigarh
+            [state] => Punjab
+            [country] => India
+            [zip] => Fjnnj
+            [dob] => 2017-02-07T00:00:00.000Z
+            [gender] => female
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/editprofile
+============================================================Over=================================================================
+===================================================2017-04-25 03:33:07 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => diksha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 03:27:49 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => diksha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 03:17:30 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 03:15:30 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 03:03:17 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_fblogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [name] => Diksha Khajuria
+    [email] => diksha@avainfotech.com
+    [image] => https://graph.facebook.com/131724207356507/picture?type=large
+    [facebook_id] => 131724207356507
+    [session_id] => 1493121710081
+    [device_uuid] => F8135F5A-183B-4988-9388-009327BAC5CE
+    [User] => Array
+        (
+            [username] => diksha@avainfotech.com
+            [name] => Diksha Khajuria
+            [email] => diksha@avainfotech.com
+            [fb_id] => 131724207356507
+            [image] => https://graph.facebook.com/131724207356507/picture?type=large
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/fblogin
+============================================================Over=================================================================
+===================================================2017-04-25 02:53:22 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => readsession
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [event_time] => 3:00pm
+    [event_date] => 2017/04/25
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/readsession
+============================================================Over=================================================================
+===================================================2017-04-25 02:53:22 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => readsession
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [event_time] => 3:00pm
+    [event_date] => 2017/04/25
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/readsession
+============================================================Over=================================================================
+===================================================2017-04-25 02:52:59 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => webdisplaycart
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [apply] =>  promo
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/webdisplaycart
+============================================================Over=================================================================
+===================================================2017-04-25 02:52:56 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => webdisplaycart
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [apply] =>  promo
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/webdisplaycart
+============================================================Over=================================================================
+===================================================2017-04-25 02:52:52 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => webdisplaycart
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [apply] =>  promo
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/webdisplaycart
+============================================================Over=================================================================
+===================================================2017-04-25 02:52:50 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => webdisplaycart
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [apply] =>  promo
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/webdisplaycart
+============================================================Over=================================================================
+===================================================2017-04-25 02:52:29 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => jazzmoondj@gmail.com
+            [password] => morefood
+            [server] => rajdeep.crystalbiltech.com/thoag/eng
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 02:47:40 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 02:45:12 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_fblogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [name] => Diksha Khajuria
+    [email] => diksha@avainfotech.com
+    [image] => https://graph.facebook.com/131724207356507/picture?type=large
+    [facebook_id] => 131724207356507
+    [session_id] => 1493120691082
+    [device_uuid] => E5DBEC45-944C-4B92-8ED0-15F234934D4D
+    [User] => Array
+        (
+            [username] => diksha@avainfotech.com
+            [name] => Diksha Khajuria
+            [email] => diksha@avainfotech.com
+            [fb_id] => 131724207356507
+            [image] => https://graph.facebook.com/131724207356507/picture?type=large
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/fblogin
+============================================================Over=================================================================
+===================================================2017-04-25 02:39:04 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_fblogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [name] => Diksha Khajuria
+    [email] => diksha@avainfotech.com
+    [facebook_id] => 131724207356507
+    [session_id] => 1493120341736
+    [User] => Array
+        (
+            [username] => diksha@avainfotech.com
+            [name] => Diksha Khajuria
+            [email] => diksha@avainfotech.com
+            [fb_id] => 131724207356507
+            [image] => 
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/fblogin
+============================================================Over=================================================================
+===================================================2017-04-25 02:35:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => address
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [eventdate] => 2017/04/25
+    [event_time] => 2:35pm
+    [demand] => 1
+    [waitre_male] => 1
+    [waitre_female] => 1
+    [finaltotal] => 40
+    [order_rest] => Masala House
+    [ordernotes] => test
+    [placeorder] => placesubmit
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/address
+============================================================Over=================================================================
+===================================================2017-04-25 02:35:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => menu
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [eventdate] => 2017/04/25 2:35pm
+    [res_id] => 28
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/restaurants/menu
+============================================================Over=================================================================
+===================================================2017-04-25 02:35:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => webcart_increaseqty
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 45
+    [date] => 2017-04-25 14:34:59
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/webcart_increaseqty
+============================================================Over=================================================================
+===================================================2017-04-25 02:35:08 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => webcart_increaseqty
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 45
+    [date] => 2017-04-25 14:34:54
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/webcart_increaseqty
+============================================================Over=================================================================
+===================================================2017-04-25 02:35:05 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => readsession
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [ordertype] => delivery
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/readsession
+============================================================Over=================================================================
+===================================================2017-04-25 02:35:05 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => readsession
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [ordertype] => delivery
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/shop/readsession
+============================================================Over=================================================================
+===================================================2017-04-25 02:34:59 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [server] => /thoag/eng/restaurants/menu/28
+    [Product] => Array
+        (
+            [quantity] => 1
+            [order_type] => 1
+            [rest_id] => 28
+            [id] => 45
+        )
+
+    [User] => Array
+        (
+            [id] => 263
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/shop/add
+============================================================Over=================================================================
+===================================================2017-04-25 02:34:54 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [server] => /thoag/eng/restaurants/menu/28
+    [Product] => Array
+        (
+            [quantity] => 1
+            [order_type] => 1
+            [rest_id] => 28
+            [id] => 45
+        )
+
+    [User] => Array
+        (
+            [id] => 263
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/shop/add
+============================================================Over=================================================================
+===================================================2017-04-25 02:34:18 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => jazzmoondj@gmail.com
+            [password] => morefood
+            [server] => rajdeep.crystalbiltech.com/thoag/
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 02:34:00 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => morefood
+            [server] => rajdeep.crystalbiltech.com/thoag/
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 02:30:38 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_fblogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [name] => Diksha Khajuria
+    [email] => diksha@avainfotech.com
+    [image] => https://graph.facebook.com/131724207356507/picture?type=large
+    [facebook_id] => 131724207356507
+    [session_id] => 1493119818900
+    [device_uuid] => E5DBEC45-944C-4B92-8ED0-15F234934D4D
+    [User] => Array
+        (
+            [username] => diksha@avainfotech.com
+            [name] => Diksha Khajuria
+            [email] => diksha@avainfotech.com
+            [fb_id] => 131724207356507
+            [image] => https://graph.facebook.com/131724207356507/picture?type=large
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/fblogin
+============================================================Over=================================================================
+===================================================2017-04-25 02:20:43 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_fblogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [name] => Diksha Khajuria
+    [email] => diksha@avainfotech.com
+    [image] => https://graph.facebook.com/131724207356507/picture?type=large
+    [facebook_id] => 131724207356507
+    [session_id] => 1493119204874
+    [device_uuid] => E5DBEC45-944C-4B92-8ED0-15F234934D4D
+    [User] => Array
+        (
+            [username] => diksha@avainfotech.com
+            [name] => Diksha Khajuria
+            [email] => diksha@avainfotech.com
+            [fb_id] => 131724207356507
+            [image] => https://graph.facebook.com/131724207356507/picture?type=large
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/fblogin
+============================================================Over=================================================================
+===================================================2017-04-25 02:11:01 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_fblogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [name] => Diksha Khajuria
+    [email] => diksha@avainfotech.com
+    [image] => https://graph.facebook.com/131724207356507/picture?type=large
+    [facebook_id] => 131724207356507
+    [session_id] => 1493118647817
+    [device_uuid] => E5DBEC45-944C-4B92-8ED0-15F234934D4D
+    [User] => Array
+        (
+            [username] => diksha@avainfotech.com
+            [name] => Diksha Khajuria
+            [email] => diksha@avainfotech.com
+            [fb_id] => 131724207356507
+            [image] => https://graph.facebook.com/131724207356507/picture?type=large
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/fblogin
+============================================================Over=================================================================
+===================================================2017-04-25 02:10:22 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_fblogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [name] => Diksha Khajuria
+    [email] => diksha@avainfotech.com
+    [facebook_id] => 131724207356507
+    [session_id] => 1493118618402
+    [User] => Array
+        (
+            [username] => diksha@avainfotech.com
+            [name] => Diksha Khajuria
+            [email] => diksha@avainfotech.com
+            [fb_id] => 131724207356507
+            [image] => 
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/fblogin
+============================================================Over=================================================================
+===================================================2017-04-25 02:05:50 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => api_checkout
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [id] => 286
+            [snid] => 1493116044405
+            [social_responsible] => 0
+            [eventdate] => 2017-04-25T11:54:00.000Z
+            [discount_option] => referral
+        )
+
+    [address] => Array
+        (
+            [billing] => Array
+                (
+                    [name] => Anshul mahajan
+                    [phone] => 4649588566494949599592
+                    [address] => IT Park Rd, Phase - I, Manimajra, Chandigarh, 160101, India
+                    [recipent_mobile] => 97800998877646649595
+                )
+
+        )
+
+    [payment] => Array
+        (
+            [mode] => cod
+            [total] => 600.00
+        )
+
+    [delivery] => Array
+        (
+            [status] => 1
+        )
+
+    [paypal] => Array
+        (
+            [status] => null
+            [paymentid] => 0
+            [paymentdate] => 
+        )
+
+    [notes] => Array
+        (
+            [notes] => 
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/shop/checkout
+============================================================Over=================================================================
+===================================================2017-04-25 02:05:43 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => api_checkout
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [id] => 286
+            [snid] => 1493116044405
+            [social_responsible] => 0
+            [eventdate] => 2017-04-25T11:54:00.000Z
+            [discount_option] => referral
+        )
+
+    [address] => Array
+        (
+            [billing] => Array
+                (
+                    [name] => Anshul mahajan
+                    [phone] => 4649588566494949599592
+                    [address] => IT Park Rd, Phase - I, Manimajra, Chandigarh, 160101, India
+                    [recipent_mobile] => 97800998877646649595
+                )
+
+        )
+
+    [payment] => Array
+        (
+            [mode] => cod
+            [total] => 600.00
+        )
+
+    [delivery] => Array
+        (
+            [status] => 1
+        )
+
+    [paypal] => Array
+        (
+            [status] => null
+            [paymentid] => 0
+            [paymentdate] => 
+        )
+
+    [notes] => Array
+        (
+            [notes] => 
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/shop/checkout
+============================================================Over=================================================================
+===================================================2017-04-25 01:53:15 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getsubcat
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [id] => 35
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getsubcat
+============================================================Over=================================================================
+===================================================2017-04-25 01:53:15 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getsubcat
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 35
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getsubcat
+============================================================Over=================================================================
+===================================================2017-04-25 01:53:14 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getproduct
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 21
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getproduct
+============================================================Over=================================================================
+===================================================2017-04-25 01:49:55 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getsubcat
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [id] => 35
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getsubcat
+============================================================Over=================================================================
+===================================================2017-04-25 01:49:54 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getsubcat
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 35
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getsubcat
+============================================================Over=================================================================
+===================================================2017-04-25 01:49:54 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => products
+    [action] => admin_getproduct
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => admin
+    [admin] => 1
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [id] => 21
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/admin/products/getproduct
+============================================================Over=================================================================
+===================================================2017-04-25 01:48:26 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [oauth_verifier] => OqBitlN57eDzzlvxB4zDH45SUEXCbNaJ
+    [User] => Array
+        (
+            [username] => anshul@avainfotech.com
+            [password] => 111111
+            [server] => rajdeep.crystalbiltech.com/thoag/users/twitter_process?oauth_token=bOpZRgAAAAAAzV5oAAABW6S46hU
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 01:47:21 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 889203951
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:47:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:47:17 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => twitter_process
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [twitter_id] => 839357241375379457
+            [name] => diksha
+            [image] => http://pbs.twimg.com/profile_images/845534730216865792/e-T7ykxM_normal.jpg
+            [username] => DikshaFuture
+            [password] => DikshaFuture
+            [role] => customer
+            [email] => diksha@avainfotech.com
+            [active] => 1
+            [md_pass] => RGlrc2hhRnV0dXJl
+        )
+
+)
+
+<-----Query------>
+Array
+(
+    [oauth_token] => bOpZRgAAAAAAzV5oAAABW6S46hU
+    [oauth_verifier] => OqBitlN57eDzzlvxB4zDH45SUEXCbNaJ
+)
+
+<-----Location------>
+/thoag/users/twitter_process
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:58 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 734660934
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:58 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:28 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 918386504
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:28 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:25 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 765321900
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:25 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:24 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 214951688
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:24 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:23 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 735672739
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:22 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:21 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 266130807
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:21 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:21 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 247296064
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:21 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 582068708
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 429250195
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 138145487
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 795859393
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 488702415
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:20 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:19 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 506908920
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:19 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:19 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 298689714
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:19 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:12 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 947458817
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:12 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:12 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 729112321
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 353283417
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 590545016
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 458411038
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 136065224
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 698630952
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:11 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 336086472
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 911721409
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 640218441
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 121524107
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 389732335
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 685598508
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:10 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 212586332
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 412732463
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 204759430
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 557873966
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 662039338
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:09 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:08 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 350755688
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:46:08 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:45:58 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 391297834
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:45:58 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:45:46 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => +9660456478798
+            [gender] => male
+            [username] => neha@avainfotech.com
+            [md_pass] => ICAgICAgICAgIA==
+            [used_referral_code] => 
+            [verification_code] => 492297971
+            [role] => customer
+            [active] => 0
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:45:46 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => add
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [referral_code] => 
+            [dob] => 03/11/1991
+            [email] => neha@avainfotech.com
+            [password] =>           
+            [phone] => 456478798
+            [gender] => male
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/add
+============================================================Over=================================================================
+===================================================2017-04-25 01:41:24 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => neha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 01:41:13 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => neha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 01:38:16 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => twitter_process
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [twitter_id] => 842643096055627776
+            [name] => anurag sharma
+            [image] => http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+            [username] => fwrk4
+            [password] => fwrk4
+            [role] => customer
+            [email] => 
+            [active] => 1
+            [md_pass] => ZndyazQ=
+        )
+
+)
+
+<-----Query------>
+Array
+(
+    [oauth_token] => bXR0tAAAAAAAzV5oAAABW6Sv1qE
+    [oauth_verifier] => AE79WI2RRxbAxoDfBWQ7ZQZLdqe1sIw2
+)
+
+<-----Location------>
+/thoag/users/twitter_process
+============================================================Over=================================================================
+===================================================2017-04-25 01:37:07 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => google_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [name] => Anurag Sharma
+            [email] => anurag@avainfotech.com
+            [username] => anurag@avainfotech.com
+            [password] => 114184079621711528148
+            [md_pass] => MTE0MTg0MDc5NjIxNzExNTI4MTQ4
+            [first_name] => Anurag
+            [last_name] => Sharma
+            [image] => https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg
+            [google_id] => 114184079621711528148
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/users/google_login
+============================================================Over=================================================================
+===================================================2017-04-25 01:34:00 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => api_checkout
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [id] => 30
+            [snid] => 1493107491258
+            [social_responsible] => 1
+            [eventdate] => 2017-04-25T12:33:00.000Z
+        )
+
+    [address] => Array
+        (
+            [billing] => Array
+                (
+                    [name] => Simerjit
+                    [phone] => +9660789654123
+                    [address] => 205, New Indira Colony, Manimajra, Chandigarh, Haryana 160101, India
+                    [recipent_mobile] => 987456321
+                )
+
+        )
+
+    [payment] => Array
+        (
+            [mode] => cod
+            [total] => 150.00
+        )
+
+    [delivery] => Array
+        (
+            [status] => 1
+        )
+
+    [paypal] => Array
+        (
+            [status] => null
+            [paymentid] => 0
+            [paymentdate] => 
+        )
+
+    [notes] => Array
+        (
+            [notes] => 
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/shop/checkout
+============================================================Over=================================================================
+===================================================2017-04-25 01:31:36 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => api_checkout
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [id] => 388
+            [snid] => 1493116180015
+            [social_responsible] => 1
+        )
+
+    [address] => Array
+        (
+            [billing] => Array
+                (
+                    [name] => Hhh
+                    [phone] => +9660147258396
+                    [address] => Shivalik Enclave NAC, Shivalik Enclave, Manimajra, Chandigarh, 160101, India
+                    [recipent_mobile] => 147258369
+                )
+
+        )
+
+    [payment] => Array
+        (
+            [mode] => paypal
+            [total] => 120.00
+        )
+
+    [delivery] => Array
+        (
+            [status] => 1
+        )
+
+    [paypal] => Array
+        (
+            [status] => approved
+            [paymentid] => PAY-49K73901C09465609LD7SK7Q
+            [paymentdate] => 2017-04-25T10:31:34Z
+        )
+
+    [notes] => Array
+        (
+            [notes] => 
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/shop/checkout
+============================================================Over=================================================================
+===================================================2017-04-25 01:31:18 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_googlelogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [name] => Diksha Khajuria
+    [email] => diksha@avainfotech.com
+    [image] => https://lh5.googleusercontent.com/-fQta7p402ig/AAAAAAAAAAI/AAAAAAAAAAA/AHalGhq9beC4ztm-YkUDZAw8_QSe9vL6Iw/s120/photo.jpg
+    [google_id] => 109229398757483475860
+    [session_id] => 1493116044405
+    [device_uuid] => E5DBEC45-944C-4B92-8ED0-15F234934D4D
+    [User] => Array
+        (
+            [name] => Diksha Khajuria
+            [username] => diksha@avainfotech.com
+            [email] => diksha@avainfotech.com
+            [image] => https://lh5.googleusercontent.com/-fQta7p402ig/AAAAAAAAAAI/AAAAAAAAAAA/AHalGhq9beC4ztm-YkUDZAw8_QSe9vL6Iw/s120/photo.jpg
+            [google_id] => 109229398757483475860
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/googlelogin
+============================================================Over=================================================================
+===================================================2017-04-25 01:29:33 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => anurag
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 01:26:48 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => diksha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 01:26:34 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => diksha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 01:26:24 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_fblogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [name] => Diksha Khajuria
+    [email] => diksha@avainfotech.com
+    [image] => https://graph.facebook.com/131724207356507/picture?type=large
+    [facebook_id] => 131724207356507
+    [session_id] => 1493108914765
+    [device_uuid] => E5DBEC45-944C-4B92-8ED0-15F234934D4D
+    [User] => Array
+        (
+            [username] => diksha@avainfotech.com
+            [name] => Diksha Khajuria
+            [email] => diksha@avainfotech.com
+            [fb_id] => 131724207356507
+            [image] => https://graph.facebook.com/131724207356507/picture?type=large
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/fblogin
+============================================================Over=================================================================
+===================================================2017-04-25 01:25:55 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => diksha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 01:25:38 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 01:25:34 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_index
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [search] => diksha
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users
+============================================================Over=================================================================
+===================================================2017-04-25 12:42:28 pm=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 11:04:35 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_mobilefilter
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+    [models] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [plugin] => 
+                    [className] => Restaurant
+                )
+
+            [Dashboard] => Array
+                (
+                    [plugin] => 
+                    [className] => AppModel
+                )
+
+            [Staticpage] => Array
+                (
+                    [plugin] => 
+                    [className] => Staticpage
+                )
+
+            [Setting] => Array
+                (
+                    [plugin] => 
+                    [className] => Setting
+                )
+
+            [RestaurantsType] => Array
+                (
+                    [plugin] => 
+                    [className] => RestaurantsType
+                )
+
+            [Product] => Array
+                (
+                    [plugin] => 
+                    [className] => Product
+                )
+
+        )
+
+)
+
+<-----Data------>
+Array
+(
+    [data] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [sort_by] => name
+                    [category_id] => Array
+                        (
+                            [0] => 8
+                        )
+
+                )
+
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/mobilefilter
+============================================================Over=================================================================
+===================================================2017-04-25 10:57:44 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => shop
+    [action] => api_checkout
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [id] => 30
+            [snid] => 1493106604081
+            [social_responsible] => 0
+            [discount_option] => repeat_orders
+        )
+
+    [address] => Array
+        (
+            [billing] => Array
+                (
+                    [name] => Simerjit
+                    [phone] => +9660789654123
+                    [address] => 205, New Indira Colony, Manimajra, Chandigarh, Haryana 160101, India
+                    [recipent_mobile] => 987456321
+                )
+
+        )
+
+    [payment] => Array
+        (
+            [mode] => paypal
+            [total] => 120.00
+        )
+
+    [delivery] => Array
+        (
+            [status] => 1
+        )
+
+    [paypal] => Array
+        (
+            [status] => approved
+            [paymentid] => PAY-1B393892DX862792NLD7QCVA
+            [paymentdate] => 2017-04-25T07:57:41Z
+        )
+
+    [notes] => Array
+        (
+            [notes] => Order gfg
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/shop/checkout
+============================================================Over=================================================================
+===================================================2017-04-25 10:52:48 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_mobilefilter
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+    [models] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [plugin] => 
+                    [className] => Restaurant
+                )
+
+            [Dashboard] => Array
+                (
+                    [plugin] => 
+                    [className] => AppModel
+                )
+
+            [Staticpage] => Array
+                (
+                    [plugin] => 
+                    [className] => Staticpage
+                )
+
+            [Setting] => Array
+                (
+                    [plugin] => 
+                    [className] => Setting
+                )
+
+            [RestaurantsType] => Array
+                (
+                    [plugin] => 
+                    [className] => RestaurantsType
+                )
+
+            [Product] => Array
+                (
+                    [plugin] => 
+                    [className] => Product
+                )
+
+        )
+
+)
+
+<-----Data------>
+Array
+(
+    [data] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [sort_by] => name
+                    [category_id] => Array
+                        (
+                            [0] => 6
+                        )
+
+                )
+
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/mobilefilter
+============================================================Over=================================================================
+===================================================2017-04-25 10:52:44 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => restaurants
+    [action] => api_mobilefilter
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+    [models] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [plugin] => 
+                    [className] => Restaurant
+                )
+
+            [Dashboard] => Array
+                (
+                    [plugin] => 
+                    [className] => AppModel
+                )
+
+            [Staticpage] => Array
+                (
+                    [plugin] => 
+                    [className] => Staticpage
+                )
+
+            [Setting] => Array
+                (
+                    [plugin] => 
+                    [className] => Setting
+                )
+
+            [RestaurantsType] => Array
+                (
+                    [plugin] => 
+                    [className] => RestaurantsType
+                )
+
+            [Product] => Array
+                (
+                    [plugin] => 
+                    [className] => Product
+                )
+
+        )
+
+)
+
+<-----Data------>
+Array
+(
+    [data] => Array
+        (
+            [Restaurant] => Array
+                (
+                    [sort_by] => name
+                    [category_id] => Array
+                        (
+                            [0] => 8
+                        )
+
+                )
+
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/restaurants/mobilefilter
+============================================================Over=================================================================
+===================================================2017-04-25 10:46:23 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => api_twitterlogin
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [prefix] => api
+    [api] => 1
+    [lang] => eng
+    [isAjax] => 
+)
+
+<-----Data------>
+Array
+(
+    [screen_name] => DikshaFuture
+    [twitter_id] => 839357241375379457
+    [session_id] => 1493102253285
+    [device_uuid] => E5DBEC45-944C-4B92-8ED0-15F234934D4D
+    [User] => Array
+        (
+            [username] => DikshaFuture
+            [twitter_id] => 839357241375379457
+            [role] => customer
+            [status] => 1
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/api/users/twitterlogin
+============================================================Over=================================================================
+===================================================2017-04-25 10:25:55 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================
+===================================================2017-04-25 10:21:51 am=======================================================
+<-----Params------>
+Array
+(
+    [plugin] => 
+    [controller] => users
+    [action] => admin_login
+    [named] => Array
+        (
+        )
+
+    [pass] => Array
+        (
+        )
+
+    [lang] => eng
+    [prefix] => admin
+    [admin] => 1
+)
+
+<-----Data------>
+Array
+(
+    [User] => Array
+        (
+            [username] => thoag@gmail.com
+            [password] => admin123
+        )
+
+)
+
+<-----Query------>
+Array
+(
+)
+
+<-----Location------>
+/thoag/eng/admin/users/login
+============================================================Over=================================================================

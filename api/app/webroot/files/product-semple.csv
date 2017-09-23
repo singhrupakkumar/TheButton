@@ -1,0 +1,3 @@
+Sr. no,name,category_id,sub_cat_id,description,price,min_price,weight,active,Size
+1,Cannellini Bruschetta,8,0,This is test product,50,25,25,1,100 ml
+2,Radish-Anchovy Canapes,8,0,This is test product second,100,10,25,1,50 ml

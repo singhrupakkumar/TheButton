@@ -1,0 +1,1378 @@
+<!DOCTYPE html>      
+<html lang="en" data-ng-app="app">
+    <head>
+        <meta charset="utf-8" />
+        <title>The Button App</title>
+        <meta name="description" content="Angularjs, Html5, Music, Landing, 4 in 1 ui kits package" />
+        <meta name="keywords" content="AngularJS, angular, bootstrap, admin, dashboard, panel, app, charts, components,flat, responsive, layout, kit, ui, route, web, app, widgets" />
+        <meta name="keywords" content="ng-map,AngularJS,center"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="google-signin-client_id" content="10376399595-3dmhi6f2g9ib2u19co5eotooitka6hje.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/api:client.js"></script>
+        <link rel="shortcut icon" id="appIcon" href="/favicon.ico" type="image/x-icon" />   
+        <link rel="stylesheet" href="libs/assets/animate.css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="libs/assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="libs/assets/simple-line-icons/css/simple-line-icons.css" type="text/css" /> 
+        <link rel="stylesheet" href="libs/jquery/bootstrap/dist/css/bootstrap.css" type="text/css" />
+        <!-- build:css css/app.min.css -->
+        <link rel="stylesheet" href="src/css/font.css" type="text/css" />
+        <link rel="stylesheet" href="src/css/app.css" type="text/css" />  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+          <!-- Angular -->
+          <script src="bower_components/jquery/dist/jquery.js"></script>       
+                <script src="libs/angular/angular/angular.js"></script>  
+        <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+        <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">  
+        <script src="bower_components/slick-carousel/slick/slick.js"></script>
+        <script src="bower_components/angular-slick/dist/slick.js"></script>    
+        <link rel="stylesheet" href="https://cdn.rawgit.com/codekraft-studio/angular-page-loader/master/dist/angular-page-loader.css">
+        <script type="text/javascript" src="https://cdn.rawgit.com/codekraft-studio/angular-page-loader/master/dist/angular-page-loader.min.js"></script>  
+      
+<style>  
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+</style>  
+  
+    </head>
+    <body ng-controller="homeController" ng-cloak>       
+       <page-loader bg-color="rgb(160, 25, 120)"  flag="isLoading"></page-loader>                       
+
+<!--div class="loader"></div-->      
+<script>
+     ///////////////google login//////////////////////
+  
+    var googleUser = {};
+  function attachSignin(element) {     
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+    var profile = googleUser.getBasicProfile();
+        var google_id = profile.getId();
+        var full_name = profile.getName();
+        var image     = profile.getImageUrl();
+        var g_email   = profile.getEmail()
+         var uid = localStorage.getItem('ZGV2ZWxvcGVyX3J1cGFr');
+         
+        
+              if(google_id !='' && uid == null){  
+                  /// alert('========='+uid+'=========='); 
+                 $.ajax({
+			type: "POST", 
+			url:"https://rupak.crystalbiltech.com/thebutton/api/users/googlelogin",
+			data: {
+				gid: google_id,
+                                full_name: full_name, 
+                                g_email: g_email,  
+                                invitecode:window.localStorage.getItem('invitereferral_code')
+			  },
+			dataType: "json",
+			success: function(data) { 
+                             if (!data.status ) {  
+                                 $('#errormsg').html(data.msg) ; 
+                           // console.log(data);
+                              }else{
+                                 localStorage.setItem('ZGV2ZWxvcGVyX3J1cGFr',data.uid); 
+                                 $('#mylogin').modal('hide');   
+                                  $('#mysignup').modal('hide');  
+                                 // $('#sign').html('');    
+                                  // $('#acc').html('<a ui-sref="user.profile"><i class="fa fa-user"></i> Account </a>'); 
+                               window.location.reload();                
+                              
+                              }  
+                  
+			},
+			error: function() {   
+				//alert('Error');  
+			}
+                     
+		});
+        //console.log('Given Name: ' + profile.getGivenName());
+        //console.log('Family Name: ' + profile.getFamilyName());
+         }     
+               
+  
+        }, function(error) {
+          alert(JSON.stringify(error, undefined, 2));
+        });
+  }
+ 
+    
+      var startApp = function() {  
+    gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+      auth2 = gapi.auth2.init({
+        client_id: '10376399595-3dmhi6f2g9ib2u19co5eotooitka6hje.apps.googleusercontent.com',
+        cookiepolicy: 'single_host_origin',
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+      attachSignin(document.getElementById('customBtn'));
+    });
+  };
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1735134643181693',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();   
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <div ng-controller="Uaccess">
+    <div class="container"> 
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button"> <span class="sr-only">Menu</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" ui-sref="home"><!-- <img alt="Logo" src="#" height="34">--> LOGO</a> </div>
+         
+        <div class="navbar-left visible-lg" id="navbar-search">   
+            <form  ng-submit="searchcat()">  
+             <div class="input-group">  
+            <input autocomplete="off" class="form-control" ng-model="data.search" placeholder="Search..." type="text" required>
+           
+            <span class="input-group-btn">
+            <button class="btn btn-primary btn-lg"> <span class="fa fa-search"></span> </button> 
+            </span> </div>
+            </form>
+        </div>
+            
+      <ul class="collapse navbar-collapse" id="navbar-collapse">  
+        <ul class="nav navbar-nav navbar-right">
+        
+          <li> <a ui-sref="home" ng-class="{ active: isActive('#/')}"><i class="fa fa-home"></i> Home </a></li>
+          <li ng-show="loggedin==1" id="acc"> <a ui-sref="user.profile"><i class="fa fa-user"></i> Account </a></li>
+          <li ng-show="loggedin==0" id="sign" class="dropdown"> <a class="dropdown-toggle sign-up" href="#mylogin" data-toggle="modal" data-target="#mylogin">Sign Up Now - It's Free!</a> </li>
+          <!--li> <a ui-sref="home"> <i class="fa fa-question-circle"></i> Tutorial </a> </li-->
+   
+
+        </ul>
+      </ul>
+    </div>
+   </div>    
+  </nav>
+</header>       
+    
+ <div class="app" id="app" class="container-fluid" ui-view> </div>  
+
+ <!-- slot-client end -->
+<div class="text-center" ng-include="'src/tpl/blocks/footer.html'">       
+        
+</div>     
+ 
+
+
+
+
+<!-- Modal -->
+<div id="mylogin" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      
+      <div class="modal-body">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div id="sign-up">
+<h1>Logo</h1>
+<div class="center-block text-center">
+<div class="h5">ITEMS SELL IN 90 SECONDS!</div>
+<div class="h5 text-muted">10 million shoppers &amp; counting</div>
+<div class="h5">“Loved everything I ordered, items were amazing.”</div>
+<div class="h5 text-muted">
+—
+Brenda from Virginia, July 2017
+</div>
+</div>
+ <div ng-controller="homeController">       
+
+<form class="new_user form-validation" id="new_user" ng-submit="usignup();"> 
+    <div class="text-danger wrapper text-center" ng-show="authError"> 
+                {{authError}}
+     </div> 
+   <p id="errormsg" class="text-danger"></p> 
+<div class="form-group"> 
+    <input type="hidden" ng-model="referral_code">         
+<input autocomplete="off" class="form-control" ng-model="user.email" required placeholder="Email" title="Not a valid email." aria-required="true" type="email">
+</div>
+<div class="form-group">
+<button class="btn btn-primary btn-block ">Sign Up</button>   
+</div>
+<div class="row" style="border-bottom: 1px solid #ccc; padding: 0 0 10px;">
+<div class="col-xs-12">
+<span class="text-muted">
+Or, sign up using <a class="text-muted" href="javascript:void(0)" style="position: relative; top: 6px; color: #3b5998;">
+<span class="fa fa-facebook-square fa-2x left5 right5" onclick="fb_login();"></span>
+</a>
+
+ or<a class="text-muted" href="javascript:void(0)"  style="position: relative; top: 6px; color: #dd4b39;">
+<span id="customBtn" class="fa fa-google-plus-square fa-2x left5 right5 "></span> 
+</a>    
+  <script>startApp();</script>  
+</span>  
+</div>
+</div>
+
+<div class="top5">
+<div class="clearfix">
+<div class="pull-right">
+<a class="text-muted" href="#mysignup" onclick="" data-dismiss="modal" aria-hidden="true" role="button" data-toggle="modal" data-target="#mysignup">
+Sign In
+<span class="fa fa-caret-right"></span>
+</a>
+</div>
+</div>
+</div>
+</form>
+</div>
+ </div>
+      </div>
+       
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="mysignup" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      
+      <div class="modal-body">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div id="sign-up">
+<h1>Logo</h1>
+ <div ng-controller="Uaccess">   
+<form  name="form" class="form-validation" ng-submit="ulogin();">     
+ 
+      <div class="text-danger wrapper text-center" ng-show="authError">
+                {{authError}}
+      </div>
+    
+<div class="form-group">
+<input autocomplete="off" autofocus="autofocus" class="form-control valid" ng-model="user.email" required placeholder="Email" required="required" title="Not a valid email." aria-required="true" type="email">
+</div>
+<div class="form-group">
+<input class="form-control" ng-model="user.password" required placeholder="Password" required="required" aria-required="true" type="password">
+</div>
+<div class="form-group">
+<button class="btn btn-primary btn-block signup"  data-disable-with="Signing In...">Sign In</button> 
+</div>
+<div class="row" style="border-bottom: 1px solid #ccc; padding: 0 0 10px;">
+<div class="col-xs-12">
+<span class="text-muted">
+Or, sign in using <a class="text-muted" href="#" style="position: relative; top: 6px; color: #3b5998;">
+<span class="fa fa-facebook-square fa-2x left5 right5" onclick="fb_login();"></span>
+</a>
+ or<a class="text-muted" href="javascript:void(0)"  style="position: relative; top: 6px; color: #dd4b39;">
+<span id="customBtn" class="fa fa-google-plus-square fa-2x left5 right5 "></span> 
+</a>    
+  <script>startApp();</script>     
+    
+</span>
+</div>
+</div>
+
+<div class="top5">
+<div class="clearfix">
+<div class="pull-left">
+<a class="text-muted" href="#forgotModal" data-dismiss="modal" data-toggle="modal" data-target="#forgotModal" role="button">
+Reset Password
+<span class="fa fa-undo"></span>
+</a>
+</div>
+<div class="pull-right">
+<a class="text-muted" href="#" href="#mylogin" data-dismiss="modal" data-toggle="modal" data-target="#mylogin" role="button">
+Sign Up
+<span class="fa fa-caret-right"></span>
+</a>
+</div>
+</div>
+</div>
+</form>
+</div> 
+</div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+<!-- forgot modal -->
+ 
+ <div id="forgotModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      
+      <div class="modal-body">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div id="sign-up">
+<h1>Logo</h1>
+<div ng-controller="Uaccess"> 
+<form ng-submit="forgotpassword()">
+
+     <div class="text-danger wrapper text-center" ng-show="msg">
+                {{msg}}
+      </div>
+<div class="form-group"> 
+
+    <input type="email" class="form-control" id="email" placeholder="Email" name="email" ng-model="user.email" required="required">
+</div>
+
+<div class="form-group"> 
+    <input type="submit" class="btn btn-primary btn-block signup" value="Submit"> 
+</div>
+
+
+<div class="top5">
+<div class="clearfix">
+
+<div class="pull-right">
+<a class="text-muted" href="#mysignup" data-dismiss="modal" data-toggle="modal" data-target="#mysignup" role="button">
+Back
+<span class="fa fa-caret-right"></span>
+</a>
+    
+</div>
+</div>
+</div>
+ </form>
+ </div>   
+</div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+
+ 
+ 
+        <!-- build:js js/app.angular.js -->
+        <!-- jQuery -->
+        <script src="libs/jquery/jquery/dist/jquery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+     
+        <script src="libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+
+      
+        <script src="libs/angular/angular-animate/angular-animate.js"></script>
+        <script src="libs/angular/angular-aria/angular-aria.js"></script>
+        <script src="libs/angular/angular-cookies/angular-cookies.js"></script>
+        <script src="libs/angular/angular-messages/angular-messages.js"></script>
+        <script src="libs/angular/angular-resource/angular-resource.js"></script>
+        <script src="libs/angular/angular-sanitize/angular-sanitize.js"></script>
+        <script src="libs/angular/angular-touch/angular-touch.js"></script>
+        <script src="libs/angular/angular-ui-router/release/angular-ui-router.js"></script> 
+        <script src="libs/angular/ngstorage/ngStorage.js"></script>
+        <script src="libs/angular/angular-ui-utils/ui-utils.js"></script>
+        <!-- bootstrap -->
+        <script src="libs/angular/angular-bootstrap/ui-bootstrap-tpls.js"></script>         
+        <!-- lazyload -->
+        <script src="libs/angular/oclazyload/dist/ocLazyLoad.js"></script>
+        <!-- translate -->
+        <script src="libs/angular/angular-translate/angular-translate.js"></script>
+        <script src="libs/angular/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script src="libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+        <script src="libs/angular/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+
+        <!-- Firebase -->
+        <script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+         <script src="src/js/angular-slick.js"></script>    
+ 
+        <!--script src="src/js/controllers/slicktest.js"></script-->   
+   
+        <script src="src/js/app.js"></script>  
+        <script src="src/js/config.js"></script>   
+        <script src="src/js/main.js"></script>      
+
+        <script src="https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script>
+        <script src="src/js/ngAutocomplete.js"></script>  
+
+          <script type="text/javascript">
+ function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+     // console.log(response);
+   // statusChangeCallback(response);
+    testAPI()
+  });
+ }
+ 
+ function fb_login(){
+    FB.login(function(response) {
+
+        if (response.authResponse) {
+       testAPI()
+        } else {
+            //user hit cancel button
+           // console.log('User cancelled login or did not fully authorize.');
+
+        }
+    }, {
+        scope: 'publish_stream,email'
+    });
+}
+
+ function testAPI() {
+
+    FB.api('/me?fields=id,email,name,birthday,locale,age_range,picture,gender,first_name,last_name', function(response) {  
+
+        $.post('https://rupak.crystalbiltech.com/thebutton/api/users/facebook_connect', 
+        {
+           myid: response,invitecode:window.localStorage.getItem('invitereferral_code'),
+           action:'fblogin'
+         }, 
+         function(data, status){
+             var obj = JSON.parse(data);
+           //  console.log(obj);
+            if (!obj.status) {
+            $('#errormsg').html(obj.msg) ;    
+        }else{  
+          localStorage.setItem('ZGV2ZWxvcGVyX3J1cGFr',obj.uid);    
+          $('#mylogin').modal('hide');
+           $('#mysignup').modal('hide');
+           window.location.reload();    
+      }
+         });
+      
+    });
+
+  }
+   
+
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      //console.log('User signed out.');
+    });
+  }
+
+  </script>   
+
+  <script type="text/javascript">
+ 
+    $(document).on('ready', function() {
+
+            var cartcat_id;  //  alert('dd');  
+     function test(){  
+       var scope = angular.element($("#cartcat")).scope();  
+     cartcat_id = scope.cartcatid;   
+     }
+        
+            var userid =  window.localStorage.getItem('ZGV2ZWxvcGVyX3J1cGFr');   
+           $('#userid').val(userid);  
+        
+        $('#button-confirm').on('click', function() {   
+   // alert('pay'); 
+   // alert(cartcat_id); 
+   var cart_no         = $('#input-cc-number').val();
+   var card_start_date = $('#input-cc-start-date').val();
+   var card_start_year = $('#cc_start_date_year').val();
+   var card_expire_date = $('#input-cc-expire-date').val();
+   var card_expire_year = $('#cc_expire_date_year').val();
+   var cvv = $('#input-cc-cvv2').val();        
+   var address = window.localStorage.getItem('shipping_id');  
+   var gifrt_id = window.localStorage.getItem('gifrt_id');
+   var select_refral = window.localStorage.getItem('select_refral'); 
+   var cart_cat_id = window.localStorage.getItem('cart_cat_id'); 
+   var cc_type  = $('#cc_type').val(); 
+   var cart_product_attr_id = window.localStorage.getItem('cart_product_attr_id');    
+   var uid = localStorage.getItem('ZGV2ZWxvcGVyX3J1cGFr');  
+	$.ajax({
+		url: 'https://rupak.crystalbiltech.com/thebutton/api/shop/paybycard', 
+		type: 'post',
+		data: {userid:uid,cc_number:cart_no,cc_start_date_month:card_start_date,
+                    cc_start_date_year:card_start_year,cc_expire_date_month:card_expire_date, 
+                    cc_expire_date_year:card_expire_year,cc_cvv2:cvv,address_id:address, 
+                gift_id:gifrt_id,select_refral:select_refral,cart_cat_id:cart_cat_id,cc_type:cc_type,product_attr:cart_product_attr_id},                
+		dataType: 'json',
+		beforeSend: function() {    
+			$('#button-confirm').attr('disabled', true);  
+			$('#payment').before('<div class="alert alert-info"><i class="fa fa-info-circle"></i> Waiting</div>');
+		},
+		complete: function() {
+			$('.alert').remove();
+			$('#button-confirm').attr('disabled', false);
+		},
+		success: function(json) {
+			if (json['error']) {
+				alert(json['error']);
+			}
+		
+			if (json['success']) {    
+                            alert(json['success']);
+                            $('#pay-flow-modal').modal('hide');
+                            window.location.reload();  
+				//location = json['success'];
+			}
+		}
+	});
+  });
+        
+        
+          
+        
+
+        $(document).delegate('.did-select-credit-card','click', function(){    
+            
+            $('#select-credit-card-or-paypal').css('display', 'none');
+            $('#new-shipping-address').css('display', 'block');
+            
+            
+        });
+        
+        $(document).delegate('#select-shipping-address-back','click', function(){  
+            $('#new-shipping-address').css('display', 'none');
+            $('#select-credit-card-or-paypal').css('display', 'block');
+        });
+       
+ 
+        $(document).delegate('#new-shipping-address-back','click', function(){       
+            $('#select-credit-card-or-paypal').css('display', 'block');     
+            $('#new-shipping-address').css('display', 'none');
+        });
+                
+         $(document).delegate('#go-to-new-shipping-address','click', function(){    
+            $('#new-shipping-address').css('display', 'block');  
+            $('#select-shipping-address').css('display', 'none');    
+        });
+        
+//        $('#gopaycard').on('click', function(){ 
+//             $('#new-shipping-address').css('display', 'none');   
+//            $('#new-payment-method').css('display', 'block');
+//        });
+        ////////////////gift item////////////
+       $(document).delegate("#giftitemid","change",function () {      
+          $('#referral_amount').prop('checked', false);    
+           window.localStorage.setItem('gifrt_id',$(this).val()) ;
+           window.localStorage.setItem('select_refral','0') ;
+       }); 
+     
+        $(document).delegate('#referral_amount','change',function () {       
+           $("#giftitemid, option").attr("selected", false); 
+            window.localStorage.setItem('select_refral','1') ;
+             window.localStorage.setItem('gifrt_id','0') ;    
+        });
+  /////////////////////////////////////////////////////////      
+       
+   var  width = 100;
+var sdd =  function() {        
+var all = $(".auction-parents").map(function() {      
+    var phtm =''; 
+    var div_id = $(this).attr('id');  
+    var fullprice = $('#price_'+$(this).attr('id')).attr('fullprice');
+    var catid = $('#price_'+$(this).attr('id')).attr('catid');  
+    var product_current_price = $('#price_'+$(this).attr('id')).attr('price');
+    var product_min_price = parseFloat($('#price_'+$(this).attr('id')).attr('min_price')).toFixed(2);
+      
+    var inter_val = $('#price_'+$(this).attr('id')).attr('interval') ;     
+    var down_times = inter_val/1;     
+    var get_current_width = $('#cartbtn_'+div_id).width() / $('#cartbtn_'+div_id).parent().width() * 100;
+    var minu_width = 100 /Number(down_times);       
+    var counter_price = parseFloat(product_current_price - 1).toFixed(2);     
+
+    var get_width = Number(get_current_width) - Number(minu_width);         
+    $('#cartbtn_'+div_id).css('width', Number(get_width)+'%');         
+   
+         var prealprice = fullprice; 
+         var prod_cat = catid;   
+         var rand_n =  Math.floor(Math.random() * ((10-30)+1) + 30);
+         var salepercent = prealprice*rand_n/100;
+
+        if(Math.round(counter_price) <= Math.round(product_min_price))                          
+              {                        
+                        $.ajax({
+                       url: "https://rupak.crystalbiltech.com/thebutton/api/shop/orderbybot", 
+                       type: "post",
+                       data: {uid:rand_n,pid:div_id,current_price:product_current_price},    
+                       dataType: "json",
+                       success: function (response) {       
+                           $('#'+div_id).remove();           
+                              
+                           
+                       $.ajax({
+                       url: "https://rupak.crystalbiltech.com/thebutton/api/products/reappendproduct", 
+                       type: "post",
+                       data: {cat:prod_cat},  
+                       dataType: "json",
+                       success: function (data) {                     
+                        
+                                     phtm = '<div class="default slot slot-auction auction-parents"  id="'+data.data.Product.id+'"><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 slot-grid-wrapper">   '  + 
+ '               <div class="slot-wrapper">  '  + 
+ '                 <div class="row">  '  + 
+ '                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 col-left">  '  + 
+ '                       <div class="lot-image-holder" ng-click="productdetail('+data.data.Product.id+')" role="button" tabindex="0"> <img class="lot-image img-responsive"  style=""  src="'+data.data.Product.image+'"> </div>  '  + 
+ '                   </div>  '  + 
+ '                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 col-left col-right">  '  + 
+ '                     <button class="bid-button btn btn-lg btn-block btn-success" ng-click="addtocart('+data.data.Product.id+','+data.data.Product.category_id+')" id="btn_'+data.data.Product.id+'">  '  + 
+ '                     <div class="progress-bar progress-bar-striped bg-info smooth" role="progressbar" style="width:100%; background-color:'+ window.localStorage.getItem('btncolor')+' !important;" id="cartbtn_'+data.data.Product.id+'" aria-valuenow="70" aria-valuemin="0" ariavaluemax="70">  '  + 
+ '                     <input class="bid-button-lot-id" value="46172670" type="hidden">  '  + 
+ '                     <input class="bid-button-amount" value="3" type="hidden">   '  + 
+ '                     <div class="row bid-button-text-wrapper">   '  + 
+ '                     </div>  '  + 
+ '                     <div class="bid-button-timer-wrapper">  '  + 
+ '                       <div class="bid-button-timer reset" style="width: 223px;"></div>  '  + 
+ '                     </div>  '  + 
+ '                     </div>  '  + 
+ '                         <div class="btn-div">  '  + 
+ '                         <div class="bid-button-title">Buy Now</div>  '  + 
+ '                         <div class="bid-button-subtitle" style="display: block;" interval="'+(data.data.Product.price - data.data.Product.min_price)+'" id="price_'+data.data.Product.id+'" fullprice="'+data.data.Product.price+'" catid="'+data.data.Product.category_id+'" price="'+data.data.Product.price+'" min_price="'+data.data.Product.min_price+'">$ '+data.data.Product.min_price+'</div> '  + 
+ '                       </div>  '  + 
+ '                     </button>  '  + 
+ '                     <div class="slot-details">  '  + 
+ '                       <div class="state" style="color: rgb(103, 78, 167);"><strike>Starting $ '+data.data.Product.price+'</strike></div>  '  + 
+ '                       <div class="high-bidder" style="color: rgb(153, 153, 153);" data-input-length="30">'+data.data.Product.name+'</div>  '  + 
+ '                        <div class="high-bidder username" style="color: rgb(153, 153, 153);"> </div>   '  + 
+ '                       <div class="row">  '  + 
+ '                         <div class="col-xs-5" style="padding-right: 0;">  '  + 
+ '                         </div>  '  + 
+ '                         <div class="col-xs-7" style="padding-left: 7px;">  '  + 
+ '                             <div ng-show="prod.Product.view_isshow == 1" class="discount" style="color: rgb(68, 157, 68);" aria-hidden="true"> <i class="fa fa-eye" aria-hidden="true"></i> 0</div>  '  + 
+ '                         </div>  '  + 
+ '                       </div>  '  + 
+ '                         '  + 
+ '                     </div>  '  + 
+ '                   </div>  '  + 
+ '                 </div>  '  + 
+ '               </div>  '  + 
+ '            </div> </div> ' ; 
+     
+  
+      $('#slot-group').append(phtm);                        
+                       }   
+                   });
+          
+ 
+                       }
+                   }); 
+
+              }    
+             $('#price_'+div_id).html('$'+counter_price);   
+             $('#price_'+div_id).attr('price',counter_price);      
+                  
+                 
+             
+           
+            
+             //$('#price_'+div_id).attr('interval',counter_price); 
+         
+//           
+//            if( Number(product_current_price)  < Number(product_min_price) ) {           
+//
+//         $('#price_'+div_id).html('$'+fullprice);      
+//        $('#price_'+div_id).attr('price',fullprice);   
+//    
+//            }else{  
+//               $('#price_'+div_id).html('$'+counter_price);   
+//          $('#price_'+div_id).attr('price',counter_price);  
+//            } 
+          
+          
+          
+//     width -= set_width;  
+
+//    $('#cartbtn_'+div_id).css('width', Number(width)+'%');              
+     
+    
+//     $.ajax({
+//        url: "https://rupak.crystalbiltech.com/thebutton/api/users/getrandom", 
+//        type: "post",
+//        data: '' ,
+//        dataType: "json",
+//        success: function (response) {   
+//             //   $("#1").find("div.username").html(response+' is Winning');
+//       if(response == null) {
+//            $('#username_'+div_id).html('Rupak is Winning');  
+//       }else{
+//           $('#username_'+div_id).html(response+' is Winning');  
+//       }        
+//    
+//        }
+//    });
+
+  
+  
+}).get();
+// var categorydivs = $(".progress-bar-striped");
+//    $.each(categorydivs, function (index, div) {  
+//     
+//     //console.log("check width " + Number($(this).css('width').replace('px', '') ) );
+//     
+//     if (Number($(this).css('width').replace('px', '')) < 24) {
+////    if ( width < 10) {
+//       // console.log("yes less than condition..");
+//        $(this).removeClass('smooth');
+//        $(this).css("width", "100%");
+//        width = 100;
+//    }else{
+//         $(this).addClass('smooth');
+//    }
+//    });    
+//    
+//var elements = document.getElementsByClassName('progress-bar-striped');
+
+// var allproduct_id = all.join().split(",");
+ //console.log(allproduct_id); 
+
+  
+    }
+setInterval(sdd, 4000);                
+        
+    });     
+  </script>            
+     <!-- Modal -->
+  
+<div id="prodtdescr" class="modal fade" role="dialog">    
+     <div ng-controller="homeController">   
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+       
+        <i class="fa fa-chevron-left prev hidden-xs hidden-sm" ng-click="productdetail11()" style="display: inline;"></i>   
+        <i class="fa fa-chevron-right next hidden-xs hidden-sm" ng-click="productdetail11()" style="display: inline;"></i>
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button"> <span aria-hidden="aria-hidden">×</span> <span class="sr-only">Close</span> </button>
+        <h3 class="title">{{productdetailc.Product.name}} </h3>
+        <p ng-bind="a"></p>
+        <div class="r-stars lot-modal-stars" style="display: none;"> <span class="fa fa-star-o"></span> <span class="fa fa-star-o"></span> <span class="fa fa-star-o"></span> <span class="fa fa-star-o"></span> <span class="fa fa-star-o"></span> <span class="rating text-muted left15"></span> </div>
+      </div>
+      <div class="modal-body">
+        <div class="scroll-header text-center top10 bottom20 visible-xs"> Scroll down for more details on this item. </div> 
+ 
+     
+   
+
+   <script type="text/ng-template" id="tpl.html">  
+       <img src="{{i}}" style="width:100px;height:100px;"/>
+    </script>    
+    <slick ng-if="numberLoaded" settings="slickConfig">       
+        <div ng-repeat="i in number">
+            <div class="" ng-include="'tpl.html'"></div>
+        </div>
+    </slick>  
+
+        <div class="row" id="lot-modal-content">  
+          <div class="image col-md-7">
+          
+            <span class="label condition label-warning">New</span>     
+            <img class="img-responsive main" id="bigimage" ng-src="{{productdetailc.Product.image}}" alt="{{productdetailc.Product.image}}"/> </div> 
+           <iframe style="display:none;" class="youtube-player" type="text/html" width="250" height="250" ng-src="{{video}}"  id="showvideo" allowfullscreen frameborder="0"></iframe> 
+            <div class="thumbnails col-md-1 bottom20">
+              <img ng-repeat="(key ,value) in productdetailc.Product.gallery_img | commaBreak" ng-src="{{value}}" ng-click="gallery($event)" id="{{key}}"/>   
+              <img ng-if="video"  ng-src="src/img/videotumb.png" ng-click="gallery($event)" id="video"/>  
+            
+           </div>                            
+            
+          <div class="col-md-4">          
+            <div class="sidebar">
+              <div class="panel panel-default" id="actions" style="display: block;"> 
+                <div class="panel-body">
+                  <div class="slot-auction" id="lot-modal-slot-auction" style="display: none;">
+                    <button class="bid-button btn btn-disabled btn-lg btn-block">
+                    <input class="bid-button-lot-id" type="hidden">
+                    <input class="bid-button-amount" type="hidden">
+                    <div class="row bid-button-text-wrapper">
+                      <div class="col-xs-12">
+                        <div class="bid-button-title"></div>
+                        <div class="bid-button-subtitle"></div>
+                      </div>
+                    </div>
+                    <div class="bid-button-timer-wrapper">
+                      <div class="bid-button-timer"></div>
+                    </div>
+                    </button>
+                    <div class="slot-details">
+                      <div class="state"></div>
+                      <div class="high-bidder"></div>
+                      <div class="row">
+                        <div class="col-xs-5 text-center">
+                          <div class="bid-count"></div>
+                        </div>
+                        <div class="col-xs-7 text-center"> <span class="retail"></span> <span class="discount"></span> </div>
+                      </div>
+                    </div> 
+                  </div>
+           
+                  <div class="top10" ng-click="addtocart(productdetailc.Product.id,productdetailc.Product.category_id)" id="{{productdetailc.Product.id}}}">
+                      <a id="buy-btn" class="btn btn-block btn-success btn-lg buy-it-now" href="#">
+                          <i class="fa fa-shopping-cart btn-icon pull-left"></i> 
+                          <span>Buy Now for $ {{productdetailc.Product.price}}</span>  
+                       
+                      </a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bottom10" id="details" style="height: 200px;">
+                <div class="panel-body">
+                  <div class="bottom15" id="shipping-lot-modal" style="display: block;">
+                    <h5> <i class="fa fa-truck fa-rotate-90 fa-flip-horizontal"></i> Shipping: </h5>
+                    <p class="shipping" style="">$90 shipping - at your doorstep within 9-11 business days.</p>
+                    <p class="expedited" style="">
+                    <p><strong>Delivered in 3 business days</strong> when you choose expedited at checkout.</p>
+                    </p>
+                  </div>
+                  <div class="bottom15" id="description-lot-modal" style="display: block;">
+                    <h5> <i class="fa fa-file-text-o"></i> Description: </h5>
+                    {{productdetailc.Product.description}} 
+                  </div>
+                  <div class="bottom15" id="sizing-lot-modal" style="">
+                    <h5> Sizing: </h5>
+                    <table class="sizing-ratings-table lot-modal-table">
+                      <tbody>
+                        <tr>
+                          <td class="header">Too Small</td>
+                          <td class="sizing-bar-background"><div class="sizing-bar small" style="width: 0.931677%;"></div></td>
+                          <td class="total-ratings small">3</td>
+                        </tr>
+                        <tr>
+                          <td class="header">Just Right</td>
+                          <td class="sizing-bar-background"><div class="sizing-bar right" style="width: 98.7578%;"></div></td>
+                          <td class="total-ratings right">318</td>
+                        </tr>
+                        <tr>
+                          <td class="header">Too Large</td>
+                          <td class="sizing-bar-background"><div class="sizing-bar large" style="width: 0.310559%;"></div></td>
+                          <td class="total-ratings large">1</td> 
+                        </tr>
+                      </tbody> 
+                    </table>
+                  </div>
+                  <div class="bottom15" id="upsell-lot-modal" style="">
+                    <h5> <i class="fa fa-star"></i> Special Offers: </h5>
+                    <p>· Buy one, get one for $18.<br>
+                      · CANON USB CABLE **REQUIRED FOR USE** - $5<br>
+                    </p>
+                  </div>
+                  <div class="bottom15" id="protection-lot-modal" style="display: block;">
+                    <h5> <i class="fa fa-shield"></i> Easy Returns: </h5>
+                    <p>We want you to be completely satisfied with your purchase on The Button App. If you are not satisfied, you may return any item within 30 days of delivery.</p>
+                  </div>
+                  <!--div id="seller-lot-modal" style="display: none;">
+                    <h5 id="seller-header"> <i class="fa fa-user"></i> Seller: </h5>
+                    <p><a href="#" target="storefront">Colombo's Store</a><br>
+                      <span class="text-muted"> 11,512 items sold</span></p>
+                  </div-->
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+      </div>
+    </div>
+  </div>
+    </div> 
+</div>
+     
+  <!-----payment modal-->
+  <div class="modal fade in" id="pay-flow-modal" style="display: none;">
+       <div ng-controller="homeController">       
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">
+<span aria-hidden="aria-hidden">×</span>
+<span class="sr-only">Close</span>
+</button>
+
+<h3>
+<span class="fa fa-lock"></span>
+Secure Payment
+</h3>
+   
+</div>
+<div class="modal-body">
+<div id="pay-flow" style="" class="pay-flow-initialized">
+<div class="row">
+<div class="col-sm-5">
+<div>
+<div>
+<div class="media bottom10">
+<div class="media-left">
+<img class="media-object image" ng-src="{{cartdata[1][0].Cart.image}}"/>  
+</div>
+<div class="media-body">
+<p class="text-strong name"> {{cartdata[1][0].Cart.name}}</p>
+  
+</div>
+</div>
+</div>
+<div>
+<div class="panel panel-default">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th colspan="2">Order Summary:</th>
+</tr>
+</thead>
+<tbody id="pricing">
+    <tr>
+        <td class="text-muted" style="width: 33%;">Price</td> 
+        <td class="text-strong">${{cartdata[1][0].Cart.price}}</td>
+    </tr>
+    <tr ng-if="cartdata[0].discount_amount != 0">      
+        <td class="text-muted" style="width: 33%;">Promocode  Discount</td> 
+        <td class="text-strong">${{cartdata[0].discount_amount}}</td>   
+    </tr>
+
+    <tr>
+        <td class="text-muted" style="width: 33%;">Total</td>
+        <td class="text-strong" id="cartprice" >${{cartdata[0].total}} </td>    
+  
+
+    </tr>
+</tbody>
+</table>
+</div>
+</div>
+ <script>
+      var newvalue;  //  alert('dd');  
+     function test(){    
+       var scope = angular.element($("#cartprice")).scope();
+     newvalue = scope.cartprice;   
+     }
+   
+    //  var cart = window.localStorage.getItem('cartdata');   
+    
+      paypal.Button.render({ 
+
+            env: 'sandbox', // sandbox | production
+
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+            client: {
+                sandbox:    'AY1-cMVWA_M4AxrshEP6XlR5N993eDy650b3mh3Ij-I9n1bxvXAneRN2GSb5gQSf6m_5GTGkKjKIqved',  
+                production: '<insert production client id>'
+            },
+
+            // Show the buyer a 'Pay Now' button in the checkout flow
+            commit: true,
+
+            // payment() is called when the button is clicked
+            payment: function(data, actions) {
+
+                // Make a call to the REST api to create the payment
+                return actions.payment.create({ 
+                    payment: {
+                        transactions: [
+                            {
+                                amount: { total: ''+newvalue+'', currency: 'USD' }
+                            }
+                        ]
+                    }
+                });
+            },
+
+            // onAuthorize() is called when the buyer approves the payment
+            onAuthorize: function(data, actions) {
+
+                // Make a call to the REST api to execute the payment
+                return actions.payment.execute().then(function(payment) {  
+                    window.alert('Payment Complete!');
+                    
+                    
+   var address = window.localStorage.getItem('shipping_id');  
+   var gifrt_id = window.localStorage.getItem('gifrt_id');
+   var select_refral = window.localStorage.getItem('select_refral'); 
+   var cart_cat_id = window.localStorage.getItem('cart_cat_id'); 
+   var cart_pro_id = window.localStorage.getItem('cart_pro_id');   
+   var cart_product_attr_id = window.localStorage.getItem('cart_product_attr_id');    
+   var uid = localStorage.getItem('ZGV2ZWxvcGVyX3J1cGFr');   
+   var trx_id     = payment.id
+   var pay_amount  = payment.transactions[0].amount.total;  
+   var state  = payment.state;
+	$.ajax({
+		url: 'https://rupak.crystalbiltech.com/thebutton/api/shop/expresscheckout', 
+		type: 'post',
+		data: {userid:uid,address_id:address,     
+                gift_id:gifrt_id,select_refral:select_refral,cart_cat_id:cart_cat_id,product_attr:cart_product_attr_id,pid:cart_pro_id,trx_id:trx_id,pay_amount:pay_amount},                
+		dataType: 'json',
+		success: function(json) { 
+			if (json['error']) {
+				alert(json['error']);
+			}
+		
+			if (json['order_id']) {      
+                            alert('Order Id:- '+json['order_id']);
+                            window.location.reload();  
+				//location = json['success'];
+			}
+		}
+	});
+                    
+                });  
+            }
+
+        }, '#paypal-button');
+
+ </script>          
+<div class="visible-xs bottom20"></div> 
+</div>
+</div>
+<div class="col-sm-7">
+<div class="page" id="select-variation"  ng-if="cartdata[1][0].Cart.cat_id !=1 && cartdata[1][1].Product.attribute_id !=0"> 
+<div class="panel panel-default bottom0">
+<div class="panel-body" ng-if="cart_attr !=''"> 
+   
+    <div class="text-strong bottom20">Which size and/or color would you like?</div>   
+<div class="radios"> 
+    <a href="javascript:void(0)" class="btn btn-default btn-block btn-select did-select-variation active" ng-repeat="attr in cart_attr" ng-click="addattribute(attr.Attribute.id);">{{attr.Attribute.name}}<span class="fa fa-chevron-right"></span></a>   
+  
+</div>  
+</div>
+<div id="sizing-ratings" ng-if="cartdata[1][0].Cart.cat_id !=1 && cartdata[1][1].Product.attribute_id !=0"> 
+<h5>
+Sizing
+</h5>
+<table class="sizing-ratings-table pay-flow-table">
+<tbody><tr>
+<td class="header">Too Small</td>
+<td class="sizing-bar-background">
+<div class="sizing-bar small" style="width: 8%;"></div>
+</td>
+<td class="total-ratings small">2</td>
+</tr>
+<tr>
+<td class="header">Just Right</td>
+<td class="sizing-bar-background">
+<div class="sizing-bar right" style="width: 92%;"></div>
+</td>
+<td class="total-ratings right">23</td>
+</tr>
+<tr>
+<td class="header">Too Large</td>
+<td class="sizing-bar-background">
+<div class="sizing-bar large" style="width: 0%;"></div>
+</td>
+<td class="total-ratings large">0</td>  
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="page" id="select-credit-card-or-paypal" style="display: block;"> 
+<div class="col-xs-12">
+<div class="alert alert-info processing-notice" style="margin-top: 50px; margin-bottom: -40px; display: none;">
+Processing payment. Please hold on.
+</div>
+</div><div class="col-xs-1"></div><div class="col-xs-10">
+  
+    <div class="gift" ng-if="cartuserinfo.refferal_count !=0">   
+   <label>Choose Gift Item</label> 
+    <select ng-model="giftitemid" id="giftitemid">   
+        <option value="">Choose </option>  
+        <option ng-repeat="item in giftitems" value="{{item.Product.id}}"> {{item.Product.name | limitTo:45}}     {{item.Product.price}}</option>
+  </select>    
+   
+</div>
+<div class="referral" ng-if="cartuserinfo.refferal_count !=0">           
+   <label>Choose Referral Reward</label>    
+   <input type="checkbox" id="referral_amount" ng-model="cartuserinfo.refferal_discount">   
+</div> 
+    
+         
+<div class="row bottom10 top30">
+<div class="col-xs-12 top30">
+<a class="btn btn-lg text-center btn-block did-select-credit-card" data-target="#select-shipping-address" role="button" href="#select-shipping-address" style="background-color: green; color: white;">
+Checkout
+</a>
+</div>
+<div class="col-xs-12 text-center top30 text-muted" style="margin-bottom: -30px">            
+OR 
+</div>
+<div class="col-xs-6">      
+<hr>
+</div>
+<div class="col-xs-6">
+<hr>
+</div>
+</div>
+</div>
+<div class="text-center">
+<div id="paypal-button"></div>   
+
+</div>
+
+<a class="btn btn-default btn-sm btn-back go-to-select-variation" href="javascript:void(0)" style="display: none;">  
+<span class="fa fa-arrow-left"></span>
+Back
+</a>
+</div>
+<div class="page" id="select-payment-method" style="display: none;">
+<div class="panel panel-default bottom0">
+<div class="panel-body">
+<div class="text-strong bottom20">Which payment method would you like to use?</div>
+<div class="radios"></div>
+<a class="btn btn-primary btn-block go-to-new-payment-method top20" href="javascript:void(0)">
+Add New Payment Method
+<span class="fa fa-plus-circle"></span>
+</a>
+<a class="btn btn-default btn-sm btn-back go-to-select-variation" href="javascript:void(0)" style="display: none;">   
+<span class="fa fa-arrow-left"></span>
+Back
+</a>
+</div>
+</div>
+</div>
+<div class="page" id="new-payment-method" style="display: none;">  
+<div class="panel panel-default bottom0">
+<div class="panel-body">
+
+<div class="col-xs-12">
+<div class="alert alert-info processing-notice" style="margin-top: 50px; display: none;">
+Processing payment. Please hold on.
+</div>
+</div>
+
+<form class="form-horizontal">  
+  <div id="payment">
+    <legend>Paypal Card form</legend>  
+    <div class="form-group">
+      <label for="input-cc-number">Card Type</label>
+      <div class="row">
+     <select class="form-control" name="cc_type" id="cc_type">  
+         <option value="MasterCard">MasterCard</option>
+          <option value="Visa">Visa</option>
+          <option value="Discover">Discover</option>  
+           <option value="JCB">JCB</option>
+           <option value="American Express">American Express</option>
+     </select>    
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="input-cc-number">Credit Card Number</label>
+      <div class="row">
+        <input type="text" name="cc_number" value="4024007194632823" placeholder="Credit Card Number" id="input-cc-number" class="form-control" />
+        <input type="hidden" value="" id="userid" name="userid">     
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="row"> 
+      <div class="col-sm-6">
+          <label  for="input-cc-start-date">Start Month</label>
+        <input name="cc_start_date_month" id="input-cc-start-date" value="05" class="form-control">
+      </div>
+      <div class="col-sm-6">
+          <label  for="input-cc-start-date">Start Year</label> 
+          <input name="cc_start_date_year" id="cc_start_date_year" class="form-control" value="2011">
+      </div>
+      </div>   
+    </div>
+    <div class="form-group">
+       <div class="row">  
+    
+      <div class="col-sm-6">
+            <label for="input-cc-expire-date">Expired Month</label>
+        <input name="cc_expire_date_month" id="input-cc-expire-date" value="05" class="form-control">
+       
+      </div>
+      <div class="col-sm-6">
+           <label  for="input-cc-expire-date">Expired Year</label>  
+           <input name="cc_expire_date_year" id="cc_expire_date_year" class="form-control" value="2018">      
+        
+      </div>
+     </div> 
+    </div>
+    <div class="form-group required">  
+         <div class="row"> 
+      <label for="input-cc-cvv2">CVV Number</label>   
+    
+        <input type="text" name="cc_cvv2" value="123" id="input-cc-cvv2" class="form-control" />
+      </div> 
+    </div>
+
+  </div> 
+</form>
+<div class="buttons">
+  <div class="pull-right">
+    <input type="button" value="Confirm" id="button-confirm" data-loading-text="Loading...." class="btn btn-primary" />
+  </div>
+</div>    
+</div>
+</div>
+</div>
+
+<div class="page" id="new-shipping-address" style="display: none;">    
+    
+ <div class="page" id="select-shipping-address" style="display: block;" ng-if="cartuserinfo.user_address != 0">        
+<div class="panel panel-default bottom0">
+<div class="panel-body">       
+<div class="text-strong bottom20" style="margin-right: 75px;">Where would you like your item to be shipped?</div>
+<div class="radios radios-scrollable">
+   
+    <div class="btn btn-default btn-block btn-select did-select-shipping-address" ng-click="selectaddress(address.Address.id)" id="{{address.Address.id}}" ng-repeat="address in cartuserinfo.user_address">  
+        <div class="user-name">     
+            <span>{{address.Address.first_name}}</span>
+              <span>{{address.Address.last_name}}</span>
+        </div>
+        <div class="user-add">
+            <span>{{address.Address.address1}}</span>
+            <span>{{address.Address.address2}}</span>
+            <span>{{address.Address.city}}</span>
+             <span>{{address.Address.state}}</span>
+             <span>{{address.Address.country}}</span>
+        </div>
+    </div>       
+     
+</div>
+<a class="btn btn-primary btn-block go-to-new-shipping-address top20" id="go-to-new-shipping-address" href="javascript:void(0)">  
+Add New Shipping Address
+<span class="fa fa-plus-circle"></span>    
+</a>
+<a class="btn btn-default btn-sm btn-back go-to-next" href="javascript:void(0)" id="select-shipping-address-back"> 
+<span class="fa fa-arrow-left"></span>  
+Back
+</a>
+</div>
+</div>
+</div>  
+    
+<div class="panel panel-default bottom0">     
+<div class="panel-body">
+<div class="text-strong bottom20" style="margin-right: 75px;">Where would you like your item to be shipped?</div>
+
+ <form class="new_mailing_address" ng-submit="userbillingaddress()" id="new_mailing_address"  data-remote="true"  novalidate="novalidate">
+     <div style="color:red;" ng-if="error" ng-show="error">{{error}}</div>   
+<div class="form-group"> 
+<div class="row"> 
+<div class="col-sm-6">
+<label for="mailing-address-first-name">First Name</label>
+<input type="text" ng-model="billing.first_name" id="mailing-address-first-name" value="{{billing.first_name}}" placeholder="First Name" class="form-control" required />
+</div>
+<div class="col-sm-6">
+<div class="visible-xs top10"></div>
+
+<label for="mailing-address-last-name">Last Name</label>
+<input type="text" ng-model="billing.last_name" id="mailing-address-last-name" value="{{billing.last_name}}" placeholder="Last Name" class="form-control" required />
+</div>
+</div>
+</div>
+<div class="form-group">
+<label for="mailing-address-address1">Street Address Line #1</label>
+<input type="text" ng-model="billing.address1" id="mailing-address-address1" value="{{billing.address1}}"  class="form-control" required />
+</div>
+<div class="form-group">
+<label for="mailing-address-address2">Street Address Line #2</label>
+<input type="text" ng-model="billing.address2" value="{{billing.address2}}" id="mailing-address-address2" class="form-control" required /> 
+</div>
+<div class="form-group">
+<label for="country">Country</label>     
+<select class="form-control" ng-model="billing.country" id="user_time_zone">  
+  <option ng-repeat="cout in billingcountry" value="{{cout.Country.name}}"  ng-selected="billing.country == cout.Country.name">{{cout.Country.name}}</option>
+</select>
+</div>
+<div class="form-group">
+<div class="row">
+<div class="col-sm-4">
+<label for="mailing-address-city">City</label>
+<input type="text" ng-model="billing.city" id="mailing-address-city" value="{{billing.city}}"  class="form-control" required />
+</div>
+<div class="col-sm-4">
+<div class="visible-xs top10"></div>
+<label class="mailing-address-state">State / Region</label>
+<input type="text" ng-model="billing.state" id="regions-OTHER" value="{{billing.state}}" class="form-control regions" data-label="State / Region" style="display: block;" required />
+</div>
+<div class="col-sm-4">
+<div class="visible-xs top10"></div>
+<label for="mailing-address-zip">Postal Code</label> 
+<input type="text" ng-model="billing.zip" value="{{billing.zip}}" id="mailing-address-zip" placeholder="" class="form-control" required />
+</div>
+</div>
+</div>
+<input type="submit"  name="commit" value="Continue" data-disable-with="Loading..." id="gopaycard" class="btn btn-primary btn-block top20">
+<div class="alert alert-danger bottom0 top10" id="new-shipping-address-error" style="display: none;"></div>
+<a class="btn btn-default btn-sm btn-back go-to-select-shipping-address" href="javascript:void(0)" id="new-shipping-address-back">
+<span class="fa fa-arrow-left"></span>  
+Back
+</a> 
+</form>
+</div>
+</div>
+</div>
+<div class="page" id="confirm" style="display: none;">
+<form data-remote="true">
+
+<div id="pay_flow_upsell_ids"></div>
+<div class="panel panel-default panel-confirm selected-shipping-address">
+<div class="panel-body">
+<div class="text-strong">Ship To:</div>
+<div id="confirm-shipping-address"></div>
+<a class="btn btn-default btn-sm btn-change go-to-select-shipping-address" href="javascript:void(0)">Change</a>
+</div>
+</div>
+<div class="panel panel-default panel-confirm selected-payment-method">
+<div class="panel-body">
+<div class="text-strong">Pay With:</div>
+<div id="confirm-payment-method"></div>
+<a class="btn btn-default btn-sm btn-change go-to-select-payment-method" href="javascript:void(0)">Change</a>
+</div>
+</div>
+<div class="panel panel-default panel-confirm selected-variation" style="display: none;">
+<div class="panel-body">
+<div class="text-strong">Size, Color Selection:</div>
+<div id="confirm-variation"></div>
+<a class="btn btn-default btn-sm btn-change go-to-select-variation" href="javascript:void(0)" style="display: none;">Change</a>
+</div>
+</div>
+<div class="panel panel-default panel-confirm" id="upsells" style="display: block;">    
+<div class="panel-body">
+<div class="text-strong">Special Offers</div>
+<div id="confirm-upsells"><div class="row top10"><div class="col-xs-9">Buy one, get one for $199.</div><div class="col-xs-3"><a href="javascript:void(0)" class="btn btn-success btn-sm btn-block did-select-upsell"><span class="fa fa-plus-circle"></span></a></div></div><div class="row top10"><div class="col-xs-9">Black Jewelry Gift Box - $1</div><div class="col-xs-3"><a href="javascript:void(0)" class="btn btn-success btn-sm btn-block did-select-upsell"><span class="fa fa-plus-circle"></span></a></div></div></div>
+</div>
+</div>
+<div class="top20">
+<input type="submit" name="commit" value="Complete Payment" data-disable-with="Paying..." id="pay-with-credit-card" class="btn btn-primary btn-lg btn-block">
+<a class="btn btn-primary btn-lg btn-block" href="javascript:void(0)" id="pay-with-paypal" style="display: none;"> 
+<i class="fa fa-paypal right5"></i>
+<span></span>
+</a>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 top20">
+<div class="text-muted">
+Having trouble paying?
+Contact <a href="javascript:void(0)">customer support</a>.    
+</div>  
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+      </div> 
+</div>
+
+       
+    
+    </body>
+</html>

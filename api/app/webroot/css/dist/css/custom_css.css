@@ -1,0 +1,410 @@
+*{
+	margin:0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* Google Fonts Include Here
+============================*/
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600');
+/* Commen Css Include Here
+==========================*/
+body{
+	font-family: 'Dosis', sans-serif !important;
+	font-weight: 400 !important;
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+	margin:0px;
+	padding: 0px;
+	margin-bottom: 25px;
+	font-family: 'Dosis', sans-serif !important;
+	font-weight: 600 !important;
+	color: rgba(0, 0, 0, 0.5);
+}
+h1{
+	font-size: 23px;
+}
+h2{
+	font-size: 27px;
+}
+h3{
+	font-size: 23px;
+}
+h4{
+	font-size: 21px;
+}
+h5{
+	font-size: 19px;
+}
+h6{
+	font-size: 16px;
+}
+p{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-family: 'Dosis', sans-serif !important;
+	font-weight: 400 !important;
+	margin-bottom: 15px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.clr{
+	clear: both;
+}
+.no-margin{
+	margin: 0px;
+}
+.no-padding{
+	margin: 0px;
+}
+.tec{
+	text-align: center;
+}
+.col-center{
+	display: table;
+	float: none;
+	margin: 0 auto;
+}
+.content{
+	display: table;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+.main-sec{
+	width: 100%;
+	float: left;
+	padding: 90px 0px;
+	margin-top: 50px;
+}
+/* Pages Css Include Here
+=========================*/
+#page-content-wrapper{
+	padding: 0px;
+}
+.navbar.navbar-inverse{
+	margin: 0px;
+	border: none;
+}
+.navbar.navbar-inverse .navbar-brand{
+	height: auto;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: none;
+}
+.login_outer{
+	width: 100%;
+	float: left;
+	padding: 90px 15px 15px 15px;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	position: relative;
+	margin-top: 75px;
+}
+.user_avtar{
+	width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.user_avtar img{
+	width: 100%;
+	height: 100%;
+}
+.login_outer .login_frm{
+	width: 100%;
+	float: left;
+}
+.login_outer h3{
+	text-transform: uppercase;
+	text-align: center;
+}
+form{
+	width: 100%;
+	float: left;
+}
+div.input,
+div.form-group{
+	width: 100%;
+	float: left;
+	margin: 0px;
+	margin-bottom: 15px;
+}
+div.form-group select{
+	display: inline-block;
+	width: auto;
+}
+div.form-group div.input{
+	margin: 0px;
+}
+label{
+	width: 100%;
+	float: left;
+	font-weight: normal;
+	margin: 0px;
+	margin-bottom: 11px;
+	font-size: 14px;
+}
+input.form-control,
+input[type="text"],
+select.form-control{
+	width: 100%;
+	float: left;
+	border: none;
+	border-radius: 0px;
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 7px 7px !important;
+	color: #777 !important;
+	font-size: 16px !important;
+	box-shadow: none !important;
+	margin: 0px;
+}
+.btn.btn-primary{
+	float: right;
+    border: none;
+    border-radius: 0px;
+    background-color: #CC0000;
+}
+.footer{
+	width: 100%;
+    float: left;
+    padding: 0px;
+    padding: 15px 0px;
+}
+.footer p{
+	margin: 0px;
+    font-size: 16px;
+    text-align: center;
+}
+.sqldump{
+	width: 100%;
+	float: left;
+	display: none;
+}
+.sec_inner{
+	width: 100%;
+	float: left;
+	padding: 15px 15px;
+}
+.admin_main-sec{
+	width: 100%;
+	float: left;
+	padding: 15px 0px;
+}
+.admin_main-sec .sec_inner{
+	width: 100%;
+	float: left;
+	padding: 0px 15px;
+}
+/* Inner Page Css Include Here
+==============================*/
+.page-headeing{
+	width: 100%;
+	float: left;
+	margin-bottom: 25px;
+}
+.page-headeing h1.page-title{
+	margin: 0px;
+	text-transform: uppercase;
+}
+.page-headeing h1.page-title i{
+	color: #CC0000;
+	font-weight: normal;
+	margin-right: 15px;
+}
+.btn-toolbar.list-toolbar{
+	width: 100%;
+	float: left;
+}
+.btn-toolbar.list-toolbar div[class*="col-"]{
+	padding-left: 0px; 
+}
+.restaurants.index{
+	width: 100%;
+	float: left;
+}
+table th.actions{
+	width: 25% !important;
+}
+table th,
+table th a{
+	color: #777;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+}
+table th,
+table th a:hover{
+	color: #777;
+}
+table td{
+	font-size: 12px;
+}
+table td.actions a.fa,
+table td.actions button.fa,
+table td a.fa,
+table td button.fa{
+	padding: 0px;
+	border: none;
+	border-radius: 0px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	color: #777;
+}
+table td.actions a.fa:hover,
+table td.actions a.fa:focus,
+table td.actions button.fa:hover,
+table td.actions button.fa:focus,
+table td a.fa:hover,
+table td a.fa:focus,
+table td button.fa:hover,
+table td button.fa:focus{
+	border: 1px solid #CC0000;
+	background-color: #CC0000;
+	color: #fff;
+}
+.bottom_button{
+	width: 100%;
+	float: left;
+}
+.bottom_button ul{
+	width: 100%;
+	float: left;
+	margin-top: 15px; 
+}
+.bottom_button ul div,
+.paging span{
+	display: inline-block;
+}
+.bottom_button ul span{
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	text-transform: capitalize;
+	border-radius: 4px;
+}
+.bottom_button ul span a{
+	color: #333;
+}
+.paging span{
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	color: #333;
+	text-transform: capitalize;
+	border-radius: 4px;
+}
+.paging span a{
+	color: #333;
+}
+.bottom_button ul span:hover,
+.bottom_button ul span:focus,
+.paging span:hover,
+.paging span:focus,
+.paging span:hover a,
+.paging span:focus a{
+	border-color: #CC0000;
+	background-color: #CC0000;
+	color: #fff;
+	cursor: pointer;
+}
+.bottom_button ul span:hover a,
+.bottom_button ul span:focus a{
+	color: #fff;
+}
+.checkbox input[type="checkbox"]{
+	margin: 0px;
+	margin-top: 4px;
+}
+.page_content{
+	width: 100%;
+	float: left;
+}
+.button_outer{
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+}
+.paging{
+	width: 100%;
+	float: left;
+}
+.paging span{
+	display: inline-block;
+	padding: 5px 10px;
+    border: 1px solid #ddd;
+    text-transform: capitalize;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+.paging span:hover,
+.paging span:focus{
+	border-color: #CC0000;
+    background-color: #CC0000;
+    color: #fff;
+    cursor: pointer;
+}
+.mce-container, .mce-container-body{
+	width: 100%;
+	float: left;
+}
+input[type="date"]{
+	text-transform: uppercase !important;
+}
+td pre{
+	width: 300px !important;
+}
+.alert{
+	width: 100%;
+	float: left;
+	padding: 0px;
+}
+.alert span.icon{
+	display: none;
+}
+#flashMessage{
+	width: 100%;
+    float: left;
+    padding: 0px;
+    padding: 7px 7px;
+    background: #7bc37b;
+    color: #fff;
+}
+h1.page-title .fa{
+	display: none;
+}
+#PromocodeExpiredHour{
+	margin-left: 10px;
+}
+.logo-lg b{
+	float: left;
+}
+ul.nav li.dropdown.user-menu a{
+	display: block;
+	float: right;
+}
+.input.checkbox{
+	position: relative;
+	padding: 0px;
+	padding-left: 20px; 
+}
+.input.checkbox label{
+	padding: 0px !important;
+}
+.input.checkbox input[type="checkbox"]{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}

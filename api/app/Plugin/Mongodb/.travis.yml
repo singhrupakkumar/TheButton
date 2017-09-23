@@ -1,0 +1,86 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+
+services:
+  - mongodb
+
+env:
+  - CAKEPHP=2.3.10 PECLMONGO=mongo-1.2.9
+  - CAKEPHP=2.3.10 PECLMONGO=mongo-1.3.7
+  - CAKEPHP=2.4.10 PECLMONGO=mongo-1.4.5
+  - CAKEPHP=2.5.2 PECLMONGO=mongo-1.4.5
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: 5.4
+
+before_script:
+  - sh -c "wget http://pecl.php.net/get/$PECLMONGO.tgz"
+  - sh -c "tar xfz $PECLMONGO.tgz"
+  - sh -c "cd $PECLMONGO && phpize && ./configure && make && sudo make install"
+  - echo "extension=mongo.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
+  - wget https://github.com/cakephp/cakephp/tarball/$CAKEPHP -O cake.tar.gz
+  - tar xf cake.tar.gz
+  - mv cakephp-cakephp-* ./cakephp
+  - mkdir -p ./cakephp/app/Plugin/Mongodb
+  - mv Model ./cakephp/app/Plugin/Mongodb
+  - mv Test ./cakephp/app/Plugin/Mongodb
+  - chmod -R 777 ./cakephp/app/tmp
+  - echo "<?php
+    CakePlugin::loadAll();
+    ini_set('include_path',  '/home/travis/build/ichikaway/cakephp-mongodb/cakephp/vendor/phpunit/phpunit' . PATH_SEPARATOR . ini_get('include_path'));
+    " > cakephp/app/Config/bootstrap.php
+  - echo "<?php
+    class DATABASE_CONFIG {
+    public \$default = array(
+      'datasource' => 'Mongodb.MongodbSource',
+      'database' => 'mongo_test',
+      'host' => '127.0.0.1',
+      'login' => 'travis',
+      'password' => 'test',
+      'port' => '27017',
+      'prefix' => '',
+      'encoding' => 'utf8',
+    );
+    public \$test = array(
+      'datasource' => 'Mongodb.MongodbSource',
+      'database' => 'mongo_test',
+      'host' => '127.0.0.1',
+      'login' => 'travis',
+      'password' => 'test',
+      'port' => '27017',
+      'prefix' => '',
+      'encoding' => 'utf8',
+    );
+    }" > cakephp/app/Config/database.php
+  - echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+    <phpunit bootstrap=\"vendor/autoload.php\">
+    <filter>
+        <blacklist>
+            <directory suffix=\".php\">app/Config</directory>
+            <directory suffix=\".php\">app/Controller</directory>
+            <directory suffix=\".php\">app/Model</directory>
+            <directory suffix=\".php\">app/Test</directory>
+            <directory suffix=\".php\">app/Vendor</directory>
+            <directory suffix=\".php\">app/Plugin/Mongodb/Test</directory>
+            <directory suffix=\".php\">lib</directory>
+            <directory suffix=\".php\">vendor</directory>
+        </blacklist>
+    </filter>
+    </phpunit>
+    " > cakephp/phpunit.xml.dist
+  - mv coveralls.json cakephp/composer.json
+  - mv .coveralls.yml cakephp/.coveralls.yml
+  - cd ./cakephp
+  - composer install --dev
+  - mkdir -p build/logs
+
+script:
+  - ./app/Console/cake test Mongodb All --stderr --coverage-clover build/logs/clover.xml --configuration phpunit.xml.dist
+
+after_script:
+  - php vendor/bin/coveralls -v

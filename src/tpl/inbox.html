@@ -1,0 +1,52 @@
+
+<div class="container-fluid w-xxl w-auto-xs" ng-controller="Uaccess" ng-init="app.settings.container = false;"> 
+ <div id="inner">
+  <div class="container inner" style="min-height: 500px;">  
+    <div class="row">  
+         
+    <div class="text-center" ng-include="'src/tpl/blocks/usersidebar.html'">  
+        {% include 'src/blocks/usersidebar.html' %}
+    </div>  
+<div class="col-md-10">
+        <div class="hidden">
+          <div class="inbox-folders-wrap">
+            <ul class="inbox-folders list-unstyled">
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <ol class="breadcrumb">
+              <li> <a ui-sref="user.inbox">Inbox</a> </li>      
+              <li class="active"> The Button App </li>
+            </ol>
+             
+            <div class="inbox-messages">    
+              <div class="timestamp">  {{user.created}}  </div>
+              <div class="authored inbox-message received">
+                <div class="author"> <a href="javascript:void(0)">The Button App</a> </div>
+                <div class="body">
+                  <p>Welcome to The Button App, the world's most entertaining live marketplace. Check out our live auctions or browse our catalogs and set alerts for items you like. When the items go up for auction, we will notify you so you don't miss out on a great deal. If you have any questions please don't hesitate to contact us at <a href="https://rupak.crystalbiltech.com/thebutton/user/support">https://rupak.crystalbiltech.com/thebutton/user/support</a>.</p>
+                  <p>Happy bidding!</p>
+                </div>
+                <div class="tail">
+                  <div class="outer"></div>
+                  <div class="inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+   </div>  
+      </div>    
+     </div>    
+    
+    
+    
+    
+      
+
+ </div>    
+       

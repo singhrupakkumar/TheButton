@@ -1,0 +1,420 @@
+<div class="container-fluid w-xxl w-auto-xs" ng-controller="Uaccess" ng-init="app.settings.container = false;"> 
+ <div id="inner">
+  <div class="container inner" style="min-height: 500px;">  
+    <div class="row">  
+         
+    <div class="text-center" ng-include="'src/tpl/blocks/usersidebar.html'">
+        {% include 'src/blocks/usersidebar.html' %}
+    </div>   
+<div class="col-md-10">
+        <div id="awning">
+          <div class="page-header"> 
+            <h1>Reminders</h1>
+          </div>
+        </div>
+       <div data-columns="3" id="grid" class="reminder">   
+          <div class="column size-1of3" ng-if="list.Product.price" ng-repeat="list in reminderlist">
+            <div class="panel panel-default panel-catalog" data-product-parent-id="3272661">
+              <div class="panel-heading" id="modal-open" data-toggle="modal" data-target="#lot-modal">
+                  
+                <img class="img-responsive lot-show" ng-click="reminderproductinfo(list.Product.id)" src="{{list.Product.image}}"> </div> 
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="pricing"> <span class="price">${{list.Product.price}}</span> <span class="msrp">$599</span> </div>
+                  </div>
+                  <div class="col-xs-6">
+                 
+                  </div>  
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="bought-this">50+ bought this</div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+
+                  <div class="col-xs-6 panel-separator"> 
+                      <i ng-class="(list.Product.reminder==1 ? 'fa fa-heart' : 'fa fa-heart-o')" class="remind-me" id="{{list.Product.id}}" ng-click="reminderadd(list.Product.id,$event)"></i> 
+                      <span class="reminder-count">{{list.Product.reminder_count}}</span>
+                  </div>   
+                  <div class="col-xs-6"> 
+                    <div class="buy-it-now" data-lot-id="42699963"> <i class="fa fa-shopping-cart"></i> <span>Buy</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="clearfix"></div>
+        <div class="clearfix">
+          <ul class="pagination hidden-xs">
+          </ul>
+          <ul class="pagination visible-xs">
+          </ul>
+        </div>
+      </div>
+        
+    </div>  
+      </div>  
+     </div>  
+    
+    
+    
+    
+    <!-- Modal -->
+<div id="lotmodal" class="modal fade" role="dialog">  
+    <div class="modal-dialog modal-lg">   
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="aria-hidden">×</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+ 
+                    <h3 class="title">{{productinfo.Product.name}}</h3> 
+                    <div class="r-stars lot-modal-stars" style="display: none;">
+            
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="scroll-header text-center top10 bottom20 visible-xs">
+                        Scroll down for more details on this item.
+                    </div>
+                    <div class="row" id="lot-modal-content">
+                        <div class="image col-md-7">
+                            <div class="sharing hidden-xs">
+                                <i class="fa fa-facebook facebook-send"></i>
+                                <i class="fa fa-twitter twitter-send"></i>
+                                <i class="fa fa-pinterest pinterest-send"></i>
+                                <a class="fa fa-paperclip" href="http://tophatter.com/lots/23455566?ref=14321069&amp;source=lot-view-reminders" target="_share"></a>
+                            </div>
+                            <span class="label condition label-warning">New</span>
+                            <img class="img-responsive main" src="{{productinfo.Product.image}}">
+                        </div>
+                        <div class="thumbnails col-md-1 bottom20">
+                            <img src="https://d38eepresuu519.cloudfront.net/c7c432019cdf61a16bbe0a688239fb57/thumbnail.jpg" class="selected">
+                            <img src="https://d38eepresuu519.cloudfront.net/da19057227a5fc4799665ec417f2f1bb/thumbnail.jpg">
+                            <img src="https://d38eepresuu519.cloudfront.net/f471411fdae85ec2b57f333c5ecbc8e9/thumbnail.jpg">
+                            <img src="https://d38eepresuu519.cloudfront.net/e1e0e409fb0a46c44050fe67d067b189/thumbnail.jpg">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="sidebar">
+                                <div class="panel panel-default" id="actions" style="display: block;">
+                                    <div class="panel-body">
+                                        <div class="slot-auction" id="lot-modal-slot-auction" style="display: none;">
+                                            <button class="bid-button btn btn-disabled btn-lg btn-block">
+                                                <input class="bid-button-lot-id" type="hidden">
+                                                <input class="bid-button-amount" type="hidden">
+                                                <div class="row bid-button-text-wrapper">
+                                                    <div class="col-xs-12">
+                                                        <div class="bid-button-title"></div>
+                                                        <div class="bid-button-subtitle"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="bid-button-timer-wrapper">
+                                                    <div class="bid-button-timer"></div>
+                                                </div>
+                                            </button>
+                                            <div class="slot-details">
+                                                <div class="state"></div>
+                                                <div class="high-bidder"></div>
+                                                <div class="row">
+                                                    <div class="col-xs-5 text-center">
+                                                        <div class="bid-count"></div>
+                                                    </div>
+                                                    <div class="col-xs-7 text-center">
+                                                        <span class="retail"></span>
+                                                        <span class="discount"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="top10" id="set-reminder"> 
+                                            <a ng-if="productinfo.Product.reminder == 1" id="productinfo.Product.id" ng-click="reminderadd(productinfo.Product.id,$event)" class="reminder-btn btn btn-block btn-lg btn-default" role="button"><i class="fa fa-heart btn-icon pull-left"></i>
+                                            <span>We'll remind you</span>
+                                            </a>
+                                            <a ng-if="productinfo.Product.reminder == 0" id="productinfo.Product.id" ng-click="reminderadd(productinfo.Product.id,$event)" class="reminder-btn btn btn-block btn-lg btn-default" role="button"><i class="fa fa-heart btn-icon pull-left"></i>
+                                            <span>Set a Reminder</span>  
+                                            </a>
+                                            <div class="numbers row">
+                                                <div class="col-xs-5">
+                                                    <i class="fa remind-me pointer reminded fa-heart"></i>
+                                                    <span class="reminder-count">6335</span>
+                                                </div>
+                                                <div class="col-xs-7 text-right starting-bid-amount">Starting bid $1</div>
+                                            </div>
+                                        </div>
+                                        <div class="top10" id="buy">
+                                            <a id="buy-btn" class="btn btn-block btn-success btn-lg buy-it-now" href="#"><i class="fa fa-shopping-cart btn-icon pull-left"></i>
+                                                <span>Buy Now for ${{productinfo.Product.price}}</span>
+                                            </a>
+                                            <div class="numbers row">
+                                                <div class="col-xs-6">
+                                          
+                                                    <span class="buy-now">${{productinfo.Product.price}}</span>
+                                                </div>
+                                                <div class="col-xs-6 text-right">
+                                                    <span class="discount text-money text-strong">80% off</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default bottom10" id="details" style="height: 200px;">
+                                    <div class="panel-body">
+                                        <div class="bottom15" id="shipping-lot-modal" style="display: block;">
+                                            <h5>
+<i class="fa fa-truck fa-rotate-90 fa-flip-horizontal"></i>
+Shipping:
+</h5>
+                                            <p class="shipping" style="">$59 shipping - at your doorstep within 8-10 business days.</p>
+                                            <p class="expedited" style="">
+                                                <p><strong>Delivered in 3 business days</strong> when you choose expedited at checkout.</p>
+                                            </p>
+                                        </div>
+                                        <div class="bottom15" id="description-lot-modal" style="display: block;">
+                                            <h5>
+<i class="fa fa-file-text-o"></i>
+Description:
+</h5>
+                                            <p>{{productinfo.Product.description}}</p>   
+                                        </div>
+                                        <div class="bottom15" id="sizing-lot-modal" style="">
+                                            <h5>
+Sizing:
+</h5>
+                                            <table class="sizing-ratings-table lot-modal-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="header">Too Small</td>
+                                                        <td class="sizing-bar-background">
+                                                            <div class="sizing-bar small" style="width: 0.561798%;"></div>
+                                                        </td>
+                                                        <td class="total-ratings small">3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="header">Just Right</td>
+                                                        <td class="sizing-bar-background">
+                                                            <div class="sizing-bar right" style="width: 99.2509%;"></div>
+                                                        </td>
+                                                        <td class="total-ratings right">530</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="header">Too Large</td>
+                                                        <td class="sizing-bar-background">
+                                                            <div class="sizing-bar large" style="width: 0.187266%;"></div>
+                                                        </td>
+                                                        <td class="total-ratings large">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="bottom15" id="upsell-lot-modal" style="">
+                                            <h5>
+<i class="fa fa-star"></i>
+Special Offers:
+</h5>
+                                            <p>· Buy one, get one for $19.
+                                                <br>· USB CABLE CANON **REQUIRED FOR USE* - $6
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <div class="bottom15" id="protection-lot-modal" style="display: block;">
+                                            <h5>
+<i class="fa fa-shield"></i>
+Easy Returns:
+</h5>
+                                            <p>We want you to be completely satisfied with your purchase on Tophatter. If you are not satisfied, you may return any item within 30 days of delivery.</p>
+                                        </div>
+                                        <div id="seller-lot-modal" style="display: block;">
+                                            <h5 id="seller-header">
+<i class="fa fa-user"></i>
+Seller:
+</h5>
+                                            <p><a href="/users/6118857" target="storefront">Unike New York</a>
+                                                <br><span class="text-muted"> 22,096 items sold</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lot-modal-related" style="display: none;">
+                        <h3>Related Items</h3>
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <div class="panel panel-catalog panel-catalog-1 panel-default">
+                                    <div class="panel-heading">
+                                        <img class="lot-show img-responsive" src="https://tophatter.com/280x200.png">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pricing">
+                                            <span class="price"></span>
+                                            <span class="msrp"></span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-xs-6 panel-separator">
+                                                <i class="fa remind-me"></i>
+                                                <span class="reminder-count"></span>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="buy-it-now">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Buy</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="panel panel-catalog panel-catalog-2 panel-default">
+                                    <div class="panel-heading">
+                                        <img class="lot-show img-responsive" src="https://tophatter.com/280x200.png">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pricing">
+                                            <span class="price"></span>
+                                            <span class="msrp"></span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-xs-6 panel-separator">
+                                                <i class="fa remind-me"></i>
+                                                <span class="reminder-count"></span>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="buy-it-now">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Buy</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="panel panel-catalog panel-catalog-3 panel-default">
+                                    <div class="panel-heading">
+                                        <img class="lot-show img-responsive" src="https://tophatter.com/280x200.png">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pricing">
+                                            <span class="price"></span>
+                                            <span class="msrp"></span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-xs-6 panel-separator">
+                                                <i class="fa remind-me"></i>
+                                                <span class="reminder-count"></span>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="buy-it-now">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Buy</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="panel panel-catalog panel-catalog-4 panel-default">
+                                    <div class="panel-heading">
+                                        <img class="lot-show img-responsive" src="https://tophatter.com/280x200.png">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pricing">
+                                            <span class="price"></span>
+                                            <span class="msrp"></span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-xs-6 panel-separator">
+                                                <i class="fa remind-me"></i>
+                                                <span class="reminder-count"></span>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="buy-it-now">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Buy</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="panel panel-catalog panel-catalog-5 panel-default">
+                                    <div class="panel-heading">
+                                        <img class="lot-show img-responsive" src="https://tophatter.com/280x200.png">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pricing">
+                                            <span class="price"></span>
+                                            <span class="msrp"></span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-xs-6 panel-separator">
+                                                <i class="fa remind-me"></i>
+                                                <span class="reminder-count"></span>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="buy-it-now">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Buy</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="panel panel-catalog panel-catalog-6 panel-default">
+                                    <div class="panel-heading">
+                                        <img class="lot-show img-responsive" src="https://tophatter.com/280x200.png">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pricing">
+                                            <span class="price"></span>
+                                            <span class="msrp"></span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-xs-6 panel-separator">
+                                                <i class="fa remind-me"></i>
+                                                <span class="reminder-count"></span>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="buy-it-now">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <span>Buy</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+ 
+</div> 
+
+

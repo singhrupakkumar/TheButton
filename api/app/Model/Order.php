@@ -1,0 +1,142 @@
+<?php
+App::uses('AppModel', 'Model');
+class Order extends AppModel {
+
+//////////////////////////////////////////////////
+
+//    public $validate = array(
+//        'name' => array(
+//            'rule1' => array(
+//                'rule' => array('notempty'),
+//                'message' => 'Name is invalid',
+//            ),
+//        ),
+//        'email' => array(
+//            'rule1' => array(
+//                'rule' => array('email'),
+//                'message' => 'Email is invalid',
+//            ),
+//        ),
+//        'phone' => array(
+//            'rule1' => array(
+//                'rule' => array('phone'),
+//                'message' => 'Phone is invalid',
+//            ),
+//        ),
+//        'billing_address' => array(
+//            'rule1' => array(
+//                'rule' => array('notempty'),
+//                'message' => 'Billing Address is invalid',
+//            ),
+//        ),
+//        'billing_city' => array(
+//            'rule1' => array(
+//                'rule' => array('notempty'),
+//                'message' => 'Billing City is invalid',
+//            ),
+//        ),
+//        'billing_state' => array(
+//            'rule1' => array(
+//                'rule' => array('notempty'),
+//                'message' => 'Billing State is invalid',
+//            ),
+//        ),
+//        'shipping_address' => array(
+//            'rule1' => array(
+//                'rule' => array('notempty'),
+//                'message' => 'Shipping Address is invalid',
+//            ),
+//        ),
+//        'shipping_city' => array(
+//            'rule1' => array(
+//                'rule' => array('notempty'),
+//                'message' => 'Shipping City is invalid',
+//            ),
+//        ),
+//        'shipping_state' => array(
+//            'rule1' => array(
+//                'rule' => array('notempty'),
+//                'message' => 'Shipping State is invalid',
+//            ),
+//        ),
+//        'creditcard_number' => array(
+//            'rule1' => array(
+//                'rule' => array('cc'),
+//                'message' => 'Credit Card Number is invalid',
+//            ),
+//        ),
+//        'creditcard_code' => array(
+//            'rule1' => array(
+//                'rule' => array('notEmpty'),
+//                'message' => 'Credit Card Code is required',
+//            ),
+//            'rule2' => array(
+//                 'rule' => '/^[0-9]{3,4}$/i',
+//                 'message' => 'Credit Card Code is invalid',
+//            ),
+//        ),
+//    );
+
+//////////////////////////////////////////////////
+
+    public $hasMany = array(
+        'OrderItem' => array(
+            'className' => 'OrderItem',
+            'foreignKey' => 'order_id',
+            'dependent' => true,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => '',
+        ),
+        
+    );
+    public $belongsTo = array( 
+        'OrderStatus'=> array(
+            'className' => 'OrderStatus',
+            'foreignKey' => 'order_status',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => '',
+        ),
+        'User'=> array(
+            'className' => 'User',
+            'foreignKey' => 'uid',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => '',
+        ),
+        'Promocode'=> array(
+            'className' => 'Promocode',
+            'foreignKey' => 'promocode_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => '',
+        ) 
+
+); 
+//////////////////////////////////////////////////
+
+}

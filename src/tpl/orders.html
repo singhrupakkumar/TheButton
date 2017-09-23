@@ -1,0 +1,103 @@
+<div class="container-fluid w-xxl w-auto-xs" ng-controller="Uaccess" ng-init="app.settings.container = false;"> 
+ <div id="inner">
+  <div class="container inner" style="min-height: 500px;">  
+    <div class="row">  
+         
+    <div class="text-center" ng-include="'src/tpl/blocks/usersidebar.html'">
+        {% include 'src/blocks/usersidebar.html' %}
+    </div>   
+<div class="col-md-10">  
+<div id="awning">
+<div class="page-header">
+<h1>My Orders</h1>
+</div>
+</div>
+<div class="row bottom20">
+<div class="col-sm-8">
+<ul class="nav nav-pills">
+<li class="active"><a href="#">All</a></li>       
+<!--li class=""><a href="javascript:void(0)">Processing</a></li>
+<li class=""><a href="javascript:void(0)">Shipped</a></li>
+<li class=""><a href="javascript:void(0)">Refunded</a></li-->     
+</ul>
+</div>
+     
+<div class="col-sm-4">
+<div class="top20 visible-xs"></div>
+<form  accept-charset="UTF-8" method="get">
+<div class="input-group">    
+<input ng-model="queryss" id="query"  placeholder="Keyword, Item #, Order #" class="form-control input-sm" type="text">
+<span class="input-group-btn">
+<button class="btn btn-primary btn-sm" style="height: 34px; margin-left: -2px;" type="submit">
+<span class="fa fa-search"></span>
+</button>
+</span>
+</div>
+</form>
+
+</div>
+</div>  
+    <a class="no-underline" href="javascript:void(0)" ng-repeat="orderitem in userorders | filter:queryss">
+<div class="panel panel-default">
+<div class="panel-body" style="position: relative">   
+<div class="bottom5">
+<span class="visible-xs" title="{{orderitem.Order.id}}">  
+Order #{{orderitem.Order.id}}
+</span>
+<span class="hidden-xs" title="{{orderitem.OrderItem[0].name}}">
+{{orderitem.OrderItem[0].name}}
+</span>
+<div class="text-muted text-normal">  
+{{orderitem.Order.created}}
+<!--span class="hidden-xs">· Sold by Lemonbest</span-->  
+</div>
+</div>
+<img ng-src="{{orderitem.OrderItem[0].image}}" height="40">               
+<div class="top-right">
+<span ng-confirm-click="Are you sure?" ng-click="refundUser(orderitem.Order.id)" ng-if="orderitem.Order.order_status == 3" class="label label-danger">Return</span><span></span>   
+<span ng-if="orderitem.Order.order_status==1">Processing</span>
+<span ng-if="orderitem.Order.order_status==2">Placed</span>
+<span ng-if="orderitem.Order.order_status==3">Shipped</span> 
+<span ng-if="orderitem.Order.order_status==4">Return Requested</span> 
+</div>
+<div class="mid-right">  
+<i class="fa fa-chevron-right text-muted"></i>
+</div>    
+</div>
+</div>
+        
+</a>
+
+
+</div> 
+      </div>  
+      </div>  
+     </div> 
+    
+    
+          <div  class="modal fade in" id="order_return" role="dialog" style="display: none;">      
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                <div class="modal-header">
+                <button class="close" data-dismiss="modal" type="button">
+                <span aria-hidden="aria-hidden">×</span>
+                <span class="sr-only">Close</span>
+                </button>
+
+                <h3>Return Order</h3> 
+                </div>
+                <div class="modal-body">
+                 <form ng-submit="orderrefund()">    
+                     <div style="color:red;" ng-if="refundmsg">{{refundmsg}}</div>              
+                <div class="form-group"> 
+                    <input type="hidden" ng-model="refund_id" value="">        
+                    <textarea type="text" name="return_msg" ng-model="return_msg" id="return_msg" class="form-control" placeholder="Reason of refund" required/></textarea>
+                </div>
+                <input type="submit" name="commit" value="Request Send" class="btn btn-primary btn-block">      
+                 </form>  
+                </div>
+                </div>
+            </div>
+       </div> 
+ 
+</div>  

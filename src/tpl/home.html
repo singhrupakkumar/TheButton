@@ -1,0 +1,213 @@
+<div ng-controller="homeController">  
+    <!--/Slider -->  
+<section class="slider">     
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">  
+    <li data-target="#carousel-example-generic" ng-repeat="(key,banner1) in settings.banner | commaBreak" data-slide-to="{{key}}" ng-class="key==0?'active':''"></li>
+  </ol>  
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+      <div  ng-class="(key== 1 ? 'item active' : 'item')" ng-repeat="(key,banner1) in settings.banner | commaBreak">         
+      <img ng-src="{{banner1}}" alt="slider{{key}}">        
+      <div class="carousel-caption">           
+        
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</section> 
+
+ <div id="slot-client">   
+   <div id="anchored-container">
+  <div class="container-fluid" style="padding-top: 15px;   padding-bottom: 15px;"> 
+ <div class="container"> 
+  <div class="catalog-navigation hidden-xs" style="padding: 1.2% 0;">
+      
+   
+  <span ng-repeat="(index,cat) in catlist">
+         <a ng-click="searchbyidbylink(cat.Category.id)" ng-class="(cat.Category.id== 1 ? 'active' : '')">{{cat.Category.name}}</a>  
+        <span ng-show="index == 0" class="text-muted">|</span>
+  </span>
+  </div>
+ </div>
+ </div>
+  
+    <div id="reminder-banner" style="display: none;"> <img class="reminder-image right10">
+        <span class="fa fa-heart right5"></span> <span class="reminder-text">Up now. Tap to view.</span>
+      <button class="close">×</button>
+    </div>
+    <div id="anchored-reminders-group" style="display: none;"></div>
+    <div id="anchored-slots-group"></div>
+  </div>
+ 
+  <div class="container">
+    <div class="alert text-center" id="banner-group" style="background-color: rgb(224, 220, 232); opacity: 1; display: none;"></div>
+  </div>
+  <div class="container">
+    <div class="row" id="reminder-group"></div>
+  </div>
+  <div style="position: relative;">
+    <div class="container">
+      <div class="row" id="slot-group" style="display: block;">
+          
+       
+        <div class="default slot slot-auction auction-parents"  id="{{prod.Product.id}}" ng-repeat="prod in productlist">    
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 slot-grid-wrapper"> 
+            <div class="slot-wrapper">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 col-left">  
+                    <div class="lot-image-holder" ng-click="productdetail(prod.Product.id)"> <img class="lot-image img-responsive" ng-src="{{prod.Product.image}}" style="" alt="{{prod.Product.name}}"> </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 col-left col-right">
+                  <button class="bid-button btn btn-lg btn-block btn-success" ng-click="addtocart(prod.Product.id,prod.Product.category_id,$event)" id="btn_{{prod.Product.id}}">
+                      <div  class="progress-bar progress-bar-striped bg-info smooth" style="width:100%; background-color:{{settings.progress_btn_color}} !important;"  id="cartbtn_{{prod.Product.id}}" role="progressbar" aria-valuenow="70"   aria-valuemin="0" ariavaluemax="70">      
+
+                  </div>          
+                      <div class="btn-div">   
+                      <div class="bid-button-title">Buy Now</div>
+                      <div class="bid-button-subtitle" style="display: block;" interval="{{prod.Product.price - prod.Product.min_price}}" id="price_{{prod.Product.id}}" price="{{prod.Product.price}}" fullprice="{{prod.Product.price}}" catid="{{prod.Product.category_id}}" min_price="{{prod.Product.min_price}}">${{prod.Product.price}}</div>   
+                    </div>
+                  </button>
+                  <div class="slot-details">    
+                    <div class="state" style="color: rgb(103, 78, 167);"><strike>Starting $ {{prod.Product.price}}</strike></div>  
+                    <div class="high-bidder" title="{{prod.Product.name}}" style="color: rgb(153, 153, 153);">{{prod.Product.name | limitTo:65}}</div>
+                     <div class="high-bidder" id="username_{{prod.Product.id}}" style="color: rgb(153, 153, 153);"></div> 
+                    <div class="row">
+                      <div class="col-xs-5" style="padding-right: 0;">
+                          
+                      </div>
+                      <div class="col-xs-7" style="padding-left: 7px;">
+                          <div ng-show="prod.Product.view_isshow == 1" class="discount" style="color: rgb(68, 157, 68);"> <i class="fa fa-eye" aria-hidden="true"></i> {{prod.Product.views}}</div>
+                      </div>
+                    </div>    
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+     
+      </div>
+    </div>
+  </div>
+    
+     
+  <div class="hide">
+    <div class="default slot slot-auction" id="slot-auction">   
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 slot-grid-wrapper">
+        <div class="slot-wrapper">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 col-left">
+              <div class="lot-image-holder"> <img class="lot-image img-responsive" ng-src="#"> </div>  
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 col-left col-right">
+              <button class="bid-button btn btn-disabled btn-lg btn-block">
+              <input class="bid-button-lot-id" type="hidden">
+              <input class="bid-button-amount" type="hidden">
+              <div class="row bid-button-text-wrapper">
+                <div class="col-xs-12">
+                  <div class="bid-button-title"></div>
+                  <div class="bid-button-subtitle"></div>
+                </div>
+              </div>
+              <div class="bid-button-timer-wrapper">
+                <div class="bid-button-timer"></div>
+              </div>
+              </button>
+              <div class="slot-details">
+                <div class="state"></div>
+                <div class="high-bidder"></div>
+                <div class="row">
+                  <div class="col-xs-5" style="padding-right: 0;">
+                    <div class="retail"></div>
+                  </div>
+                  <div class="col-xs-7" style="padding-left: 7px;">
+                    <div class="discount"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="bid-count"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slot slot-auction anchored-slot" id="anchored-slot">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1">
+            <button class="close"> <span class="fa fa-close"></span> </button>
+          </div>
+          <div class="col-xs-5 col-sm-2 col-md-1"> <img class="lot-image anchored-image" ng-src="#"> </div>
+          <div class="hidden-xs hidden-sm col-md-2">
+            <div class="slot-details"> <span class="retail"></span> <br>
+              <span class="discount"></span> </div>
+          </div>
+          <div class="hidden-xs col-sm-6 col-md-5">
+            <div class="slot-details">
+              <div class="state"></div>
+              <div class="high-bidder"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <button class="bid-button btn btn-disabled btn-lg btn-block">
+            <input class="bid-button-lot-id" type="hidden">
+            <input class="bid-button-amount" type="hidden">
+            <div class="row bid-button-text-wrapper">
+              <div class="col-xs-12">
+                <div class="bid-button-title"></div>
+                <div class="bid-button-subtitle"></div>
+              </div>
+            </div>
+            <div class="bid-button-timer-wrapper">
+              <div class="bid-button-timer"></div>
+            </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- close img discount state bid-button --> 
+    <!-- xs  1     5   0        0     6 = 12 --> 
+    <!-- sm  1     2   0        6     3 = 12 --> 
+    <!-- md  1     1   2        5     3 = 12 --> 
+    <!-- lg  1     1   2        5     3 = 12 -->
+    
+    <div class="anchored-reminder" id="anchored-reminder">  
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1"> &nbsp; </div>
+          <div class="col-xs-3 col-sm-2 col-md-1"> <img class="img-responsive" ng-src="#"> </div>
+          <div class="col-xs-7 col-sm-6 col-md-7 text-and-heart"> <span></span> <i class="fa fa-heart fa-2x pull-right"></i> </div>
+        </div>
+      </div>
+    </div>
+    <div class="slot slot-reminder" id="slot-reminder">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="slot-wrapper"> <img class="lot-image"> <span class="body"> Coming Up Soon </span> <span class="fa fa-heart"></span> </div>
+      </div>
+    </div>
+  </div>
+  </div>    
+</div>
+
+   

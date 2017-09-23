@@ -1,0 +1,103 @@
+<div class="container-fluid w-xxl w-auto-xs" ng-controller="Uaccess" ng-init="app.settings.container = false;"> 
+ <div id="inner">
+  <div class="container inner" style="min-height: 500px;"> 
+    <div class="row">  
+         
+    <div class="text-center" ng-include="'src/tpl/blocks/usersidebar.html'">
+        {% include 'src/blocks/usersidebar.html' %}
+    </div>   
+ <div class="col-md-10">   
+        <div id="awning"> 
+          <div class="page-header">  
+            <h1>Account Info</h1>
+          </div>
+        </div>
+     <form class="form-horizontal" ng-submit="profileupdate()" name="profile" novalidate>
+        
+      
+         <div role="alert" ng-if="!error" ng-show="msg" class="alert  alert-dismissible alertIn alertOut ng-animate alert-success" style="">
+             <span dynamic="flash.text">
+                 <span class="ng-scope">
+                   {{msg}}
+                 </span>
+                         
+             </span>
+           
+         </div>
+        <div role="alert" ng-if="!msg" ng-show="error" class="alert  alert-dismissible alertIn alertOut ng-animate alert-danger" style=""> 
+             <span dynamic="flash.text">
+                 <span class="ng-scope">
+                   {{error}}
+                 </span>
+                         
+             </span>
+          
+         </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="user_name">Name</label>
+            <div class="col-sm-6">
+              <input class="form-control" id="name" placeholder="Please Enter Your Name" ng-model="user.name"  type="text"/>   
+             
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="user_email">Email</label> 
+            <div class="col-sm-6">
+                
+            <input class="form-control" id="email" placeholder="Enter Email" ng-model="user.email"  type="email"/>     
+
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="user_phone_number">Phone Number</label>  
+            <div class="col-sm-6"> 
+           <input class="form-control" id="phone" name="phone"  placeholder="Enter Your Phone" ng-maxlength="10" ng-model="user.phone" value="phone" type="number"/>        
+           <div ng-messages="profile.phone.$error" style="color:maroon" role="alert">
+           <div ng-message="maxlength">Your field is too long 10 digit allow</div>   
+           </div>
+            </div>
+            <!--div class="col-sm-4 text-muted">Your phone # is only used when you opt-in to receiving SMS reminders about items you are interested in bidding on. </div-->
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="user_Country">Country</label>
+            <div class="col-sm-6">
+            <select class="form-control" ng-model="user.country" id="user_time_zone">
+                <option ng-repeat="cout in country" value="{{cout.Country.name}}"  ng-selected="user.country == cout.Country.name">{{cout.Country.name}}</option>
+            </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="user_Time Zone">Time zone</label> 
+            <div class="col-sm-6">
+              <select class="form-control"  ng-model="user.time_zone" id="user_time_zone">
+                 <option ng-repeat="timez in timezone" value="{{timez}}" ng-selected="user.time_zone == timez">{{timez}}</option>
+              </select>
+            </div>
+          </div>
+     
+          <div class="form-group"> 
+            <div class="col-sm-6 col-sm-offset-2"> 
+           <input name="submit" id="editsubmit" class="btn btn-primary btn-block" type="submit" value="Update"/>      
+             
+            </div>
+          </div>
+          <hr>
+          <div class="form-group">
+            <div class="col-sm-6 col-sm-offset-2">
+              <div class="list-group">
+                  <a class="list-group-item" ui-sref="user.profile"><i class="fa fa-fw fa-facebook-square"></i>{{ user.fb_id != null ? 'Disconnect Facebook' : 'Connect Facebook' }}  </a>
+                  <!--a class="list-group-item" ui-sref="user.profile"><i class="fa fa-fw fa-credit-card"></i> Manage payment methods </a-->
+                  <a class="list-group-item" ui-sref="user.manageaddress"><i class="fa fa-fw fa-map-marker"></i> Manage addresses </a>    
+                  <a class="list-group-item" ui-sref="user.changepassword"><i class="fa fa-fw fa-lock"></i> Change password </a>
+                  <a class="list-group-item" ui-sref="user.unsubscribe"><i class="fa fa-fw fa-envelope"></i> Email preferences </a>  
+              
+              </div>
+            </div>
+          </div>
+       </form>
+      </div>  
+      </div>  
+      </div>  
+     </div>   
+ 
+</div>  

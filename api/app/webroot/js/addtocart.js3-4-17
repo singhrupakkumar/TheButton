@@ -1,0 +1,803 @@
+jQuery(document).ready(function () {
+   jQuery.getJSON("http://rajdeep.crystalbiltech.com/thoag/shop/webdisplaycart", function (data) { 
+        var html = '<div class="mycart_view clearfix"> <div class="mycart_left"><div class="clearfix">';
+        html += '<div> '; 
+       jQuery('#cartcount').html(data['data']['cartcount']);
+        var downcheck ='';
+  jQuery.each(data['data']['products'], function (index, value) {
+    downcheck =   value.parent_product.Cart.down_payment;
+  });
+  var carttotalval ='';
+ if(data['data']['cartInfo']['discount_amount'] != 0) {  
+  carttotalval = data['data']['cartInfo']['total']- data['data']['cartInfo']['discount_amount']; 
+ }else if(data['data']['cartInfo']['promocode_discount'] != 0){
+	 carttotalval = data['data']['cartInfo']['total'] - data['data']['cartInfo']['promocode_discount']; 
+ } if(downcheck ===true){   
+    var  downpayment = carttotalval * data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']/100;
+       var downpaymenttotal = carttotalval - downpayment;
+      carttotalval = downpayment ; 
+     
+  }  
+
+        jQuery.each(data['data']['products'], function (index, value) {
+            html += '<div class="cart_frm"><a  id=' + value.parent_product.Cart.product_id + ' data-date="'+ value.parent_product.Cart.created +'" class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.parent_product.Cart.name + '';
+            html += '<div class="border_crt"><a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cmins qtyplus" id=' + value.parent_product.Cart.product_id + '></a> <a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.parent_product.Cart.product_id + '></a></div>';
+            html += '<span>'+ value.parent_product.Cart.quantity + 'x '+ value.parent_product.Cart.price + ' SAR</span></div>';   
+        
+            jQuery.each(value['associated_products'], function (index, value) {   
+                      
+      
+         html += '<div class="cart_frm suborder"><a  id=' + value.Cart.product_id + ' class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.Cart.name + '';
+         html += '<div class="border_crt"><a href="#" data-date="'+ value.Cart.created +'" class="cmins qtyplus" id=' + value.Cart.product_id + '></a> <a href="#" data-date="'+ value.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.Cart.product_id + '></a></div>';
+         html += '<span>'+ value.Cart.quantity + 'x '+ value.Cart.price + ' SAR</span></div>';  
+         
+            
+       }); 
+             
+        
+        }); 
+        html += '</div></div></div></div>';      
+        jQuery('#added_items').html(html);  
+  
+        var totalhtml = '<table class="table table_summary">';       
+        totalhtml += '<tbody>';   
+       
+         if(Math.round(data['data']['cartInfo']['total']) >= Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['min_amount_for_down_payment'])) { totalhtml += '<tr><td>';  
+    if(downcheck ===false) {    totalhtml += '<button type="button" id="down" class="btn btn-sm defult_btn view_btn waves-effect waves-light downpay"> Down Payment ' + Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']) + '% </button>';}
+     if(downcheck ===true) { totalhtml +='<input class="btn btn-sm defult_btn view_btn waves-effect waves-light downpayremove" type="button" value="Remove Down Payment" id="downpayremove">';}
+            totalhtml += '</td></tr>'};       
+        
+       if(data['data']['cartInfo']['discount_amount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Discount Amount <span class="pull-right">SAR ' + data['data']['cartInfo']['discount_amount'] + '</span>';  
+        totalhtml += '</td></tr>'};  
+        
+        if(data['data']['cartInfo']['discount_percentage'] != 0) { totalhtml += '<tr><td>'; 
+        totalhtml += 'Discount % <span class="pull-right">' + data['data']['cartInfo']['discount_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        
+        if(data['data']['cartInfo']['promocode_discount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Promocode Discount <span class="pull-right">SAR ' + data['data']['cartInfo']['promocode_discount'] + '</span><input type="hidden" id="promid" value='+ data['data']['cartInfo']['promocode']['Promocode']['id'] +'>';
+        totalhtml += '</td></tr>'};  
+         
+        if(data['data']['cartInfo']['promocode_percentage'] != 0) { totalhtml += '<tr><td>';  
+        totalhtml += 'Promocode % <span class="pull-right">' + data['data']['cartInfo']['promocode_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        totalhtml += '<tr><td>';  
+        totalhtml += 'Subtotal <span class="pull-right">SAR ' + data['data']['cartInfo']['subtotal'] + '</span>'; 
+        totalhtml += '</td></tr>';
+        totalhtml += '<tr><td>';
+        totalhtml += '  TOTAL <span class="pull-right">\n\
+ SAR ' + carttotalval.toFixed(2) + '</span><input type="hidden" id="carttotal" value='+data['data']['cartInfo']['total']+'>\n\
+<input type="hidden" id="downpaymenttotal" name="downpaymenttotal" value='+ downpaymenttotal +'>\n\
+<input type="hidden" id="finaltotal" name="finaltotal" value=' + carttotalval + '>';
+        totalhtml += '</td></tr>'; 
+        totalhtml += '</tbody></table>';   
+        jQuery('#total_items').html(totalhtml);     
+        rmv();
+        //$('#total_items').delay(2000).fadeIn('slow');
+    });
+    
+    
+    
+    
+    function rmv() {
+        jQuery('.remove_item').off("click").on('click', function () {
+            jQuery.ajax({
+                type: "POST",
+                url: "http://rajdeep.crystalbiltech.com/thoag/shop/webremoveitems",
+                data: {
+                    id: jQuery(this).attr("id"),
+                  date:jQuery(this).attr("data-date"), 
+                },
+                dataType: "json",
+                success: function (data) { 
+        var html = '<div class="mycart_view clearfix"> <div class="mycart_left"><div class="clearfix">';
+        html += '<div> '; 
+        if(data['data']['cartcount'] > 0)  { 
+        jQuery('#cartcount').html(data['data']['cartcount']);
+    }else{
+         jQuery('#cartcount').html(0);    
+    }
+        var downcheck ='';
+  jQuery.each(data['data']['products'], function (index, value) {
+    downcheck =   value.parent_product.Cart.down_payment;
+  });
+  var carttotalval ='';
+ if(data['data']['cartInfo']['discount_amount'] != 0) {  
+  carttotalval = data['data']['cartInfo']['total']- data['data']['cartInfo']['discount_amount']; 
+ }else if(data['data']['cartInfo']['promocode_discount'] != 0){
+	 carttotalval = data['data']['cartInfo']['total'] - data['data']['cartInfo']['promocode_discount']; 
+ } if(downcheck ===true){   
+    var  downpayment = carttotalval * data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']/100;
+       var downpaymenttotal = carttotalval - downpayment;
+      carttotalval = downpayment ; 
+     
+  }  
+
+        jQuery.each(data['data']['products'], function (index, value) {
+            html += '<div class="cart_frm"><a  id=' + value.parent_product.Cart.product_id + ' data-date="'+ value.parent_product.Cart.created +'" class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.parent_product.Cart.name + '';
+            html += '<div class="border_crt"><a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cmins qtyplus" id=' + value.parent_product.Cart.product_id + '></a> <a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.parent_product.Cart.product_id + '></a></div>';
+            html += '<span>'+ value.parent_product.Cart.quantity + 'x '+ value.parent_product.Cart.price + ' SAR</span></div>';   
+        
+            jQuery.each(value['associated_products'], function (index, value) {   
+                      
+      
+         html += '<div class="cart_frm suborder"><a  id=' + value.Cart.product_id + ' class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.Cart.name + '';
+         html += '<div class="border_crt"><a href="#" data-date="'+ value.Cart.created +'" class="cmins qtyplus" id=' + value.Cart.product_id + '></a> <a href="#" data-date="'+ value.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.Cart.product_id + '></a></div>';
+         html += '<span>'+ value.Cart.quantity + 'x '+ value.Cart.price + ' SAR</span></div>';  
+         
+            
+       }); 
+             
+        
+        }); 
+        html += '</div></div></div></div>';      
+        jQuery('#added_items').html(html);  
+  
+        var totalhtml = '<table class="table table_summary">';       
+        totalhtml += '<tbody>';   
+       
+         if(Math.round(data['data']['cartInfo']['total']) >= Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['min_amount_for_down_payment'])) { totalhtml += '<tr><td>';  
+    if(downcheck ===false) {    totalhtml += '<button type="button" id="down" class="btn btn-sm defult_btn view_btn waves-effect waves-light downpay"> Down Payment ' + Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']) + '% </button>';}
+     if(downcheck ===true) { totalhtml +='<input class="btn btn-sm defult_btn view_btn waves-effect waves-light downpayremove" type="button" value="Remove Down Payment" id="downpayremove">';}
+            totalhtml += '</td></tr>'};     
+        
+       if(data['data']['cartInfo']['discount_amount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Discount Amount <span class="pull-right">SAR ' + data['data']['cartInfo']['discount_amount'] + '</span>';  
+        totalhtml += '</td></tr>'};  
+        
+        if(data['data']['cartInfo']['discount_percentage'] != 0) { totalhtml += '<tr><td>'; 
+        totalhtml += 'Discount % <span class="pull-right">' + data['data']['cartInfo']['discount_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        
+        if(data['data']['cartInfo']['promocode_discount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Promocode Discount <span class="pull-right">SAR ' + data['data']['cartInfo']['promocode_discount'] + '</span><input type="hidden" id="promid" value='+ data['data']['cartInfo']['promocode']['Promocode']['id'] +'>';
+        totalhtml += '</td></tr>'};  
+         
+        if(data['data']['cartInfo']['promocode_percentage'] != 0) { totalhtml += '<tr><td>';  
+        totalhtml += 'Promocode % <span class="pull-right">' + data['data']['cartInfo']['promocode_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        totalhtml += '<tr><td>';  
+        totalhtml += 'Subtotal <span class="pull-right">SAR ' + data['data']['cartInfo']['subtotal'] + '</span>'; 
+        totalhtml += '</td></tr>';
+        totalhtml += '<tr><td>';
+        totalhtml += '  TOTAL <span class="pull-right">\n\
+ SAR ' + carttotalval.toFixed(2) + '</span><input type="hidden" id="carttotal" value='+data['data']['cartInfo']['total']+'>\n\
+<input type="hidden" id="downpaymenttotal" name="downpaymenttotal" value='+ downpaymenttotal +'>\n\
+<input type="hidden" id="finaltotal" name="finaltotal" value=' + carttotalval + '>';
+        totalhtml += '</td></tr>'; 
+        totalhtml += '</tbody></table>';   
+        jQuery('#total_items').html(totalhtml);     
+        rmv();
+                },
+                error: function () { 
+                    alert('Error!');
+                }
+            });
+            return false;
+        });
+        jQuery('.cplus').off("click").on('click', function () {
+            console.log(jQuery(this).attr("data-date"))
+                 // var ids = jQuery(this).attr("id");
+	    // var ress = ids.split("_0"); 
+           // var newws = ress[0];
+            jQuery.ajax({
+                type: "POST",
+                url: "http://rajdeep.crystalbiltech.com/thoag/shop/webcart_increaseqty", 
+                data: { 
+                    id:jQuery(this).attr("id"),
+                    date:jQuery(this).attr("data-date"),  
+                },
+                dataType: "json",
+                success: function (data) {
+      var html = '<div class="mycart_view clearfix"> <div class="mycart_left"><div class="clearfix">';
+        html += '<div> '; 
+         jQuery('#cartcount').html(data['data']['cartcount']);
+        var downcheck ='';
+  jQuery.each(data['data']['products'], function (index, value) {
+    downcheck =   value.parent_product.Cart.down_payment;
+  });
+  var carttotalval ='';
+ if(data['data']['cartInfo']['discount_amount'] != 0) {  
+  carttotalval = data['data']['cartInfo']['total']- data['data']['cartInfo']['discount_amount']; 
+ }else if(data['data']['cartInfo']['promocode_discount'] != 0){
+	 carttotalval = data['data']['cartInfo']['total'] - data['data']['cartInfo']['promocode_discount']; 
+ } if(downcheck ===true){   
+    var  downpayment = carttotalval * data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']/100;
+       var downpaymenttotal = carttotalval - downpayment;
+      carttotalval = downpayment ; 
+     
+  }  
+
+        jQuery.each(data['data']['products'], function (index, value) {
+            html += '<div class="cart_frm"><a  id=' + value.parent_product.Cart.product_id + ' data-date="'+ value.parent_product.Cart.created +'" class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.parent_product.Cart.name + '';
+            html += '<div class="border_crt"><a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cmins qtyplus" id=' + value.parent_product.Cart.product_id + '></a> <a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.parent_product.Cart.product_id + '></a></div>';
+            html += '<span>'+ value.parent_product.Cart.quantity + 'x '+ value.parent_product.Cart.price + ' SAR</span></div>';   
+        
+            jQuery.each(value['associated_products'], function (index, value) {   
+                      
+      
+         html += '<div class="cart_frm suborder"><a  id=' + value.Cart.product_id + ' class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.Cart.name + '';
+         html += '<div class="border_crt"><a href="#" data-date="'+ value.Cart.created +'" class="cmins qtyplus" id=' + value.Cart.product_id + '></a> <a href="#" data-date="'+ value.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.Cart.product_id + '></a></div>';
+         html += '<span>'+ value.Cart.quantity + 'x '+ value.Cart.price + ' SAR</span></div>';  
+         
+            
+       }); 
+             
+        
+        }); 
+        html += '</div></div></div></div>';      
+        jQuery('#added_items').html(html);  
+  
+        var totalhtml = '<table class="table table_summary">';       
+        totalhtml += '<tbody>';   
+       
+         if(Math.round(data['data']['cartInfo']['total']) >= Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['min_amount_for_down_payment'])) { totalhtml += '<tr><td>';  
+    if(downcheck ===false) {    totalhtml += '<button type="button" id="down" class="btn btn-sm defult_btn view_btn waves-effect waves-light downpay"> Down Payment ' + Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']) + '% </button>';}
+     if(downcheck ===true) { totalhtml +='<input class="btn btn-sm defult_btn view_btn waves-effect waves-light downpayremove" type="button" value="Remove Down Payment" id="downpayremove">';}
+            totalhtml += '</td></tr>'};     
+        
+       if(data['data']['cartInfo']['discount_amount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Discount Amount <span class="pull-right">SAR ' + data['data']['cartInfo']['discount_amount'] + '</span>';  
+        totalhtml += '</td></tr>'};  
+        
+        if(data['data']['cartInfo']['discount_percentage'] != 0) { totalhtml += '<tr><td>'; 
+        totalhtml += 'Discount % <span class="pull-right">' + data['data']['cartInfo']['discount_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        
+        if(data['data']['cartInfo']['promocode_discount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Promocode Discount <span class="pull-right">SAR ' + data['data']['cartInfo']['promocode_discount'] + '</span><input type="hidden" id="promid" value='+ data['data']['cartInfo']['promocode']['Promocode']['id'] +'>';
+        totalhtml += '</td></tr>'};  
+         
+        if(data['data']['cartInfo']['promocode_percentage'] != 0) { totalhtml += '<tr><td>';  
+        totalhtml += 'Promocode % <span class="pull-right">' + data['data']['cartInfo']['promocode_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        totalhtml += '<tr><td>';  
+        totalhtml += 'Subtotal <span class="pull-right">SAR ' + data['data']['cartInfo']['subtotal'] + '</span>'; 
+        totalhtml += '</td></tr>';
+        totalhtml += '<tr><td>';
+        totalhtml += '  TOTAL <span class="pull-right">\n\
+ SAR ' + carttotalval.toFixed(2) + '</span><input type="hidden" id="carttotal" value='+data['data']['cartInfo']['total']+'>\n\
+<input type="hidden" id="downpaymenttotal" name="downpaymenttotal" value='+ downpaymenttotal +'>\n\
+<input type="hidden" id="finaltotal" name="finaltotal" value=' + carttotalval + '>';
+        totalhtml += '</td></tr>'; 
+        totalhtml += '</tbody></table>';   
+        jQuery('#total_items').html(totalhtml);     
+        rmv();
+                },
+                error: function () {
+                    alert('Error!'); 
+                }
+            });
+            return false;
+        });
+        jQuery('.cmins').off("click").on('click', function () { 
+        
+            //var id = jQuery(this).attr("id");  
+	    // var res = id.split("_0");    
+           // var neww = res[0];
+            jQuery.ajax({
+                type: "POST",    
+                url: "http://rajdeep.crystalbiltech.com/thoag/shop/webcart_decreaseqty",         
+                data: { 
+                   id:jQuery(this).attr("id"), 
+                   date:jQuery(this).attr("data-date"),
+                },
+                dataType: "json",
+                success: function (data) {
+      var html = '<div class="mycart_view clearfix"> <div class="mycart_left"><div class="clearfix">';
+        html += '<div> '; 
+         jQuery('#cartcount').html(data['data']['cartcount']);
+        var downcheck ='';
+  jQuery.each(data['data']['products'], function (index, value) {
+    downcheck =   value.parent_product.Cart.down_payment;
+  });
+  var carttotalval ='';
+ if(data['data']['cartInfo']['discount_amount'] != 0) {  
+  carttotalval = data['data']['cartInfo']['total']- data['data']['cartInfo']['discount_amount']; 
+ }else if(data['data']['cartInfo']['promocode_discount'] != 0){
+	 carttotalval = data['data']['cartInfo']['total'] - data['data']['cartInfo']['promocode_discount']; 
+ } if(downcheck ===true){   
+    var  downpayment = carttotalval * data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']/100;
+       var downpaymenttotal = carttotalval - downpayment;
+      carttotalval = downpayment ; 
+     
+  }  
+
+        jQuery.each(data['data']['products'], function (index, value) {
+            html += '<div class="cart_frm"><a  id=' + value.parent_product.Cart.product_id + ' data-date="'+ value.parent_product.Cart.created +'" class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.parent_product.Cart.name + '';
+            html += '<div class="border_crt"><a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cmins qtyplus" id=' + value.parent_product.Cart.product_id + '></a> <a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.parent_product.Cart.product_id + '></a></div>';
+            html += '<span>'+ value.parent_product.Cart.quantity + 'x '+ value.parent_product.Cart.price + ' SAR</span></div>';   
+        
+            jQuery.each(value['associated_products'], function (index, value) {   
+                      
+      
+         html += '<div class="cart_frm suborder"><a  id=' + value.Cart.product_id + ' class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.Cart.name + '';
+         html += '<div class="border_crt"><a href="#" data-date="'+ value.Cart.created +'" class="cmins qtyplus" id=' + value.Cart.product_id + '></a> <a href="#" data-date="'+ value.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.Cart.product_id + '></a></div>';
+         html += '<span>'+ value.Cart.quantity + 'x '+ value.Cart.price + ' SAR</span></div>';  
+         
+            
+       }); 
+             
+        
+        }); 
+        html += '</div></div></div></div>';      
+        jQuery('#added_items').html(html);  
+  
+        var totalhtml = '<table class="table table_summary">';       
+        totalhtml += '<tbody>';   
+       
+         if(Math.round(data['data']['cartInfo']['total']) >= Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['min_amount_for_down_payment'])) { totalhtml += '<tr><td>';  
+    if(downcheck ===false) {    totalhtml += '<button type="button" id="down" class="btn btn-sm defult_btn view_btn waves-effect waves-light downpay"> Down Payment ' + Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']) + '% </button>';}
+     if(downcheck ===true) { totalhtml +='<input class="btn btn-sm defult_btn view_btn waves-effect waves-light downpayremove" type="button" value="Remove Down Payment" id="downpayremove">';}
+            totalhtml += '</td></tr>'};     
+        
+       if(data['data']['cartInfo']['discount_amount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Discount Amount <span class="pull-right">SAR ' + data['data']['cartInfo']['discount_amount'] + '</span>';  
+        totalhtml += '</td></tr>'};  
+        
+        if(data['data']['cartInfo']['discount_percentage'] != 0) { totalhtml += '<tr><td>'; 
+        totalhtml += 'Discount % <span class="pull-right">' + data['data']['cartInfo']['discount_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        
+        if(data['data']['cartInfo']['promocode_discount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Promocode Discount <span class="pull-right">SAR ' + data['data']['cartInfo']['promocode_discount'] + '</span><input type="hidden" id="promid" value='+ data['data']['cartInfo']['promocode']['Promocode']['id'] +'>';
+        totalhtml += '</td></tr>'};  
+         
+        if(data['data']['cartInfo']['promocode_percentage'] != 0) { totalhtml += '<tr><td>';  
+        totalhtml += 'Promocode % <span class="pull-right">' + data['data']['cartInfo']['promocode_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        totalhtml += '<tr><td>';  
+        totalhtml += 'Subtotal <span class="pull-right">SAR ' + data['data']['cartInfo']['subtotal'] + '</span>'; 
+        totalhtml += '</td></tr>';
+        totalhtml += '<tr><td>';
+        totalhtml += '  TOTAL <span class="pull-right">\n\
+ SAR ' + carttotalval.toFixed(2) + '</span><input type="hidden" id="carttotal" value='+data['data']['cartInfo']['total']+'>\n\
+<input type="hidden" id="downpaymenttotal" name="downpaymenttotal" value='+ downpaymenttotal +'>\n\
+<input type="hidden" id="finaltotal" name="finaltotal" value=' + carttotalval + '>';
+        totalhtml += '</td></tr>'; 
+        totalhtml += '</tbody></table>';   
+        jQuery('#total_items').html(totalhtml);     
+        rmv();
+                },
+                error: function () {
+                    alert('Error!');
+                }
+            });
+            return false;  
+        });
+       
+        
+
+
+       
+      
+    }        
+    
+    
+    
+   /* jQuery('.cplus').off("click").on('click', function () {
+        var dataString = 'id=' + jQuery(this).attr("id");
+        var redirect = jQuery('#redirect').val();
+        jQuery.ajax({
+            type: "POST",
+            url: "http://rajdeep.crystalbiltech.com/thoag/shop/addremovecart",
+            data: dataString,
+            cache: false,
+            success: function (result) {
+                jQuery("#divid").load(" #divid");
+                //   window.location.reload();  
+                //window.location = 'http://rajdeep.crystalbiltech.com/thoag/restaurants/menu/'+redirect;  
+            }
+        });
+        return false;
+    });
+    jQuery('.cmins').off("click").on('click', function () {
+        var redirect2 = jQuery('#redirect').val();
+        var dataString = 'id=' + jQuery(this).attr("id");
+        jQuery.ajax({
+            type: "POST",
+            url: "http://rajdeep.crystalbiltech.com/thoag/shop/minusremovecart",
+            data: dataString,
+            cache: false,
+            success: function (result) {
+                jQuery("#divid").load(" #divid");
+                //  window.location.reload();   
+                //window.location = 'http://rajdeep.crystalbiltech.com/thoag/restaurants/menu/'+redirect2; 
+            }
+        });
+        return false;    
+    });*/
+/////////////////promocode//////////////   
+    jQuery("#applypromo").click(function () {
+        var promocode = jQuery("#promocode").val();
+        var rest_id = jQuery("#cartrest_id").val();
+// Returns successful data submission message when the entered information is stored in database.
+        var dataString = 'promocode=' + promocode + '&rest_id=' + rest_id;
+// AJAX Code To Submit Form.
+        jQuery.ajax({
+            type: "POST",
+            url: "http://rajdeep.crystalbiltech.com/thoag/promocodes/webpromocode",
+            data: dataString,
+            cache: false, 
+            dataType: "json",  
+            success: function (data) { 
+         var html = '<div class="mycart_view clearfix"> <div class="mycart_left"><div class="clearfix">';
+        html += '<div> ';
+        jQuery('#applypromo').html('Appled'); 
+        var downcheck ='';
+  jQuery.each(data['data']['products'], function (index, value) {
+    downcheck =   value.parent_product.Cart.down_payment;
+  });
+  var carttotalval ='';
+ if(data['data']['cartInfo']['discount_amount'] != 0) {  
+  carttotalval = data['data']['cartInfo']['total']- data['data']['cartInfo']['discount_amount']; 
+ }else if(data['data']['cartInfo']['promocode_discount'] != 0){
+	 carttotalval = data['data']['cartInfo']['total'] - data['data']['cartInfo']['promocode_discount']; 
+ } if(downcheck ===true){   
+    var  downpayment = carttotalval * data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']/100;
+       var downpaymenttotal = carttotalval - downpayment;
+      carttotalval = downpayment ; 
+     
+  }  
+
+        jQuery.each(data['data']['products'], function (index, value) {
+            html += '<div class="cart_frm"><a  id=' + value.parent_product.Cart.product_id + ' data-date="'+ value.parent_product.Cart.created +'" class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.parent_product.Cart.name + '';
+            html += '<div class="border_crt"><a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cmins qtyplus" id=' + value.parent_product.Cart.product_id + '></a> <a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.parent_product.Cart.product_id + '></a></div>';
+            html += '<span>'+ value.parent_product.Cart.quantity + 'x '+ value.parent_product.Cart.price + ' SAR</span></div>';   
+        
+            jQuery.each(value['associated_products'], function (index, value) {   
+                      
+      
+         html += '<div class="cart_frm suborder"><a  id=' + value.Cart.product_id + ' class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.Cart.name + '';
+         html += '<div class="border_crt"><a href="#" data-date="'+ value.Cart.created +'" class="cmins qtyplus" id=' + value.Cart.product_id + '></a> <a href="#" data-date="'+ value.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.Cart.product_id + '></a></div>';
+         html += '<span>'+ value.Cart.quantity + 'x '+ value.Cart.price + ' SAR</span></div>';  
+         
+            
+       }); 
+             
+        
+        }); 
+        html += '</div></div></div></div>';      
+        jQuery('#added_items').html(html);  
+  
+        var totalhtml = '<table class="table table_summary">';       
+        totalhtml += '<tbody>';   
+       
+         if(Math.round(data['data']['cartInfo']['total']) >= Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['min_amount_for_down_payment'])) { totalhtml += '<tr><td>';  
+    if(downcheck ===false) {    totalhtml += '<button type="button" id="down" class="btn btn-sm defult_btn view_btn waves-effect waves-light downpay"> Down Payment ' + Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']) + '% </button>';}
+     if(downcheck ===true) { totalhtml +='<input class="btn btn-sm defult_btn view_btn waves-effect waves-light downpayremove" type="button" value="Remove Down Payment" id="downpayremove">';}
+            totalhtml += '</td></tr>'};     
+        
+       if(data['data']['cartInfo']['discount_amount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Discount Amount <span class="pull-right">SAR ' + data['data']['cartInfo']['discount_amount'] + '</span>';  
+        totalhtml += '</td></tr>'};  
+        
+        if(data['data']['cartInfo']['discount_percentage'] != 0) { totalhtml += '<tr><td>'; 
+        totalhtml += 'Discount % <span class="pull-right">' + data['data']['cartInfo']['discount_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        
+        if(data['data']['cartInfo']['promocode_discount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Promocode Discount <span class="pull-right">SAR ' + data['data']['cartInfo']['promocode_discount'] + '</span><input type="hidden" id="promid" value='+ data['data']['cartInfo']['promocode']['Promocode']['id'] +'>';
+        totalhtml += '</td></tr>'};  
+         
+        if(data['data']['cartInfo']['promocode_percentage'] != 0) { totalhtml += '<tr><td>';  
+        totalhtml += 'Promocode % <span class="pull-right">' + data['data']['cartInfo']['promocode_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        totalhtml += '<tr><td>';  
+        totalhtml += 'Subtotal <span class="pull-right">SAR ' + data['data']['cartInfo']['subtotal'] + '</span>'; 
+        totalhtml += '</td></tr>';
+        totalhtml += '<tr><td>';
+        totalhtml += '  TOTAL <span class="pull-right">\n\
+ SAR ' + carttotalval.toFixed(2) + '</span><input type="hidden" id="carttotal" value='+data['data']['cartInfo']['total']+'>\n\
+<input type="hidden" id="downpaymenttotal" name="downpaymenttotal" value='+ downpaymenttotal +'>\n\
+<input type="hidden" id="finaltotal" name="finaltotal" value=' + carttotalval + '>';
+        totalhtml += '</td></tr>'; 
+        totalhtml += '</tbody></table>';   
+        jQuery('#total_items').html(totalhtml);     
+        rmv();
+                },
+                error: function () {
+                    alert('Error!');
+                }
+            });
+            return false;
+    });
+    
+    
+    
+    /////////////////remove promocode//////////////   
+    jQuery("#removepromo").click(function () {
+        var promid = jQuery("#promid").val();
+
+        var dataString = 'promocode_id=' + promid;  
+// AJAX Code To Submit Form.
+        jQuery.ajax({
+            type: "POST",
+            url: "http://rajdeep.crystalbiltech.com/thoag/promocodes/removePromocode",
+            data: dataString,
+            cache: false,
+            dataType: "json",  
+            success: function (data) {  
+        var html = '<div class="mycart_view clearfix"> <div class="mycart_left"><div class="clearfix">';
+        html += '<div> '; 
+         jQuery('#applypromo').html('Apply'); 
+        var downcheck ='';
+  jQuery.each(data['data']['products'], function (index, value) {
+    downcheck =   value.parent_product.Cart.down_payment;
+  });
+  var carttotalval ='';
+ if(data['data']['cartInfo']['discount_amount'] != 0) {  
+  carttotalval = data['data']['cartInfo']['total']- data['data']['cartInfo']['discount_amount']; 
+ }else if(data['data']['cartInfo']['promocode_discount'] != 0){
+	 carttotalval = data['data']['cartInfo']['total'] - data['data']['cartInfo']['promocode_discount']; 
+ } if(downcheck ===true){   
+    var  downpayment = carttotalval * data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']/100;
+       var downpaymenttotal = carttotalval - downpayment;
+      carttotalval = downpayment ; 
+     
+  }  
+
+        jQuery.each(data['data']['products'], function (index, value) {
+            html += '<div class="cart_frm"><a  id=' + value.parent_product.Cart.product_id + ' data-date="'+ value.parent_product.Cart.created +'" class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.parent_product.Cart.name + '';
+            html += '<div class="border_crt"><a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cmins qtyplus" id=' + value.parent_product.Cart.product_id + '></a> <a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.parent_product.Cart.product_id + '></a></div>';
+            html += '<span>'+ value.parent_product.Cart.quantity + 'x '+ value.parent_product.Cart.price + ' SAR</span></div>';   
+        
+            jQuery.each(value['associated_products'], function (index, value) {   
+                      
+      
+         html += '<div class="cart_frm suborder"><a  id=' + value.Cart.product_id + ' class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.Cart.name + '';
+         html += '<div class="border_crt"><a href="#" data-date="'+ value.Cart.created +'" class="cmins qtyplus" id=' + value.Cart.product_id + '></a> <a href="#" data-date="'+ value.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.Cart.product_id + '></a></div>';
+         html += '<span>'+ value.Cart.quantity + 'x '+ value.Cart.price + ' SAR</span></div>';  
+         
+            
+       }); 
+             
+        
+        }); 
+        html += '</div></div></div></div>';      
+        jQuery('#added_items').html(html);  
+  
+        var totalhtml = '<table class="table table_summary">';       
+        totalhtml += '<tbody>';   
+       
+         if(Math.round(data['data']['cartInfo']['total']) >= Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['min_amount_for_down_payment'])) { totalhtml += '<tr><td>';  
+    if(downcheck ===false) {    totalhtml += '<button type="button" id="down" class="btn btn-sm defult_btn view_btn waves-effect waves-light downpay"> Down Payment ' + Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']) + '% </button>';}
+     if(downcheck ===true) { totalhtml +='<input class="btn btn-sm defult_btn view_btn waves-effect waves-light downpayremove" type="button" value="Remove Down Payment" id="downpayremove">';}
+            totalhtml += '</td></tr>'};     
+        
+       if(data['data']['cartInfo']['discount_amount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Discount Amount <span class="pull-right">SAR ' + data['data']['cartInfo']['discount_amount'] + '</span>';  
+        totalhtml += '</td></tr>'};  
+        
+        if(data['data']['cartInfo']['discount_percentage'] != 0) { totalhtml += '<tr><td>'; 
+        totalhtml += 'Discount % <span class="pull-right">' + data['data']['cartInfo']['discount_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        
+        if(data['data']['cartInfo']['promocode_discount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Promocode Discount <span class="pull-right">SAR ' + data['data']['cartInfo']['promocode_discount'] + '</span><input type="hidden" id="promid" value='+ data['data']['cartInfo']['promocode']['Promocode']['id'] +'>';
+        totalhtml += '</td></tr>'};  
+         
+        if(data['data']['cartInfo']['promocode_percentage'] != 0) { totalhtml += '<tr><td>';  
+        totalhtml += 'Promocode % <span class="pull-right">' + data['data']['cartInfo']['promocode_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        totalhtml += '<tr><td>';  
+        totalhtml += 'Subtotal <span class="pull-right">SAR ' + data['data']['cartInfo']['subtotal'] + '</span>'; 
+        totalhtml += '</td></tr>';
+        totalhtml += '<tr><td>';
+        totalhtml += '  TOTAL <span class="pull-right">\n\
+ SAR ' + carttotalval.toFixed(2) + '</span><input type="hidden" id="carttotal" value='+data['data']['cartInfo']['total']+'>\n\
+<input type="hidden" id="downpaymenttotal" name="downpaymenttotal" value='+ downpaymenttotal +'>\n\
+<input type="hidden" id="finaltotal" name="finaltotal" value=' + carttotalval + '>';
+        totalhtml += '</td></tr>'; 
+        totalhtml += '</tbody></table>';   
+        jQuery('#total_items').html(totalhtml);     
+        rmv();
+                },
+                error: function () {
+                    alert('Error!');
+                }
+            });
+            return false;
+    });
+    
+    
+    
+      /////////////////down payment promocode//////////////   
+    jQuery("#total_items").on('click','.downpay',function (e) {  
+
+        e.preventDefault();        
+     
+
+      var dataString = 'downpay=' + 1;  
+
+//alert(dataString);	
+// AJAX Code To Submit Form.
+        jQuery.ajax({
+            type: "POST",  
+            url: "http://rajdeep.crystalbiltech.com/thoag/shop/downpayment",
+            data: dataString, 
+            cache: false,
+            dataType: "json",  
+            success: function (data) {
+       var html = '<div class="mycart_view clearfix"> <div class="mycart_left"><div class="clearfix">';
+        html += '<div> '; 
+        var downcheck ='';
+  jQuery.each(data['data']['products'], function (index, value) {
+    downcheck =   value.parent_product.Cart.down_payment;
+  });
+  var carttotalval ='';
+ if(data['data']['cartInfo']['discount_amount'] != 0) {  
+  carttotalval = data['data']['cartInfo']['total']- data['data']['cartInfo']['discount_amount']; 
+ }else if(data['data']['cartInfo']['promocode_discount'] != 0){
+	 carttotalval = data['data']['cartInfo']['total'] - data['data']['cartInfo']['promocode_discount']; 
+ } if(downcheck ===true){   
+    var  downpayment = carttotalval * data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']/100;
+       var downpaymenttotal = carttotalval - downpayment;
+      carttotalval = downpayment ; 
+     
+  }  
+
+        jQuery.each(data['data']['products'], function (index, value) {
+            html += '<div class="cart_frm"><a  id=' + value.parent_product.Cart.product_id + ' data-date="'+ value.parent_product.Cart.created +'" class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.parent_product.Cart.name + '';
+            html += '<div class="border_crt"><a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cmins qtyplus" id=' + value.parent_product.Cart.product_id + '></a> <a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.parent_product.Cart.product_id + '></a></div>';
+            html += '<span>'+ value.parent_product.Cart.quantity + 'x '+ value.parent_product.Cart.price + ' SAR</span></div>';   
+        
+            jQuery.each(value['associated_products'], function (index, value) {   
+                      
+      
+         html += '<div class="cart_frm suborder"><a  id=' + value.Cart.product_id + ' class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.Cart.name + '';
+         html += '<div class="border_crt"><a href="#" data-date="'+ value.Cart.created +'" class="cmins qtyplus" id=' + value.Cart.product_id + '></a> <a href="#" data-date="'+ value.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.Cart.product_id + '></a></div>';
+         html += '<span>'+ value.Cart.quantity + 'x '+ value.Cart.price + ' SAR</span></div>';  
+         
+            
+       }); 
+             
+        
+        }); 
+        html += '</div></div></div></div>';      
+        jQuery('#added_items').html(html);  
+  
+        var totalhtml = '<table class="table table_summary">';       
+        totalhtml += '<tbody>';   
+       
+         if(Math.round(data['data']['cartInfo']['total']) >= Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['min_amount_for_down_payment'])) { totalhtml += '<tr><td>';  
+    if(downcheck ===false) {    totalhtml += '<button type="button" id="down" class="btn btn-sm defult_btn view_btn waves-effect waves-light downpay"> Down Payment ' + Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']) + '% </button>';}
+     if(downcheck ===true) { totalhtml +='<input class="btn btn-sm defult_btn view_btn waves-effect waves-light downpayremove" type="button" value="Remove Down Payment" id="downpayremove">';}
+            totalhtml += '</td></tr>'};     
+        
+       if(data['data']['cartInfo']['discount_amount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Discount Amount <span class="pull-right">SAR ' + data['data']['cartInfo']['discount_amount'] + '</span>';  
+        totalhtml += '</td></tr>'};  
+        
+        if(data['data']['cartInfo']['discount_percentage'] != 0) { totalhtml += '<tr><td>'; 
+        totalhtml += 'Discount % <span class="pull-right">' + data['data']['cartInfo']['discount_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        
+        if(data['data']['cartInfo']['promocode_discount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Promocode Discount <span class="pull-right">SAR ' + data['data']['cartInfo']['promocode_discount'] + '</span><input type="hidden" id="promid" value='+ data['data']['cartInfo']['promocode']['Promocode']['id'] +'>';
+        totalhtml += '</td></tr>'};  
+         
+        if(data['data']['cartInfo']['promocode_percentage'] != 0) { totalhtml += '<tr><td>';  
+        totalhtml += 'Promocode % <span class="pull-right">' + data['data']['cartInfo']['promocode_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        totalhtml += '<tr><td>';  
+        totalhtml += 'Subtotal <span class="pull-right">SAR ' + data['data']['cartInfo']['subtotal'] + '</span>'; 
+        totalhtml += '</td></tr>';
+        totalhtml += '<tr><td>';
+        totalhtml += '  TOTAL <span class="pull-right">\n\
+ SAR ' + carttotalval.toFixed(2) + '</span><input type="hidden" id="carttotal" value='+data['data']['cartInfo']['total']+'>\n\
+<input type="hidden" id="downpaymenttotal" name="downpaymenttotal" value='+ downpaymenttotal +'>\n\
+<input type="hidden" id="finaltotal" name="finaltotal" value=' + carttotalval + '>';
+        totalhtml += '</td></tr>'; 
+        totalhtml += '</tbody></table>';   
+        jQuery('#total_items').html(totalhtml);     
+        rmv();
+                },
+                error: function () {
+                    alert('Error!');
+                }
+            });   
+            return false;
+    });
+    
+    
+    
+        /////////////////remove payment promocode//////////////   
+  
+     jQuery("#total_items").on('click','.downpayremove',function (e) {  
+
+        e.preventDefault();      
+      var dataString = 'downpay=' + 0;  
+ 	
+// AJAX Code To Submit Form.
+        jQuery.ajax({
+            type: "POST",  
+            url: "http://rajdeep.crystalbiltech.com/thoag/shop/remove_downpayment",
+            data: dataString, 
+            cache: false,
+            dataType: "json",  
+            success: function (data) {
+       var html = '<div class="mycart_view clearfix"> <div class="mycart_left"><div class="clearfix">';
+        html += '<div> '; 
+        var downcheck ='';
+  jQuery.each(data['data']['products'], function (index, value) {
+    downcheck =   value.parent_product.Cart.down_payment;
+  });
+  var carttotalval ='';
+ if(data['data']['cartInfo']['discount_amount'] != 0) {  
+  carttotalval = data['data']['cartInfo']['total']- data['data']['cartInfo']['discount_amount']; 
+ }else if(data['data']['cartInfo']['promocode_discount'] != 0){
+	 carttotalval = data['data']['cartInfo']['total'] - data['data']['cartInfo']['promocode_discount']; 
+ } if(downcheck ===true){   
+    var  downpayment = carttotalval * data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']/100;
+       var downpaymenttotal = carttotalval - downpayment;
+      carttotalval = downpayment ; 
+     
+  }  
+
+        jQuery.each(data['data']['products'], function (index, value) {
+            html += '<div class="cart_frm"><a  id=' + value.parent_product.Cart.product_id + ' data-date="'+ value.parent_product.Cart.created +'" class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.parent_product.Cart.name + '';
+            html += '<div class="border_crt"><a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cmins qtyplus" id=' + value.parent_product.Cart.product_id + '></a> <a href="#" data-date="'+ value.parent_product.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.parent_product.Cart.product_id + '></a></div>';
+            html += '<span>'+ value.parent_product.Cart.quantity + 'x '+ value.parent_product.Cart.price + ' SAR</span></div>';   
+        
+            jQuery.each(value['associated_products'], function (index, value) {   
+                      
+      
+         html += '<div class="cart_frm suborder"><a  id=' + value.Cart.product_id + ' class="remove_item"><img src="http://rajdeep.crystalbiltech.com/thoag/home/images/cross.png"  alt=""></a>' + value.Cart.name + '';
+         html += '<div class="border_crt"><a href="#" data-date="'+ value.Cart.created +'" class="cmins qtyplus" id=' + value.Cart.product_id + '></a> <a href="#" data-date="'+ value.Cart.created +'" class="cplus qtyminus qtyminus_bg" id=' + value.Cart.product_id + '></a></div>';
+         html += '<span>'+ value.Cart.quantity + 'x '+ value.Cart.price + ' SAR</span></div>';  
+         
+            
+       }); 
+             
+        
+        }); 
+        html += '</div></div></div></div>';      
+        jQuery('#added_items').html(html);  
+  
+        var totalhtml = '<table class="table table_summary">';       
+        totalhtml += '<tbody>';   
+       
+         if(Math.round(data['data']['cartInfo']['total']) >= Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['min_amount_for_down_payment'])) { totalhtml += '<tr><td>';  
+    if(downcheck ===false) {    totalhtml += '<button type="button" id="down" class="btn btn-sm defult_btn view_btn waves-effect waves-light downpay"> Down Payment ' + Math.round(data['data']['cartInfo']['restaurant']['Restaurant']['down_payment_percentage']) + '% </button>';}
+     if(downcheck ===true) { totalhtml +='<input class="btn btn-sm defult_btn view_btn waves-effect waves-light downpayremove" type="button" value="Remove Down Payment" id="downpayremove">';}
+            totalhtml += '</td></tr>'};     
+        
+       if(data['data']['cartInfo']['discount_amount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Discount Amount <span class="pull-right">SAR ' + data['data']['cartInfo']['discount_amount'] + '</span>';  
+        totalhtml += '</td></tr>'};  
+        
+        if(data['data']['cartInfo']['discount_percentage'] != 0) { totalhtml += '<tr><td>'; 
+        totalhtml += 'Discount % <span class="pull-right">' + data['data']['cartInfo']['discount_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        
+        if(data['data']['cartInfo']['promocode_discount'] != 0) { totalhtml += '<tr><td>';
+        totalhtml += 'Promocode Discount <span class="pull-right">SAR ' + data['data']['cartInfo']['promocode_discount'] + '</span><input type="hidden" id="promid" value='+ data['data']['cartInfo']['promocode']['Promocode']['id'] +'>';
+        totalhtml += '</td></tr>'};  
+         
+        if(data['data']['cartInfo']['promocode_percentage'] != 0) { totalhtml += '<tr><td>';  
+        totalhtml += 'Promocode % <span class="pull-right">' + data['data']['cartInfo']['promocode_percentage'] + '</span>';
+        totalhtml += '</td></tr>'};
+        totalhtml += '<tr><td>';  
+        totalhtml += 'Subtotal <span class="pull-right">SAR ' + data['data']['cartInfo']['subtotal'] + '</span>'; 
+        totalhtml += '</td></tr>';
+        totalhtml += '<tr><td>';
+        totalhtml += '  TOTAL <span class="pull-right">\n\
+ SAR ' + carttotalval.toFixed(2) + '</span><input type="hidden" id="carttotal" value='+data['data']['cartInfo']['total']+'>\n\
+<input type="hidden" id="downpaymenttotal" name="downpaymenttotal" value='+ downpaymenttotal +'>\n\
+<input type="hidden" id="finaltotal" name="finaltotal" value=' + carttotalval + '>';
+        totalhtml += '</td></tr>'; 
+        totalhtml += '</tbody></table>';   
+        jQuery('#total_items').html(totalhtml);     
+        rmv();
+                },
+                error: function () {
+                    alert('Error!');   
+                }
+            });       
+            return false;         
+    }); 
+
+      
+});  

@@ -1,0 +1,39 @@
+{
+  "name": "angular-page-loader",
+  "description": "quick app integration for your favourite loaders",
+  "main": [
+    "dist/angular-page-loader.js",
+    "dist/angular-page-loader.css"
+  ],
+  "authors": [
+    "codekraft-studio"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angularjs",
+    "javascript",
+    "loader",
+    "page-loader",
+    "preloader",
+    "load",
+    "animation"
+  ],
+  "homepage": "https://github.com/codekraft-studio/angular-page-loader",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "9e6baa01dc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9e6baa01dce7ff1225e7bb93cbb3f3f882bd7670"
+  },
+  "_source": "https://github.com/codekraft-studio/angular-page-loader.git",
+  "_target": "*",
+  "_originalSource": "angular-page-loader",
+  "_direct": true
+}

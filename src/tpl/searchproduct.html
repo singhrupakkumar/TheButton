@@ -1,0 +1,119 @@
+<div ng-controller="homeController">
+<style>
+    .formnew form {
+    display: flex !important;
+}
+</style>
+<div id="inner">
+  <div class="container" style="min-height: 500px;">
+<!-- Special cases: -->
+<!-- - If you remove a category filter, also remove subcategory and class. -->
+<!-- - If you add a new filter, reset the page count. -->
+<!-- - Others? -->
+<div class="row">
+<div class="col-sm-3 hidden-xs">
+<div class="facets">
+<div class="facet-header">CATEGORY</div>
+<ul class="facet-list">
+
+    <li ng-repeat="cat in catlist">
+    <a ng-click="searchbyid(cat.Category.id)">
+{{cat.Category.name }}
+</a>
+<small class="text-muted">{{cat.Product.length }}</small> 
+</li>
+
+
+</ul> 
+</div>
+
+</div>
+<div class="col-sm-9">
+   
+
+
+    <div class="input-group" style="margin-bottom: 20px;">
+    
+<div class="input-group-btn">
+<form> 
+    <select style="margin: 0;" ng-model="data.search" data-ng-change="searchcat()" class="dropdown-menu form-control">
+     <option value="" >All Categories</option> 
+     <option value="{{cat.Category.name}}" ng-repeat="cat in catlist" >{{cat.Category.name}}</option>
+    </select>
+</form>
+</div>
+   
+    <div class="formnew">
+<form  style="display: flax;" ng-submit="searchcat()">      
+ <input type="text" ng-model="data.search" class="form-control" placeholder="Search thousands of brands and unique items...">
+<span class="input-group-btn">
+<button class="btn btn-primary btn-lg" style="height: 42px;" type="submit">
+<span class="fa fa-search"></span>
+</button>
+</span>
+</form>
+</div>
+</div>
+
+
+<div data-columns="3" id="grid">
+  
+    <div class="column size-1of3" ng-repeat="prod in productlistbycat">  
+        <div class="panel panel-default panel-catalog" data-product-parent-id="2052141">
+<div class="panel-heading">
+ <div class="lot-image-holder"> <img class="lot-image img-responsive" ng-src="{{prod.Product.image}}" style="" alt="{{prod.Product.name}}"> </div>
+
+</div>
+<div class="panel-body">
+<div class="row">
+<div class="col-xs-6">
+<div class="pricing">
+<span class="price">${{prod.Product.price}}</span>
+<span class="msrp">$35</span>
+</div>
+</div>
+<div class="col-xs-6">
+  
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="bought-this">30+ bought this</div>
+</div>
+</div>
+</div>
+<div class="panel-footer">
+<div class="row">
+<div class="col-xs-6 panel-separator"> <i ng-class="(prod.Product.reminder==1 || (reminder==1 && eid == prod.Product.id) ? 'fa fa-heart' : 'fa fa-heart-o')" class="remind-me" id="{{prod.Product.id}}" ng-click="reminderadd(prod.Product.id,$event)" data-lot-id="30134427" data-position="1"></i> <span class="reminder-count">{{prod.Product.reminder_count}}</span> </div>    
+
+<div class="col-xs-6">
+<div class="buy-it-now" data-lot-id="40936928">   
+<i class="fa fa-shopping-cart"></i>
+<span>Buy</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+ </div>        
+
+ 
+
+<div class="clearfix"></div>
+
+<!--div class="clearfix">
+<ul class="pagination hidden-xs">
+<li class="previous_page disabled"><a class="previous_page disabled">← Previous</a></li> <li class="active"><a class="active">1</a></li> <li><a rel="next" href="/catalogs/search?page=2&amp;query=electronic">2</a></li> <li><a href="/catalogs/search?page=3&amp;query=electronic">3</a></li> <li><a href="/catalogs/search?page=4&amp;query=electronic">4</a></li> <li><a href="/catalogs/search?page=5&amp;query=electronic">5</a></li> <li><a href="/catalogs/search?page=6&amp;query=electronic">6</a></li> <li><a href="/catalogs/search?page=7&amp;query=electronic">7</a></li> <li><a href="/catalogs/search?page=8&amp;query=electronic">8</a></li> <li><a href="/catalogs/search?page=9&amp;query=electronic">9</a></li> <li class="disabled"><a>…</a></li> <li><a href="/catalogs/search?page=117&amp;query=electronic">117</a></li> <li><a href="/catalogs/search?page=118&amp;query=electronic">118</a></li> <li class="next"><a class="next" rel="next" href="/catalogs/search?page=2&amp;query=electronic">Next →</a></li>
+</ul>
+<ul class="pagination visible-xs">
+<li class="previous_page disabled"><a class="previous_page disabled">←</a></li> <li class="active"><a class="active">1</a></li> <li class="disabled"><a>…</a></li> <li><a href="/catalogs/search?page=118&amp;query=electronic">118</a></li> <li class="next"><a class="next" rel="next" href="/catalogs/search?page=2&amp;query=electronic">→</a></li>
+</ul>
+</div-->
+
+</div> 
+</div>
+
+</div>
+</div>
+    </div>
+</div> 

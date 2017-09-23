@@ -1,0 +1,63 @@
+<div class="container-fluid w-xxl w-auto-xs" ng-controller="Uaccess" ng-init="app.settings.container = false;"> 
+ <div id="inner">
+  <div class="container inner" style="min-height: 500px;"> 
+    <div class="row">  
+
+        <div id="awning"> 
+          <div class="page-header">    
+             <ol class="breadcrumb">
+                 <li>
+                 <a ui-sref="user.profile">Account</a> 
+                 </li>
+                 <li class="active"> 
+                 Email Preferences
+                 </li>
+            </ol>
+          </div>
+        </div>
+     <form class="form-horizontal" ng-submit="profileupdate()" name="profile" novalidate>
+        
+      
+         <div role="alert" ng-if="!error" ng-show="msg" class="alert  alert-dismissible alertIn alertOut ng-animate alert-success" style="">
+             <span dynamic="flash.text">
+                 <span class="ng-scope">
+                   {{msg}}
+                 </span>
+                         
+             </span>
+           
+         </div>
+        <div role="alert" ng-if="!msg" ng-show="error" class="alert  alert-dismissible alertIn alertOut ng-animate alert-danger" style=""> 
+             <span dynamic="flash.text">
+                 <span class="ng-scope">
+                   {{error}}
+                 </span>
+                         
+             </span>
+          
+         </div>
+  
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="get_notification">Get Notification</label> 
+            <div class="col-sm-6">
+              <select class="form-control"  ng-model="user.get_notification" id="user_get_notification">
+                 <option  value="1" ng-selected="user.get_notification == 1">Daily</option>
+                 <option  value="2" ng-selected="user.get_notification == 2">Weekly</option>
+                 <option  value="0" ng-selected="user.get_notification == 0">None</option>  
+              </select>
+            </div>
+          </div>
+          <div class="form-group"> 
+            <div class="col-sm-6 col-sm-offset-2"> 
+           <input name="submit" id="editsubmit" class="btn btn-primary btn-block" type="submit" value="Save"/>      
+             
+            </div>
+          </div>
+     
+       </form>
+
+      </div>  
+      </div>  
+     </div>   
+ 
+</div>  

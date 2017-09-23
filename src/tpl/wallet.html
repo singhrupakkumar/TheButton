@@ -1,0 +1,76 @@
+
+<div class="container-fluid w-xxl w-auto-xs" ng-controller="Uaccess" ng-init="app.settings.container = false;"> 
+ <div id="inner">
+  <div class="container inner" style="min-height: 500px;">  
+    <div class="row">  
+         
+    <div class="text-center" ng-include="'src/tpl/blocks/usersidebar.html'">  
+        {% include 'src/blocks/usersidebar.html' %}
+    </div>  
+<div class="col-md-10">
+<div id="awning">
+<div class="page-header">
+<div class="clearfix">
+<h1 class="pull-left">
+Wallet
+</h1>
+</div>
+</div>
+</div>
+<ul class="nav nav-tabs bottom20">
+<li class="active">
+<a href="javascript:void(0)">  
+Available
+<span class="badge badge-purple">${{cartuserinfo.total_wallet }} </span>        
+</a>
+</li>
+<li>
+<!--a href="javascript:void(0)">
+Used
+</a-->
+</li>  
+<div class="pull-right">   
+<a class="btn btn-primary" href="javascript:void(0)" data-toggle="modal" data-target="#promo-code-modal">Promo Code</a>  
+</div>
+</ul>  
+       
+<div class="well" ng-if="cartuserinfo.total_wallet ==0">You don't have any credits. <a ui-sref="user.share_earn">Share &amp; earn</a> to earn credits to spend at The Button App.
+</div>
+
+
+</div>
+ 
+   </div>  
+      </div>    
+     </div>    
+    
+    
+    
+    
+       <div  class="modal fade in" id="promo-code-modal" role="dialog" style="display: none;">      
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                <div class="modal-header">
+                <button class="close" data-dismiss="modal" type="button">   
+                <span aria-hidden="aria-hidden">×</span>
+                <span class="sr-only">Close</span>
+                </button>
+
+                <h3>Promo Code</h3>
+                </div>
+                <div class="modal-body">
+                 <form ng-submit="addpromo()">  
+                     <div style="color:red;" ng-if="promsg">{{promsg}}</div>              
+                <div class="form-group">  
+                    <input type="text" name="promo_code" ng-model="user.promo_code" id="promo_code" class="form-control" placeholder="Promo Code" required/>
+                </div>
+                <input type="submit" name="commit" value="Save" class="btn btn-primary btn-block" id="new-promo-code">
+                 </form>
+                </div>
+                </div>
+            </div>
+       </div>  
+    
+
+ </div>    
+       

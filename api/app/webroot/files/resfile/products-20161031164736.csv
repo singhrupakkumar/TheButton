@@ -1,0 +1,303 @@
+"id","dishcategory_id","dishsubcat_id","res_id","pro_id","alergi","name","slug","description","image","price","weight","box","flavors","sizes","tags","views","active","sale","created","modified","image1",
+"5","8","23","634","","","Cannellini Bruschetta","","&lt;p&gt;Italian bread.&lt;/p&gt;
+","FNM_110112-50-Easy-Appetizers-Cannellini-Bruschetta_s4x3.jpg.rend.sni6col.landscape.jpeg","500.00","2.00","","","Small","","0","1","0","2016-07-27 01:46:49","2016-07-30 11:04:25","",
+"6","8","23","634","","","Radish-Anchovy Canapes","","&lt;p&gt;Finely chop 1 to 2 rinsed anchovies, 2 tablespoons parsley and 1 teaspoon grated lemon zest; mix with 1 stick softened butter. Spread on pumpernickel cocktail bread and top with thinly sliced radishes and a squeeze of lemon juice.&lt;/p&gt;
+","FNM_110112-50-Easy-Appetizers-Radish-Anchovy-Canapes_s4x3.jpg.rend.sni6col.landscape.jpeg","2.00","4.00","","","Large","","0","1","0","2016-07-27 01:48:22","2016-07-30 11:07:39","",
+"9","8","23","625","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Hot fudge sundae","","The hot fudge sundae is a variation on the classic sundae and is often a creation of vanilla ice cream
+","t-mcdonalds-Hot-Fudge-Sundae.png","150.00","1.00","","","small","","0","1","0","2016-07-27 01:54:10","2016-10-07 15:43:43","",
+"10","8","23","629","","","Pomegranate Guacamole","","Textured with White Sauce, Authentic Aroma ","015559FNM_110112-50-Easy-Appetizers-Radish-Anchovy-Canapes_s4x3.jpg.rend.sni6col.landscape.jpeg","215.00","3.00","","","small ","","0","1","0","2016-07-27 01:55:59","2016-07-27 01:55:59","",
+"11","8","23","632","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Fried Ravioli","","&lt;p&gt;Served with warm marinara sauce.&lt;/p&gt;
+","015826FNM_110112-50-Easy-Appetizers-Radish-Anchovy-Canapes_s4x3.jpg.rend.sni6col.landscape.jpeg","125.00","2.00","10","","Medium","","0","1","0","2016-07-27 01:58:26","2016-10-01 15:08:34","",
+"12","3","15","632","0","","strawberry sundae","","The hot fudge sundae is a variation on the classic sundae and is often a creation of vanilla ice cream, sprinkles, hot chocolate sauce (hence the &quot;hot fudge&quot;), whipped cream, nuts, and a single bright-red maraschino cherry on top","t-mcdonalds-Strawberry-Sundae.png","130.00","1.00","","","small","","0","1","0","2016-07-27 01:59:15","2016-07-27 01:59:15","",
+"13","8","23","633","","","Romesco Dip","","Served with breadsticks or crackers.
+
+","FNM_110112-50-Easy-Appetizers-Romesco-Dip_s4x3.jpg.rend.sni6col.landscape.jpeg","550.00","2.00","","","Large","","0","1","0","2016-07-27 02:00:36","2016-07-27 02:00:36","",
+"14","3","15","634","","","hot caramel ","","This is a variation of the hot fudge sundae in which heated caramel sauce replaces the heated chocolate sauce. The other ingredients remain unchanged.","t-mcdonalds-Hot-Caramel-Sundae.png","100.00","1.00","","","medium","","0","1","0","2016-07-27 02:01:13","2016-07-27 02:01:13","",
+"15","8","23","635","","","Cranberry-Pate Bites",""," Top with chopped parsley
+","FNM_110112-50-Easy-Appetizers-Cranberry-Pate-Bites_s4x3.jpg.rend.sni6col.landscape.jpeg","325.00","4.00","","","Medium","","0","1","0","2016-07-27 02:08:01","2016-07-27 02:08:01","",
+"16","8","23","636","","","Stuffed Cherry Peppers","","Serve with toothpicks","FNM_110112-50-Easy-Appetizers-Stuffed-Cherry-Peppers_s4x3.jpg.rend.sni6col.landscape.jpeg","45.00","2.00","","","M","","0","1","0","2016-07-27 02:16:54","2016-07-27 02:16:54","",
+"17","3","14","629","","","crispy aloo pakoras","","Crispy aloo pakoras, or crispy potato fritters are a flavorful and delicious snack specially when it is served with cilantro chutney, and hot cup of chai. They are easy and quick to make.","crispy_aloo_pakoras-300x169.jpg","100.00","1.00","","","medium plate","","0","1","0","2016-07-27 02:27:08","2016-07-27 02:27:08","",
+"18","3","14","623","","","chiroti(khaja)","","Chiroti, also known as khaja, this is a crispy sugar coated puri a delicious snack. Chiroti is a traditional Maharashtrian delicacy. ","chiroti_khaja-300x168.jpg","80.00","1.00","","","medium plate","","0","1","0","2016-07-27 02:28:56","2016-07-27 02:28:56","",
+"19","8","31","629","s:5:&quot;21,32&quot;;","","Mockmosa","","A surprising alternative to the Mimosa, due to using sparkling white grape juice instead of sparkling apple cider.","mockmosa-2-600x600.jpg","700.00","3.00","","","medium","","0","1","0","2016-07-27 02:48:31","2016-07-27 02:48:31","",
+"20","7","8","632","","","Nojito","","A Mojito with all the flavor, but none of the rum.","nojito-cocktail-600x600.jpg","600.00","1.00","","","small","","0","1","0","2016-07-27 02:50:57","2016-07-27 02:50:57","",
+"21","8","31","629","s:5:&quot;19,32&quot;;","s:0:&quot;&quot;;"," Strawberry Gin Smash ","","An easy crowd-pleaser that highlights the early strawberry season.
+","571c639a0f235ff4345cd232262ad48e52958e21.jpeg","500.00","1.00","","","large ","","0","1","0","2016-07-27 02:55:40","2016-10-17 16:05:26","",
+"22","7","12","634","","","Sparkling Cucumber Cooler","","pure cane sugar","030655nojito-cocktail-600x600.jpg","600.00","1.00","","","large ","","0","1","0","2016-07-27 03:06:55","2016-07-27 03:06:55","",
+"23","8","23","633","","","Golden-glazed carrot, mushroom &amp; hazelnut tart","","the mushroom mix or assemble most of this beautiful pie in advance, saving you precious minutes on the day itself. ","carrot-tart.jpg","150.00","1.00","","","full plate","","0","1","0","2016-07-27 04:33:33","2016-07-27 04:33:33","",
+"24","8","23","634","","","Polenta &amp; goat&#039;s cheese stacks","","This restaurant-quality main course is sure to dazzle – just make sure you don’t forget the vegetarian Parmesan, as often the regular variety contains animal rennet.","polenta_0.jpg","120.00","1.00","","","half plate","","0","1","0","2016-07-27 04:36:08","2016-07-27 04:36:08","",
+"29","15","20","624","s:0:&quot;&quot;;","s:0:&quot;&quot;;","italian chef salad","","&lt;p&gt;Baby spinach, freshly sliced strawberries, oranges, grapes, cranberries, green onions and creamy goat cheese with raisin pecan sweet crisps and strawberry vinaigrette.&lt;/p&gt;
+","Italian-Chef-Salad-550x310.jpg","50.00","1.00","","","small plate","","0","1","0","2016-07-27 06:41:52","2016-10-03 18:02:15","",
+"30","8","23","636","s:0:&quot;&quot;;","s:0:&quot;&quot;;","hot caramel ","","&lt;p&gt;Salted Caramel Hot Chocolate Sache&lt;/p&gt;
+","065000t-mcdonalds-Hot-Caramel-Sundae.png","150.00","1.00","10","","medium ","","0","1","0","2016-07-27 06:50:00","2016-09-30 19:02:54","",
+"31","7","8","635","","","Mockmosa","","A surprising alternative to the Mimosa...","065400mockmosa-2-600x600.jpg","150.00","1.00","","","small ","","0","1","0","2016-07-27 06:54:00","2016-07-27 06:54:00","",
+"32","8","23","629","s:5:&quot;19,21&quot;;","","Ajowan Seeds","","An easy crowd-pleaser  ","1576.jpg","150.00","1.00","","","medium ","","0","1","0","2016-07-27 07:01:38","2016-07-27 07:01:38","",
+"33","8","23","635","","","cumin kebabs Chinese Chile and Cumin Lamb Kebabs ","","Laced with ground cumin, ground chile powder and garlic cloves, these kebabs bring together the flavors of Persia and China.","matt-taylor-gross_skewers_2000x1500.jpg","250.00","2.00","","","large ","","0","1","0","2016-07-27 07:04:37","2016-07-27 07:04:37","",
+"34","8","23","628","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Barcelona","","&lt;p&gt;Italian bread.&lt;/p&gt;
+","070934571c639a0f235ff4345cd232262ad48e52958e21.jpeg","600.00","2.00","","","large ","","0","1","0","2016-07-27 07:09:34","2016-10-19 15:48:18","",
+"37","8","23","632","","","Habanero Powder","","You can find our spices and herbs alphabetically by name, or browse by category and cuisine type ....","0718191576.jpg","100.00","2.00","","","medium ","","0","1","0","2016-07-27 07:18:19","2016-07-27 07:18:19","",
+"38","8","23","624","","","rajma rice","","sedf","Lighthouse.jpg","30.00","3.00","","","22","","0","1","0","2016-07-28 02:45:24","2016-07-28 02:45:24","",
+"45","3","15","622","s:2:&quot;45&quot;;","s:5:&quot;4,5,6&quot;;","hot caramel sundae","","&lt;p&gt;Salted Caramel Hot Chocolate Sache&lt;/p&gt;
+","045639t-mcdonalds-Hot-Caramel-Sundae.png","100.00","1.00","","","smal","","0","1","0","2016-07-28 04:56:39","2016-09-30 16:13:47","",
+"48","8","23","624","","","Sweet Potato Gnudi with Sage Butter","","
+
+ Cazuela &quot;&#039;Gnudi&#039; (or &#039;naked&#039; ravioli without a pasta jacket) are tender dumplings simmered like gnocchi and, when made with sweet potatoes and finished in sage butter, present beautifully for a delicious autumn dish.&quot;","053120carrot-tart.jpg","200.00","2.00","","","small","","0","1","0","2016-07-28 05:31:20","2016-07-28 05:31:20","",
+"49","8","23","624","s:5:&quot;29,48&quot;;","","Coke","","fadsf","409583-buffet-hut.PNG","23.00","5.00","","","Medium","","0","1","0","2016-07-28 05:34:31","2016-07-28 05:34:31","",
+"50","8","23","624","s:4:&quot;4,28&quot;;","","french fries+momos","","add","054912crispy_aloo_pakoras-300x169.jpg","200.00","2.00","","","medium ","","0","1","0","2016-07-28 05:49:12","2016-07-28 05:49:12","",
+"51","8","32","625","s:1:&quot;9&quot;;","s:0:&quot;&quot;;","salad","","jhnlkj","060018Italian-Chef-Salad-550x310.jpg","30.00","2.00","","","small","","0","1","0","2016-07-28 06:00:18","2016-10-08 13:48:15","",
+"53","8","23","624","s:0:&quot;&quot;;","","test1","","test1","020143Chrysanthemum.jpg","30.00","2.00","","","2","","0","1","0","2016-07-29 02:01:43","2016-07-29 02:01:43","",
+"55","8","23","634","s:3:&quot;5,6&quot;;","s:3:&quot;4,6&quot;;","Adobo Seasoning","","&lt;p&gt;nice....&lt;/p&gt;
+","004749exps34952_TH2847295B02_20_7b.jpg","150.00","2.00","","","small","","0","1","0","2016-08-01 00:47:49","2016-09-30 15:31:47","",
+"56","3","16","635","s:5:&quot;25,33&quot;;","","channa rice+rice+salad","","indian traditional dish","rajma-chawal.jpg","150.00","2.00","","","medium plate","","0","1","0","2016-08-01 00:52:29","2016-08-01 00:52:29","",
+"57","15","20","625","s:7:&quot;9,51,62&quot;;","s:5:&quot;3,5,7&quot;;","A&amp;W Root Beer Float","","&lt;p&gt;A&amp;amp;W Root Beer Float is a doft drink from the USA&lt;/p&gt;
+","aw-root-beer-float.jpg","250.00","3.00","55","","medium ","","0","1","0","2016-08-01 01:14:23","2016-10-12 13:47:47","",
+"58","3","15","638","s:0:&quot;&quot;;","","hot caramel sundae","","hot caramel sundae chocolate ice cream...","011728t-mcdonalds-Hot-Caramel-Sundae.png","50.00","1.00","","","small","","0","1","0","2016-08-01 01:17:28","2016-08-01 01:17:28","",
+"59","3","16","638","s:2:&quot;58&quot;;","","khari rice","","indian traditional dish....","012042rajma-chawal.jpg","50.00","2.00","","","medium plate","","0","1","0","2016-08-01 01:20:42","2016-08-01 01:20:42","",
+"60","8","23","624","s:8:&quot;29,48,50&quot;;","s:0:&quot;&quot;;"," Grapefruit Basil Mimosas","","&lt;p&gt;mocktail drink&lt;/p&gt;
+","012501aw-root-beer-float.jpg","500.00","3.00","","","large ","","0","1","0","2016-08-01 01:25:01","2016-10-13 17:15:14","",
+"61","7","8","638","s:5:&quot;58,59&quot;;","","Grapefruit Basil Mimosas","","grape fruit mocktail drink","enhanced-2260-1421863250-2.jpg","1000.00","3.00","","","large ","","0","1","0","2016-08-01 01:27:56","2016-08-01 01:27:56","",
+"62","8","32","625","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Prawns","","exciting new flavours","prawns_79d05.jpg","250.00","1.50","","","Large","","0","1","0","2016-08-02 23:30:48","2016-10-08 13:47:35","",
+"63","8","23","625","s:0:&quot;&quot;;","","Nutella Ice Cream","","Sweet as a strawberry Sweet as a strawberry Sweet as a strawberry Sweet as a strawberry ","nutella-ice-cream-2.jpg","150.00","1.00","","","small","","0","1","0","2016-08-02 23:52:20","2016-08-02 23:52:20","",
+"65","8","23","640","s:0:&quot;&quot;;","","tiramisu","","&lt;p&gt;very good&lt;/p&gt;
+","banner3.jpg","10.00","10.00","","","11","","0","1","0","2016-08-06 06:35:49","2016-09-24 01:06:00","",
+"67","8","23","622","s:0:&quot;&quot;;","","ww","","ww","124537cya new vendor logos.png","2.00","2.00","","","22mm","","0","1","0","2016-09-07 12:45:37","2016-09-07 12:45:37","",
+"68","8","23","622","s:5:&quot;sdsdd&quot;;","","sdsdsd","","&lt;p&gt;sdsdsd&lt;/p&gt;
+","real ticketmaster ticket purchsased today 24 June 2016  (1).png","11.00","11.00","","","22mm","","0","1","0","2016-09-07 15:08:08","2016-09-27 19:08:40","",
+"69","3","14","642","","","Buffalo Chicken Dip Buffalo Chicken Dip","","&lt;p&gt;Buffalo wing sauce, cream cheese and ranch make a great party dip&lt;/p&gt;
+","063319exps34952_TH2847295B02_20_7b.jpg","130.00","2.00","","","medium","","0","1","0","2016-07-27 06:33:19","2016-09-26 16:38:21","",
+"70","8","23","625","s:4:&quot;9,62&quot;;","s:1:&quot;1&quot;;","test","","tesing ","180529Desert.jpg","50.00","1.00","","","kg","","0","1","0","2016-09-19 18:05:29","2016-09-19 18:05:29","",
+"72","8","23","660","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Cold Drink","","&lt;p&gt;Fanta Dew&lt;/p&gt;
+","161353mazza.jpg","340.00","45.00","","","1","","0","1","0","2016-09-22 12:07:55","2016-10-27 16:13:53","",
+"73","3","14","640","s:2:&quot;65&quot;;","1","Kuracie prsia","","&lt;p&gt;Velmi dobre kuracie prsia&lt;/p&gt;
+","stiahnuť.jpg","10.00","150.00","","","12","","0","","0","2016-09-23 23:39:14","2016-09-24 01:06:46","",
+"74","16","22","664","s:0:&quot;&quot;;","","Nakladaný hermelín","","&lt;p&gt;syr hermel&amp;iacute;n, cibuľa, chilli&lt;/p&gt;
+","stiahnuť (1).jpg","3.50","120.00","","","g","","0","","0","2016-09-24 16:30:19","2016-09-24 16:35:34","",
+"75","8","23","664","s:0:&quot;&quot;;","","Hovädzia polievko s mäsom a zeleninou","","","stiahnuť (2).jpg","2.50","0.30","","","l","","0","","0","2016-09-24 16:38:02","2016-09-24 16:38:02","",
+"76","8","24","664","s:0:&quot;&quot;;","","Vyprážaný kurací rezeň","","","stiahnuť (3).jpg","5.30","150.00","","","","","0","","0","2016-09-24 16:54:47","2016-09-24 16:54:47","",
+"77","8","23","665","s:0:&quot;&quot;;","","srethfg","","sfdghdfh","171446stiahnuť (2).jpg","12.00","12.00","","","12","","0","","0","2016-09-24 17:14:46","2016-09-24 17:14:46","",
+"80","8","23","666","s:0:&quot;&quot;;","","testing","","test","182356Koala.jpg","50.00","1.00","","","kg","","0","","0","2016-09-28 18:23:56","2016-09-28 18:23:56","",
+"81","8","9","666","s:2:&quot;80&quot;;","3,4,5","Sparkling Drinks","","aaaaaaaaaaaaaaaaaaaaaaaaaaffffffffff","Penguins.jpg","60.00","2.00","","","pound","","0","","0","2016-09-28 18:27:31","2016-09-28 18:27:31","",
+"83","3","14","642","s:2:&quot;69&quot;;","s:6:&quot;3,6,14&quot;;","Pizza","","Delicious Awesome","155106d5a3498cfc9e53130b5f815ef44713b7_Jet.jpg","67.00","2.00","","","medium","","0","","0","2016-09-29 15:51:06","2016-09-29 15:51:06","",
+"84","8","23","642","s:5:&quot;69,83&quot;;","s:4:&quot;3,14&quot;;","Coconut milk  powder","","Awesome to eat","coconut-milk-powder.jpg","56.00","1.00","","","medium","","0","","0","2016-09-29 16:02:18","2016-09-29 16:02:18","",
+"85","8","23","628","s:5:&quot;86,87&quot;;","","Asafoetida ","","It is sold in blocks or pieces as a gum and more frequently as a fine yellow powder, sometimes ","064815571c639a0f235ff4345cd232262ad48e52958e21.jpeg","100.00","2.00","","","small","","0","1","0","2016-07-28 06:48:15","2016-09-29 17:08:26","",
+"88","8","23","628","s:11:&quot;315,316,317&quot;;","s:6:&quot;3,6,14&quot;;","pizza","","tasty, yummy with extra topping ...gdfgsdfgsdfg cvbhdghdfhg fghdfhg
+","172943d5a3498cfc9e53130b5f815ef44713b7_Jet.jpg","100.00","0.50","20","","kg","","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"89","8","23","628","s:11:&quot;315,316,317&quot;;","","pizza","","Tasty,Yummy With Extra Toppingsdsdfgsdfg dhgdghdfgsdfg gsfd","173221d5a3498cfc9e53130b5f815ef44713b7_Jet.jpg","150.00","1.00","","","kg","","0","","0","2016-09-29 17:32:21","2016-09-29 17:32:21","",
+"90","8","23","628","s:11:&quot;315,316,317&quot;;","","pizza","","Tasty,Yummy With Extra Topping sdfgsfhg sfdgbjfd asdfajhwqr8euwsd","173332d5a3498cfc9e53130b5f815ef44713b7_Jet.jpg","200.00","1.50","","","kg","","0","","0","2016-09-29 17:33:32","2016-09-29 17:33:32","",
+"91","8","25","649","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Hranolky","","","th.jpg","1.50","100.00","","","g","","0","","0","2016-10-05 18:33:56","2016-10-05 18:33:56","",
+"92","15","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Horčica","","","horcica.jpg","0.70","70.00","0","","g","","0","","0","2016-10-05 20:24:27","2016-10-05 20:28:33","",
+"93","15","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Kečup","","","kečup.jpg","0.80","70.00","0","","g","","0","","0","2016-10-05 20:29:49","2016-10-05 20:29:49","",
+"94","15","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Tatárska omáčka","","","tatarka.jpg","1.00","70.00","0","","g","","0","","0","2016-10-05 20:31:57","2016-10-05 20:31:57","",
+"95","15","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Cesnakový desing","","","cesnak.jpg","1.20","70.00","0","","g","","0","","0","2016-10-05 20:33:10","2016-10-05 20:33:10","",
+"96","15","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Syrová omáčka","","","syr.jpg","1.50","70.00","0","","g","","0","","0","2016-10-05 20:34:33","2016-10-05 20:34:33","",
+"97","15","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Pikantná omáčka","","","pik.jpg","1.50","70.00","0","","g","","0","","0","2016-10-05 20:36:17","2016-10-08 12:59:58","",
+"98","15","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Dubáková omáčka","","","dub.jpg","2.20","70.00","0","","g","","0","","0","2016-10-05 20:38:03","2016-10-05 20:38:03","",
+"99","15","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Dijonska omáčka","","","dij.jpg","1.50","70.00","0","","g","","0","","0","2016-10-05 20:39:19","2016-10-05 20:39:19","",
+"100","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Zemiaky na masle s petržlenovou vňaťou","","","krumple.jpg","1.60","200.00","0","","g","","0","","0","2016-10-05 20:42:46","2016-10-05 20:42:46","",
+"101","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Pečený zemiak v šupke s kyslou smotanou","","","krumple pec.jpg","1.60","200.00","0","","g","","0","","0","2016-10-05 20:48:33","2016-10-05 20:48:33","",
+"102","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Zemiaková kaša","","","kasa.jpg","1.60","200.00","0","","g","","0","","0","2016-10-05 20:51:44","2016-10-05 20:51:44","",
+"103","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Ryža","","","images.jpg","1.50","150.00","0","","g","","0","","0","2016-10-05 20:55:52","2016-10-05 20:55:52","",
+"104","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Hranolky","","","hra.jpg","1.60","150.00","0","","g","","0","","0","2016-10-05 20:57:39","2016-10-05 20:57:39","",
+"105","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Parená knedľa","","","knedla.jpg","1.60","150.00","0","","g","","0","","0","2016-10-05 21:00:57","2016-10-05 21:00:57","",
+"106","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Domáci žemľový knedlík","","","knedlik.jpg","2.00","150.00","0","","g","","0","","0","2016-10-05 21:03:40","2016-10-05 21:03:40","",
+"107","15","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Chlieb 2ks","","","chl.jpg","0.50","50.00","0","","g","","0","","0","2016-10-05 21:06:26","2016-10-08 12:58:37","",
+"108","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Cesnaková bagetka 2ks","","","b.jpg","1.60","100.00","0","","g","","0","","0","2016-10-05 21:08:14","2016-10-05 21:10:07","",
+"109","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Grilovaná zelenina","","","z.jpg","3.00","200.00","0","","g","","0","","0","2016-10-05 21:09:32","2016-10-05 21:09:32","",
+"110","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Baranie rohy","","","r.jpg","0.90","80.00","0","","g","","0","","0","2016-10-05 21:11:07","2016-10-05 21:11:07","",
+"111","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Feferóny","","","f.jpg","0.90","80.00","0","","g","","0","","0","2016-10-05 21:12:26","2016-10-05 21:12:26","",
+"112","15","29","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Domáci chren","","","chr.jpg","1.00","40.00","0","","g","","0","","0","2016-10-05 21:13:37","2016-10-05 21:13:37","",
+"113","21","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Palacinky s nuttelou, vanilkovým krémom, banánom a šľahačkou ","","","pal.jpg","4.80","150.00","0","","g","","0","","0","2016-10-05 21:17:14","2016-10-08 12:59:39","",
+"114","21","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Palacinky s džemom, lesným ovocím a šľahačkou","","","pala.jpg","4.40","150.00","0","","g","","0","","0","2016-10-05 21:18:22","2016-10-08 12:59:25","",
+"115","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Dubákové rizoto","","&lt;p&gt;Ryža Arborio, medajl&amp;oacute;nky z bravčovej panenky, dub&amp;aacute;ky, parmez&amp;aacute;n, rukola&lt;/p&gt;
+","dur.jpg","8.00","350.00","0","","g","","0","","0","2016-10-05 21:20:23","2016-10-05 21:21:40","",
+"116","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Špenátové rizoto",""," Ryža Arborio, kuracie soté, listový špenát, parmezán","spen.jpg","6.80","350.00","0","","g","","0","","0","2016-10-05 21:22:54","2016-10-05 21:22:54","",
+"117","8","31","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Staročeský guláš","","hovädzie predné, cibuľka, feferónka s domácim žemľovým knedlíkom a čerstvým chrenom","gul.jpg","7.90","200.00","0","","g","","0","","0","2016-10-05 21:26:58","2016-10-05 21:26:58","",
+"118","8","31","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Sviečková na smotane","","hovädzie zadné , parená domáca knedľa, brusnicový dip","sv.jpg","7.90","200.00","0","","g","","0","","0","2016-10-05 21:36:33","2016-10-05 21:36:33","",
+"119","8","31","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Vepřo, knedlo, zelo","","bravčové pečené mäso s domácou parenou knedľou a kapustou","v.jpg","6.90","200.00","0","","g","","0","","0","2016-10-05 21:37:56","2016-10-05 21:37:56","",
+"120","8","31","709","s:11:&quot;103,104,109&quot;;","s:0:&quot;&quot;;","Grilované kačacie prsia","","&lt;p&gt;kačacie prsia s redukciou červen&amp;eacute;ho v&amp;iacute;na, pučen&amp;eacute; zemiaky s cibuľkou&lt;/p&gt;
+","kac.jpg","9.50","200.00","0","","g","","0","","0","2016-10-05 21:40:40","2016-10-06 00:23:52","",
+"121","8","31","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Hovädzie pečené s kôprovou omáčkou","","(pečené hovädzie zadné preliate smotanovou kôprovou omáčkou, domáca knedľa","hov.jpg","7.90","200.00","0","","g","","0","","0","2016-10-05 21:43:08","2016-10-05 21:43:08","",
+"122","8","31","709","s:31:&quot;93,94,97,99,100,102,103,104,109&quot;;","s:0:&quot;&quot;;","Bravčová krkovička na pive","","&lt;p&gt;&lt;font&gt;&lt;font&gt;bravčov&amp;aacute; krkovička na čiernom pive s cibuľkou, cesnakom slaninkou, zemiakov&amp;eacute; Kasa&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+","br.jpg","6.90","200.00","0","","g","","0","","0","2016-10-05 21:45:38","2016-10-07 00:00:29","",
+"123","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Kurací steak","","steak z kuracích pŕs na štvorfarebnom korení","unnamed-12-150x150.jpg","6.50","200.00","0","","g","","0","","0","2016-10-05 23:26:28","2016-10-05 23:26:28","",
+"124","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Vyprážaný kurací rezeň","","kuracie prsia v trojobale so sezamom","asd-150x150.jpg","5.00","150.00","0","","g","","0","","0","2016-10-05 23:29:36","2016-10-05 23:29:36","",
+"125","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Kuracia kapsa","","kuracie prsia plnené syrom a šunkou","unnamed-22-150x150.jpg","5.60","150.00","0","","g","","0","","0","2016-10-05 23:32:26","2016-10-05 23:32:26","",
+"126","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Kuracia kapsa","","kuracie prsia plnené syrom a šunkou","233227unnamed-22-150x150.jpg","5.60","150.00","0","","g","","0","","0","2016-10-05 23:32:27","2016-10-05 23:32:27","",
+"127","8","32","709","s:14:&quot;94,100,103,104&quot;;","s:0:&quot;&quot;;","Bravčová kapsa","","&lt;p&gt;bravčov&amp;eacute; kar&amp;eacute; plnen&amp;eacute; sal&amp;aacute;mou a romad&amp;uacute;rom&lt;/p&gt;
+","unnamed-26-150x150.jpg","5.90","150.00","0","","g","","0","","0","2016-10-05 23:35:08","2016-10-06 12:50:44","",
+"128","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Vyprážaný bravčový rezeň","","&lt;p&gt;bravčov&amp;eacute; kar&amp;eacute; v trojobale&lt;/p&gt;
+","unnamed-35-150x150.jpg","5.50","150.00","0","","g","","0","","0","2016-10-05 23:37:23","2016-10-05 23:39:18","",
+"129","8","32","709","s:33:&quot;93,94,95,96,97,99,100,102,103,104&quot;;","s:0:&quot;&quot;;","Černohorský rezeň","","&lt;p&gt;&lt;font&gt;&lt;font&gt;kuracie m&amp;auml;so Alebo bravčov&amp;eacute; v zemiakovom cestičku tak syrom&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+","cer.jpg","5.90","150.00","0","","g","","0","","0","2016-10-05 23:43:03","2016-10-07 00:10:14","",
+"130","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Medajlónky z bravčovej panenky","","bravčová panenka na grile, omáčka podľa vlastného výberu","pan.jpg","8.50","200.00","0","","g","","0","","0","2016-10-05 23:45:39","2016-10-05 23:45:39","",
+"131","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Vyprážaný syr","","eidam v trojobale","vy.jpg","5.00","150.00","0","","g","","0","","0","2016-10-05 23:47:30","2016-10-05 23:47:30","",
+"132","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Grilovaný encián s brusnicami","","zrejúci syr na grile s brusnicovým dipom","e.jpg","5.50","120.00","0","","g","","0","","0","2016-10-05 23:50:05","2016-10-05 23:50:05","",
+"133","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Bryndzové pirohy so slaninkou, kyslou smotanou a pažítkou ","","","py.jpg","5.50","250.00","0","","g","","0","","0","2016-10-05 23:51:49","2016-10-05 23:51:49","",
+"134","8","32","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Bryndzové halušky","","","ha.jpg","5.50","250.00","0","","g","","0","","0","2016-10-05 23:53:25","2016-10-05 23:53:25","",
+"135","8","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Burger","","&lt;p&gt;mlet&amp;eacute; hov&amp;auml;dzie m&amp;auml;so, sezamov&amp;aacute; žemľa, slanina, cibuľka, syr cheddar, dresing pod&amp;aacute;van&amp;yacute; s hranolkami&lt;/p&gt;
+","bu.jpg","6.90","150.00","0","","g","","0","","0","2016-10-05 23:55:50","2016-10-08 12:58:21","",
+"136","8","33","709","s:27:&quot;92,93,97,99,107,110,111,112&quot;;","s:0:&quot;&quot;;","Grilované kolienko","","&lt;p&gt;Marinovan&amp;eacute; predn&amp;eacute; bravčov&amp;eacute; koleno s cesnakom, kysl&amp;aacute; obloha, dressing, chlieb&lt;/p&gt;
+","unnamed-21-150x150.jpg","10.90","750.00","0","","g","","0","","0","2016-10-06 00:00:39","2016-10-06 00:21:38","",
+"137","8","33","709","s:7:&quot;107,112&quot;;","s:0:&quot;&quot;;","Grilované rebierka","","&lt;p&gt;Marinovan&amp;eacute; bravčov&amp;eacute; rebierka s cesnakom, kysl&amp;aacute; obloha, dressing, chlieb&lt;/p&gt;
+","Snímka-obrazovky-2016-09-21-o-15.47.03-150x150.png","10.90","500.00","0","","g","","0","","0","2016-10-06 00:02:29","2016-10-06 00:23:09","",
+"138","8","33","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Grilované kuracie krídelká","","Marinované kuracie krídelká so sezamom, kyslá obloha, dressing, chlieb","ku.jpg","6.90","400.00","0","","g","","0","","0","2016-10-06 00:04:35","2016-10-06 00:04:35","",
+"139","8","23","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Pravý slepačí vývar","","&lt;p&gt;Slepač&amp;iacute; v&amp;yacute;var s k&amp;uacute;skami sliepky, zeleninou a rezancami&lt;/p&gt;
+","000632sv.jpg","2.20","0.44","0","","l","","0","","0","2016-10-06 00:06:32","2016-10-06 00:07:22","",
+"140","8","23","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Loštická cesnačka v bosniaku","","Cesnaková polievka so zemiakmi, slaninkou a smotanou v bosniaku","unnamed-29-150x150.jpg","2.99","0.44","0","","l","","0","","0","2016-10-06 00:08:52","2016-10-06 00:08:52","",
+"141","8","23","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Moravská kapustnica","","Tradičná kapustnica s údeným mäskom a klobásou","kap.jpg","2.99","0.44","0","","l","","0","","0","2016-10-06 00:11:25","2016-10-06 00:11:25","",
+"142","8","23","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Fazuľová polievka Jokai",""," Polievka z tmavej fazuľe s kúskami udeného mäsa a širokými rezancami","fa.jpg","2.99","0.44","0","","l","","0","","0","2016-10-06 00:13:09","2016-10-06 00:13:09","",
+"143","8","34","709","s:3:&quot;107&quot;;","s:0:&quot;&quot;;","Utopenci","","Špekáčik nakladaný cibuľkou, cesnakom, feferónkou, chlieb","uto.jpg","3.00","150.00","0","","g","","0","","0","2016-10-06 00:26:41","2016-10-06 00:26:41","",
+"144","8","34","709","s:3:&quot;107&quot;;","s:0:&quot;&quot;;","Upečenci","","Špekáčik pečený na čiernom pive, kyslá obloha, chlieb","002859uto.jpg","3.80","150.00","0","","g","","0","","0","2016-10-06 00:28:59","2016-10-06 00:28:59","",
+"145","8","34","709","s:3:&quot;107&quot;;","s:0:&quot;&quot;;","Nakladaný hermelín","","Hermelín naložený v olivovom oleji s cibuľkou, cesnakom, feferónkou, chlieb","he.jpg","","","","","","","0","","0","2016-10-06 00:31:35","2016-10-06 00:31:35","",
+"146","8","34","709","s:3:&quot;107&quot;;","s:0:&quot;&quot;;","Domáca zabíjačková tlačenka","","Bravčová tlačenka s octom a cibuľkou, chlieb","tlacenka.jpg","3.60","150.00","0","","g","","0","","0","2016-10-06 00:39:39","2016-10-06 00:39:39","",
+"147","8","34","709","s:3:&quot;107&quot;;","s:0:&quot;&quot;;","Kačacia paštéta","","Paštéta z kačacej pečene na cibuľke a kačacej masti, bagetka","kapa.jpg","3.80","80.00","0","","g","","0","","0","2016-10-06 00:43:27","2016-10-06 00:43:27","",
+"148","19","35","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Bakalář nealko za studena chmelený","","","ba.jpg","1.50","0.50","0","","l","","0","","0","2016-10-06 21:58:07","2016-10-06 21:58:07","",
+"149","19","35","709","s:19:&quot;143,144,145,146,147&quot;;","s:0:&quot;&quot;;","Bakalář 10º","","","ba1.jpg","1.20","0.50","0","","l","","0","","0","2016-10-06 22:01:25","2016-10-06 22:01:25","",
+"150","19","35","709","s:15:&quot;143,144,145,147&quot;;","s:0:&quot;&quot;;","Bakalář 10º","","","220451ba1.jpg","0.80","0.33","0","","g","","0","","0","2016-10-06 22:04:51","2016-10-06 22:04:51","",
+"151","19","35","709","s:15:&quot;143,144,145,147&quot;;","s:0:&quot;&quot;;","Bakalář 14° medový špeciál","","","ba2.jpg","1.60","0.50","0","","l","","0","","0","2016-10-06 22:08:00","2016-10-06 22:08:00","",
+"152","22","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Slané pivné palice","","","pp.jpg","1.60","125.00","0","","g","","0","","0","2016-10-06 22:11:08","2016-10-08 12:59:14","",
+"153","22","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Arasidy","","","ar.jpg","1.80","100.00","0","","g","","0","","0","2016-10-06 22:12:28","2016-10-07 17:07:11","",
+"154","22","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Pistácie","","","pis.jpg","2.20","75.00","0","","g","","0","","0","2016-10-06 22:13:55","2016-10-08 12:59:56","",
+"155","19","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Espresso “Galliano”","","","q.jpg","1.40","7.00","0","","g","","0","","0","2016-10-06 22:17:01","2016-10-08 12:58:50","",
+"156","19","36","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Cappuccino","","","221752q.jpg","1.90","7.00","0","","g","","0","","0","2016-10-06 22:17:52","2016-10-06 22:17:52","",
+"157","19","36","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Caffe latte","","","221832q.jpg","1.90","7.00","0","","g","","0","","0","2016-10-06 22:18:32","2016-10-06 22:18:32","",
+"158","19","36","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Čaj porcovaný","","","ca.jpg","1.90","3.00","0","","g","","0","","0","2016-10-06 22:20:01","2016-10-06 22:20:01","",
+"159","19","36","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","med","","","222221ca.jpg","0.40","20.00","0","","d","","0","","0","2016-10-06 22:22:21","2016-10-06 22:22:21","",
+"160","19","37","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Martini dry","","","m.jpg","1.80","0.08","0","","l","","0","","0","2016-10-06 22:26:08","2016-10-06 22:26:08","",
+"161","19","39","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Biele víno rozlievané","","","vi.jpg","0.70","0.10","0","","l","","0","","0","2016-10-06 23:32:02","2016-10-06 23:32:02","",
+"162","19","39","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Červené víno rozlievané","","","233255vi.jpg","0.80","0.10","0","","l","","0","","0","2016-10-06 23:32:55","2016-10-06 23:32:55","",
+"163","19","40","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Absolut vodka","","","de.jpg","2.00","0.04","0","","l","","0","","0","2016-10-06 23:35:29","2016-10-06 23:35:29","",
+"164","19","40","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Beefeater gin","","","233628de.jpg","2.00","0.04","0","","l","","0","","0","2016-10-06 23:36:28","2016-10-06 23:36:28","",
+"165","19","40","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Tequila gold","","","233731de.jpg","2.00","0.04","0","","l","","0","","0","2016-10-06 23:37:31","2016-10-06 23:37:31","",
+"166","19","40","709","s:3:&quot;149&quot;;","s:0:&quot;&quot;;","Borovička spiš","","","233844de.jpg","1.50","0.04","0","","l","","0","","0","2016-10-06 23:38:44","2016-10-06 23:38:44","",
+"167","19","40","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Slivovica 52º Jelínek","","","234101de.jpg","2.00","0.04","0","","l","","0","","0","2016-10-06 23:41:01","2016-10-06 23:41:01","",
+"168","19","41","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Kofola original 0,5","","","n.jpg","1.50","0.50","0","","l","","0","","0","2016-10-06 23:43:35","2016-10-06 23:43:35","",
+"169","19","20","709","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Kofola original 0,3","","","234552n.jpg","1.00","0.30","0","","l","","0","","0","2016-10-06 23:45:52","2016-10-08 12:58:08","",
+"303","8","23","634","","","Cannellini Bruschetta","","&amp;lt;p&amp;gt;Italian bread.&amp;lt;/p&amp;gt;
+","FNM_110112-50-Easy-Appetizers-Cannellini-Bruschetta_s4x3.jpg.rend.sni6col.landscape.jpeg","500.00","2.00","","","Small","","0","1","0","0000-00-00 00:00:00","0000-00-00 00:00:00","",
+"304","8","23","634","","","Radish-Anchovy Canapes","","&amp;lt;p&amp;gt;Finely chop 1 to 2 rinsed anchovies, 2 tablespoons parsley and 1 teaspoon grated lemon zest; mix with 1 stick softened butter. Spread on pumpernickel cocktail bread and top with thinly sliced radishes and a squeeze of lemon juice.&amp;lt;/p&amp;gt;
+","FNM_110112-50-Easy-Appetizers-Radish-Anchovy-Canapes_s4x3.jpg.rend.sni6col.landscape.jpeg","2.00","4.00","","","Large","","0","1","0","0000-00-00 00:00:00","0000-00-00 00:00:00","",
+"305","19","35","864","s:0:&quot;&quot;;","s:0:&quot;&quot;;","test product","","testing","cart2.jpg","22.00","1.00","","","medium","","0","","0","2016-10-08 17:36:10","2016-10-08 17:36:10","",
+"307","8","32","865","s:7:&quot;309,310&quot;;","s:5:&quot;3,4,6&quot;;","test411","","&lt;p&gt;test411&lt;/p&gt;
+","180246Lighthouse.jpg","20.00","2.00","2","","gm","","0","","0","2016-10-10 18:02:46","2016-10-10 20:53:50","",
+"308","8","32","865","s:3:&quot;306&quot;;","s:3:&quot;3,5&quot;;","test412","","test","181544Lighthouse.jpg","10.00","10.00","1","","gm","","0","","0","2016-10-10 18:15:44","2016-10-10 18:15:44","",
+"309","29","44","865","N;","N;","Sparkling Drinks","","hgfgh","200456Koala.jpg","10.00","10.00","10","","kg","","0","","1","2016-10-10 20:04:56","2016-10-10 20:04:56","",
+"310","29","44","865","","s:0:&quot;&quot;;","Sparkling ","","&lt;p&gt;hgfgh&lt;/p&gt;
+","200539Koala.jpg","10.00","10.00","10","","kg","","0","","1","2016-10-10 20:05:39","2016-10-10 20:48:33","",
+"311","29","44","865","","","tesssss","","tessss","203058Penguins.jpg","10.00","10.00","10","","kg","","0","","1","2016-10-10 20:30:58","2016-10-10 20:30:58","",
+"312","8","58","867","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Chivas Regal","","12 year old whiskey","blend_chi1.jpg","250.00","3.50","","","","","0","","0","2016-10-13 12:10:04","2016-10-13 12:10:04","",
+"314","36","50","624","","s:0:&quot;&quot;;","test","","test","170812Chrysanthemum.jpg","10.00","101.00","10","","km","","0","","1","2016-10-13 17:08:12","2016-10-13 17:08:12","",
+"315","36","52","628","","s:0:&quot;&quot;;","Regular 
+serves 1","","Medium size pizza","ofr5.png","138.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"316","36","52","628","","s:0:&quot;&quot;;","Medium  serves 2","","Medium size pizza","ofr6.png","248.00","1.50","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"317","36","52","628","","s:0:&quot;&quot;;","Large  serves 3","","Large size pizza for most hungry people","ofr7.png","358.00","2.00","30","","kg","","0","","1","2016-10-13 17:34:51","2016-10-13 17:34:51","",
+"319","8","55","867","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Vodka fine","","The medium-full bodied Smirnoff Vodka is reminiscent of lemon, white pepper, charcoal; full, bold texture; smoky sensation is followed by a burst of rich flavor.","c700x420.jpg","1000.00","1.50","","","kg","","0","","0","2016-10-15 11:36:45","2016-10-15 11:36:45","",
+"320","8","54","628","s:71:&quot;315,316,340,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363&quot;;","s:6:&quot;3,6,14&quot;;","Summer Fresh ","","Capsicum, Tomato, Onions
+","Summer-Fresh.jpg","138.00","0.50","20","","kg","1,5,10","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"321","8","54","628","s:71:&quot;341,343,344,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363&quot;;","","Tex Mex Special ","","Spicy Jalapenos, Golden Corn, Capsicum","Tex-mex-Special.jpg","148.00","1.00","","","kg","1,3,8,9","0","","0","2016-09-29 17:32:21","2016-09-29 17:32:21","",
+"322","8","54","628","s:71:&quot;345,346,347,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363&quot;;&quot;;","s:6:&quot;3,6,14&quot;;","Country Roads","","Red Paprika, Baby Corn, Onions
+","Country-Roads.jpg","158.00","0.50","20","","kg","3,6,8,10","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"324","8","54","628","s:71:&quot;316,340,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363&quot;;&quot;;","s:6:&quot;3,6,14&quot;;","Four Seasons","","Black Olives, Spicy Jalapenos, Baby Corn, Onions 
+","Four-Seasons.jpg","198.00","0.50","20","","kg","10,7,4,3,2,1","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"325","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Mediterranean Delight","","Mushrooms, Black Olives, Baby Corn, Onions 
+","Mediterranean.jpg","208.00","0.50","20","","kg","5,7,2,9","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"326","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Flame Thrower","","Red Paprika, Spicy Jalapenos, Golden Corn, Capsicum,Tomato","Flame-Thrower.jpg","218.00","0.50","20","","kg","1,2,3,4,5,6","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"327","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Paneer Tikka","","Paneer Cubes, Capsicum, Tomato, Onions","Paneer-Tikka.jpg","238.00","0.50","20","","kg","10,9,8,7,6","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"328","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","The Heritage","","Paneer Cubes, Red Paprika, Golden Corn ,Capsicum","The-Heritage.jpg","258.00","0.50","20","","kg","3,4,5,6,7","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"329","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Everything Special","","Mushrooms, Red Paprika, Black Olives, Golden Corn, Baby Corn, Onions, Tomato","Everything-Special.jpg","268.00","0.50","20","","kg","5,6,7,2,10","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"330","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Crowded House","","Extra Cheese, Paneer Cubes, Spicy Jalapenos, Black Olives, Golden Corn, Capsicum...
+","Crowded-House.jpg","278.00","0.50","20","","kg","1,5,4,3","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"331","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Smokey Joe","","BBQ Chicken, Onions","Smokey-Joe.jpg","258.00","0.50","20","","kg","7,4,10","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"332","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Classic American","","Chicken Sausage, Red Paprika
+","Classic-American.jpg","168.00","0.50","20","","kg","1,2,3,5,7,9","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"333","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Barbecued Chicken","","BBQ Chicken, Red Paprika, Golden Corn,Onions
+","Barbecued-Chicken.jpg","218.00","0.50","20","","kg","4,5,6,9","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"334","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","The Secret Agent","","Roast Chicken,Chicken Sausage, Spicy Jalapenos,Capsicum
+","The-Secret-Agent.jpg","228.00","0.50","20","","kg","10,5,3,1","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"335","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Fire House","","BBQ Chicken, Spicy Chiken, Spicy Jalapenos, Baby Corn","Fire-House.jpg","228.00","0.50","20","","kg","9,4,2","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"336","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Exotic Chicken","","Roast Chicken, Mushrooms, Black Olives, Onions","Exotic-Chicken.jpg","248.00","0.50","20","","kg","1,4,7,9","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"337","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Chicken Tikka","","Chicken Tikka, Chicken Kebab, Red Paprika, Capsicum, Onions
+","Chicken-Tikka.jpg","268.00","0.50","20","","kg","9,4,6","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"338","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","The Meat Eater","","BBQ Chicken, Roast Chicken, Spicy Chiken, Chicken Sausage
+","The-Meat-Eater.jpg","298.00","0.50","20","","kg","1,2,10,9","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"339","8","54","628","s:11:&quot;315,316,340&quot;;","s:6:&quot;3,6,14&quot;;","Chicken Housefull","","Chicken Tikka, Roast Chicken, Chicken Kebab, Red Paprika, Black Olives, Capsicum...","Chicken-Housefull.jpg","308.00","0.50","20","","kg","4,8,10","0","","0","2016-09-29 17:29:43","2016-10-13 17:56:53","",
+"340","36","52","628","","s:0:&quot;&quot;;","Large  serves 3","","Large size pizza for most hungry people","ofr7.png","368.00","2.00","30","","kg","","0","","1","2016-10-13 17:34:51","2016-10-13 17:34:51","",
+"341","36","52","628","","s:0:&quot;&quot;;","Regular 
+serves 1","","Medium size pizza","ofr5.png","148.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"342","36","52","628","","s:0:&quot;&quot;;","Medium  serves 2","","Medium size pizza","ofr6.png","268.00","1.50","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"343","36","52","628","","s:0:&quot;&quot;;","Medium  serves 2","","Medium size pizza","ofr6.png","268.00","1.50","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"344","36","52","628","","s:0:&quot;&quot;;","Large  serves 3","","Large size pizza for most hungry people","ofr7.png","388.00","2.00","30","","kg","","0","","1","2016-10-13 17:34:51","2016-10-13 17:34:51","",
+"345","36","52","628","","s:0:&quot;&quot;;","Regular 
+serves 1","","Medium size pizza","ofr5.png","158.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"346","36","52","628","","s:0:&quot;&quot;;","Medium  serves 2","","Medium size pizza","ofr6.png","278.00","1.50","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"347","36","52","628","","s:0:&quot;&quot;;","Large  serves 3","","Large size pizza for most hungry people","ofr7.png","398.00","2.00","30","","kg","","0","","1","2016-10-13 17:34:51","2016-10-13 17:34:51","",
+"348","36","52","628","","s:0:&quot;&quot;;","Regular 
+serves 1","","Medium size pizza","ofr5.png","198.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"349","30","50","628","","s:0:&quot;&quot;;","Original Crust","","","ofr20.png","0.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"350","30","50","628","","s:0:&quot;&quot;;","Thin Crust","","","ofr21.svg","20.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"351","30","50","628","","s:0:&quot;&quot;;","Cheese Blast","","","ofr22.svg","90.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"352","31","51","628","","s:0:&quot;&quot;;","Paneer Cubes ","","","ofr8.png","30.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"353","31","51","628","","s:0:&quot;&quot;;","Mushrooms","","","ofr9.png","30.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"354","31","51","628","","s:0:&quot;&quot;;","Black Olives","","","ofr10.png","30.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"355","31","51","628","","s:0:&quot;&quot;;","Spicy Jalapenos","","","ofr11.png","30.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"356","31","51","628","","s:0:&quot;&quot;;","Red Paprika","","","ofr12.png","30.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"357","31","51","628","","s:0:&quot;&quot;;","Golden Corn","","","ofr13.png","30.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"358","31","51","628","","s:0:&quot;&quot;;","Baby Corn","","","ofr14.png","30.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"359","33","53","628","","s:0:&quot;&quot;;","BBQ Chicken","","","ofr15.png","50.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"360","33","53","628","","s:0:&quot;&quot;;","Chicken Sausage","","","ofr16.png","50.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"361","33","53","628","","s:0:&quot;&quot;;","Roast Chicken","","","ofr17.png","50.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"362","33","53","628","","s:0:&quot;&quot;;","Spicy Chicken","","","ofr18.png","50.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"363","33","53","628","","s:0:&quot;&quot;;","Chicken Tikka","","","ofr19.png","50.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"364","8","59","628","s:19:&quot;365,366,367,368,369&quot;;","s:0:&quot;&quot;;","Dal Makhni Meal","","The best Dal makhni in town + Additional Chole/ Dal Makhni on the side + Salad/Chutney + Dessert","1110-X-810.jpg","128.00","1.00","20","","kg","1,2,3,4","0","","0","2016-10-17 18:26:16","2016-10-17 18:26:16","",
+"365","34","60","628","","s:0:&quot;&quot;;","Rice","","","rice.svg","0.00","0.50","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"366","34","60","628","","s:0:&quot;&quot;;","Paratha","","","paratha.svg","0.00","0.50","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"367","34","60","628","","s:0:&quot;&quot;;","Paratha + Rice [1/2]","","","rparatha.svg","18.00","1.00","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"368","35","61","628","","s:0:&quot;&quot;;","Dal Makhni","","","dal.svg","0.00","0.50","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"369","35","61","628","","s:0:&quot;&quot;;","Dilli Chole","","","dilli.svg","0.00","0.50","20","","kg","","0","","1","2016-10-13 17:31:01","2016-10-13 17:31:01","",
+"370","30","50","625","","s:1:&quot;3&quot;;","Regular serves 1","","&lt;p&gt;Regular serves 1&lt;/p&gt;
+","185601Summer-Fresh.jpg","10.00","10.00","2","","kg","","0","","1","2016-10-18 12:25:17","2016-10-18 18:56:01","",
+"371","8","32","625","s:3:&quot;370&quot;;","s:1:&quot;3&quot;;","pizza","","&lt;p&gt;pizza&lt;/p&gt;
+","185553Summer-Fresh.jpg","200.00","1.00","3","","kg","","0","","0","2016-10-18 12:26:36","2016-10-18 18:55:53","",
+"372","32","52","625","","s:1:&quot;5&quot;;","Original Crust ","","&lt;p&gt;Original Crust&lt;/p&gt;
+","185539Summer-Fresh.jpg","10.00","1.00","1","","kg","","0","","1","2016-10-18 12:51:23","2016-10-18 18:55:39","",
+"373","32","52","625","","s:1:&quot;5&quot;;","Thin Crust","","&lt;p&gt;Thin Crust&lt;/p&gt;
+","185614Summer-Fresh.jpg","15.00","1.00","0","","kg","","0","","1","2016-10-18 12:53:49","2016-10-18 18:56:14","",
+"374","32","62","625","","s:1:&quot;5&quot;;","Paneer Cubes ","","&lt;p&gt;Paneer Cubes&lt;/p&gt;
+","185546Summer-Fresh.jpg","12.00","","","","","","0","","1","2016-10-18 12:55:52","2016-10-18 18:55:46","",
+"375","8","54","625","s:19:&quot;372,373,374,376,377&quot;;","s:3:&quot;5,7&quot;;","Summer Fresh","","&lt;p&gt;Summer Fresh&lt;/p&gt;
+","125859Summer-Fresh.jpg","120.00","1.00","5","","kg","1,2,8,10","0","","0","2016-10-18 12:58:59","2016-10-18 13:39:01","",
+"376","32","64","625","","s:1:&quot;7&quot;;","Regular serves 1","","&lt;p&gt;Regular serves 1&lt;/p&gt;
+","185607Summer-Fresh.jpg","138.00","1.00","1","","kg","","0","","1","2016-10-18 13:05:26","2016-10-18 18:56:07","",
+"377","32","64","625","","s:1:&quot;6&quot;;","Medium  serves 2 ","","&lt;p&gt;Medium serves 2&lt;/p&gt;
+","185531Summer-Fresh.jpg","200.00","1.00","1","","kg","","0","","1","2016-10-18 13:37:38","2016-10-18 18:55:31","",
+"378","8","54","625","s:11:&quot;372,374,377&quot;;","s:1:&quot;4&quot;;","Farm House","","Farm House","132501Summer-Fresh.jpg","120.00","1.00","1","","kg","","0","","0","2016-10-20 13:25:01","2016-10-20 13:25:01","",
+"379","8","57","867","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Old Monk","","Legends Walk Alone","x_770e3f05.jpg","1.18","2.00",".25","","2.5","","0","","0","2016-10-26 13:44:55","2016-10-26 13:44:55","",
+"380","8","54","815","s:17:&quot;Chilli,red chilli&quot;;","s:0:&quot;&quot;;","Cheese Pizza","","Pizza cheese encompasses several varieties and types of cheeses ","Cheese Pizza.jpg","200.00","300.00","325","","gm","","0","","0","2016-10-27 13:56:44","2016-10-27 13:56:44","",
+"381","8","54","807","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Cheese Pizza","","Pizza cheese encompasses several varieties and types of cheeses ","135835Cheese Pizza.jpg","200.00","300.00","325","","gm","","0","","0","2016-10-27 13:58:35","2016-10-27 13:58:35","",
+"382","8","32","645","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Jeddah Food","","Jeddah Food","Jeddah Food.jpg","200.00","200.00","225","","gm","","0","","0","2016-10-27 14:42:34","2016-10-27 14:42:34","",
+"383","8","59","812","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Sambhar","","Big Sambhar","big_sambhar.jpg","50.00","150.00","65","","gm","","0","","0","2016-10-27 15:17:05","2016-10-27 15:17:05","",
+"384","8","59","812","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Idli","","Rava Idli","big_quick-rava-idli.jpg","45.00","120.00","60","","gm","","0","","0","2016-10-27 15:18:31","2016-10-27 15:18:31","",
+"385","8","31","813","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Mushroom","","mushroom","good-food.jpg","250.00","350.00","275","","gm","","0","","0","2016-10-27 15:31:55","2016-10-27 15:31:55","",
+"386","8","31","814","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Mushroom","","mushroom","153331good-food.jpg","200.00","300.00","220","","gm","","0","","0","2016-10-27 15:33:31","2016-10-27 15:33:31","",
+"387","8","32","816","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Sweet dezert","","sweets","sweets.jpg","120.00","500.00","130","","gm","","0","","0","2016-10-27 15:38:32","2016-10-27 15:38:32","",
+"388","8","59","818","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Puri Chole","","puri chole","puri-chole.jpg","50.00","250.00","60","","gm","","0","","0","2016-10-27 15:41:04","2016-10-27 15:41:04","",
+"389","8","54","819","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Cheese Pizza","","Cheese pizza with different version cheese","154305Cheese Pizza.jpg","250.00","450.00","275","","gm","","0","","0","2016-10-27 15:43:05","2016-10-27 15:43:05","",
+"390","8","23","821","s:0:&quot;&quot;;","s:0:&quot;&quot;;","With Salad","","Biscuit with salad","Aazzan-1470300329.jpg","50.00","100.00","60","","gm","","0","","0","2016-10-27 15:45:00","2016-10-27 15:45:00","",
+"391","8","23","822","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Jeddah Food","","food","154653Jeddah Food.jpg","80.00","250.00","85","","gm","","0","","0","2016-10-27 15:46:53","2016-10-27 15:46:53","",
+"392","8","59","824","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Pkoraas","","red chili pkoras","cuisine.jpg","100.00","500.00","110","","gm","","0","","0","2016-10-27 15:49:50","2016-10-27 15:49:50","",
+"393","8","34","825","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Lentil Soup","","mix lentil soup","lentil-soup.jpg","60.00","500.00","70","","gm","","0","","0","2016-10-27 15:53:39","2016-10-27 15:53:39","",
+"394","8","59","826","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Puri Chole","","puri chole","155440puri-chole.jpg","50.00","300.00","60","","gm","","0","","0","2016-10-27 15:54:40","2016-10-27 15:54:40","",
+"395","8","59","833","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Pkoraas","","red chilly pkoras","155552cuisine.jpg","50.00","200.00","60","","gm","","0","","0","2016-10-27 15:55:52","2016-10-27 15:55:52","",
+"396","8","59","834","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Sarson Saag","","Sarson Saag with green chilly","Saagroti.jpg","50.00","350.00","60","","gm","","0","","0","2016-10-27 15:57:36","2016-10-27 15:57:36","",
+"397","8","59","836","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Dal Roti","","Dal roti","Daal-Roti.jpg","40.00","350.00","50","","gm","","0","","0","2016-10-27 15:59:51","2016-10-27 15:59:51","",
+"398","8","59","838","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Dal Roti","","Dal Roti","160053Daal-Roti.jpg","40.00","350.00","50","","gm","","0","","0","2016-10-27 16:00:53","2016-10-27 16:00:53","",
+"399","8","54","839","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Cheese Pizza","","Cheese Pizza","160151Cheese Pizza.jpg","100.00","350.00","110","","gm","","0","","0","2016-10-27 16:01:51","2016-10-27 16:01:51","",
+"400","8","23","841","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Mushroom","","mushroom","160253good-food.jpg","50.00","250.00","60","","gm","","0","","0","2016-10-27 16:02:53","2016-10-27 16:02:53","",
+"401","8","23","842","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Jeddah Food","","jeddah","160349Jeddah Food.jpg","150.00","250.00","160","","gm","","0","","0","2016-10-27 16:03:49","2016-10-27 16:03:49","",
+"402","8","59","844","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Puri Chole","","puri cholle","160441puri-chole.jpg","50.00","300.00","60","","gm","","0","","0","2016-10-27 16:04:41","2016-10-27 16:04:41","",
+"403","8","31","845","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Lentil Soup","","soup","160626lentil-soup.jpg","50.00","250.00","60","","gm","","0","","0","2016-10-27 16:06:26","2016-10-27 16:06:26","",
+"404","8","59","846","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Sweet dezert","","sweet","160735sweets.jpg","400.00","1.00","420","","kg","","0","","0","2016-10-27 16:07:35","2016-10-27 16:07:35","",
+"405","8","59","853","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Sarson Saag","","saag with corn roti","160847Saagroti.jpg","50.00","350.00","60","","gm","","0","","0","2016-10-27 16:08:47","2016-10-27 16:08:47","",
+"406","8","54","872","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Cheese Pizza","","pizza","161001Cheese Pizza.jpg","80.00","450.00","90","","gm","","0","","0","2016-10-27 16:10:01","2016-10-27 16:10:01","",
+"407","8","59","871","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Mushroom","","mushroom","161056good-food.jpg","200.00","1.00","220","","kg","","0","","0","2016-10-27 16:10:56","2016-10-27 16:10:56","",
+"408","19","35","870","s:0:&quot;&quot;;","s:0:&quot;&quot;;","Mazza","","Mango Dring","mazza.jpg","60.00","1.00","60","","kg","","0","","0","2016-10-27 16:12:30","2016-10-27 16:12:30","",
+"409","8","59","876","s:16:&quot;coke,miranda,7up&quot;;","s:0:&quot;&quot;;","buffalo wings ","","delicious shit ","74b7585a8932ba16287fed34f21822f9.jpg","20.00","5.00","3","","","","0","","0","2016-10-31 07:13:27","2016-10-31 07:13:27","",
